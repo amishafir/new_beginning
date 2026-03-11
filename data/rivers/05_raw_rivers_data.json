@@ -1,0 +1,3664 @@
+[
+  {
+    "basin_name": "Akpa",
+    "basin_code": "AKPA",
+    "continent": "Africa",
+    "countries": [
+      "Cameroon",
+      "Nigeria"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2434
+  },
+  {
+    "basin_name": "Allahein",
+    "basin_code": "ALHN",
+    "continent": "Africa",
+    "countries": [
+      "Gambia",
+      "Senegal"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 527
+  },
+  {
+    "basin_name": "Annole",
+    "basin_code": "ANNL",
+    "continent": "Africa",
+    "countries": [
+      "Kenya",
+      "Somalia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 11219
+  },
+  {
+    "basin_name": "Awash",
+    "basin_code": "AWSH",
+    "continent": "Africa",
+    "countries": [
+      "Djibouti",
+      "Ethiopia",
+      "Somalia"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 152264
+  },
+  {
+    "basin_name": "Bahr at Tubat",
+    "basin_code": "BATU",
+    "continent": "Africa",
+    "countries": [
+      "Egypt",
+      "Libya"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 7764
+  },
+  {
+    "basin_name": "Baraka",
+    "basin_code": "BRKA",
+    "continent": "Africa",
+    "countries": [
+      "Eritrea",
+      "Sudan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 63770
+  },
+  {
+    "basin_name": "Benito/Ntem",
+    "basin_code": "BENT",
+    "continent": "Africa",
+    "countries": [
+      "Cameroon",
+      "Equatorial Guinea",
+      "Gabon"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 44329
+  },
+  {
+    "basin_name": "Bia",
+    "basin_code": "BIAX",
+    "continent": "Africa",
+    "countries": [
+      "Côte d'Ivoire",
+      "Ghana"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 11328
+  },
+  {
+    "basin_name": "Buzi",
+    "basin_code": "BUZI",
+    "continent": "Africa",
+    "countries": [
+      "Mozambique",
+      "Zimbabwe"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 28490
+  },
+  {
+    "basin_name": "Cavally",
+    "basin_code": "CVLY",
+    "continent": "Africa",
+    "countries": [
+      "Côte d'Ivoire",
+      "Guinea",
+      "Liberia"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 29501
+  },
+  {
+    "basin_name": "Cestos",
+    "basin_code": "CSTO",
+    "continent": "Africa",
+    "countries": [
+      "Côte d'Ivoire",
+      "Liberia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 12714
+  },
+  {
+    "basin_name": "Chiloango",
+    "basin_code": "CLNG",
+    "continent": "Africa",
+    "countries": [
+      "Angola",
+      "DR Congo",
+      "Rep. of Congo"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 12996
+  },
+  {
+    "basin_name": "Congo/Zaire",
+    "basin_code": "CNGO",
+    "continent": "Africa",
+    "countries": [
+      "Angola",
+      "Burundi",
+      "Cameroon",
+      "Central African Republic",
+      "DR Congo",
+      "Malawi",
+      "Rep. of Congo",
+      "Rwanda",
+      "Tanzania",
+      "Zambia"
+    ],
+    "num_countries": 10,
+    "total_area_km2": 3688887
+  },
+  {
+    "basin_name": "Cross",
+    "basin_code": "CROS",
+    "continent": "Africa",
+    "countries": [
+      "Cameroon",
+      "Nigeria"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 52840
+  },
+  {
+    "basin_name": "Cuvelai/Etosha",
+    "basin_code": "ETOS",
+    "continent": "Africa",
+    "countries": [
+      "Angola",
+      "Namibia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 173683
+  },
+  {
+    "basin_name": "Daoura",
+    "basin_code": "DAUR",
+    "continent": "Africa",
+    "countries": [
+      "Algeria",
+      "Morocco"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 49690
+  },
+  {
+    "basin_name": "Dra",
+    "basin_code": "DRAX",
+    "continent": "Africa",
+    "countries": [
+      "Algeria",
+      "Morocco"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 94178
+  },
+  {
+    "basin_name": "Galana",
+    "basin_code": "GLNA",
+    "continent": "Africa",
+    "countries": [
+      "Kenya",
+      "Tanzania"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 46662
+  },
+  {
+    "basin_name": "Gambia",
+    "basin_code": "GAMB",
+    "continent": "Africa",
+    "countries": [
+      "Gambia",
+      "Guinea",
+      "Senegal"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 77179
+  },
+  {
+    "basin_name": "Gash",
+    "basin_code": "GASH",
+    "continent": "Africa",
+    "countries": [
+      "Eritrea",
+      "Ethiopia",
+      "Sudan"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 23657
+  },
+  {
+    "basin_name": "Geba-Corubal",
+    "basin_code": "GEBA",
+    "continent": "Africa",
+    "countries": [
+      "Guinea",
+      "Guinea-Bissau",
+      "Senegal"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 36629
+  },
+  {
+    "basin_name": "Great Scarcies",
+    "basin_code": "GSCR",
+    "continent": "Africa",
+    "countries": [
+      "Guinea",
+      "Sierra Leone"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 7832
+  },
+  {
+    "basin_name": "Guir",
+    "basin_code": "GUIR",
+    "continent": "Africa",
+    "countries": [
+      "Algeria",
+      "Morocco"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 108733
+  },
+  {
+    "basin_name": "Incomati",
+    "basin_code": "ICMT",
+    "continent": "Africa",
+    "countries": [
+      "Eswatini",
+      "Mozambique",
+      "South Africa"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 46631
+  },
+  {
+    "basin_name": "Juba-Shibeli",
+    "basin_code": "JUBA",
+    "continent": "Africa",
+    "countries": [
+      "Ethiopia",
+      "Kenya",
+      "Somalia"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 792350
+  },
+  {
+    "basin_name": "Komoe",
+    "basin_code": "KMOE",
+    "continent": "Africa",
+    "countries": [
+      "Burkina Faso",
+      "Côte d'Ivoire",
+      "Ghana",
+      "Mali"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 83390
+  },
+  {
+    "basin_name": "Kunene",
+    "basin_code": "KUNE",
+    "continent": "Africa",
+    "countries": [
+      "Angola",
+      "Namibia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 108563
+  },
+  {
+    "basin_name": "Lak Dera",
+    "basin_code": "LKDR",
+    "continent": "Africa",
+    "countries": [
+      "Kenya",
+      "Somalia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 5427
+  },
+  {
+    "basin_name": "Lake Cayo",
+    "basin_code": "LKCY",
+    "continent": "Africa",
+    "countries": [
+      "Angola",
+      "Rep. of Congo"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3552
+  },
+  {
+    "basin_name": "Lake Chad",
+    "basin_code": "LKCH",
+    "continent": "Africa",
+    "countries": [
+      "Algeria",
+      "Cameroon",
+      "Central African Republic",
+      "Chad",
+      "Libya",
+      "Niger",
+      "Nigeria",
+      "Sudan"
+    ],
+    "num_countries": 8,
+    "total_area_km2": 2596866
+  },
+  {
+    "basin_name": "Lake Chilwa",
+    "basin_code": "LKCW",
+    "continent": "Africa",
+    "countries": [
+      "Malawi",
+      "Mozambique"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8753
+  },
+  {
+    "basin_name": "Lake Natron",
+    "basin_code": "LKNT",
+    "continent": "Africa",
+    "countries": [
+      "Kenya",
+      "Tanzania"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 27281
+  },
+  {
+    "basin_name": "Lake Rukwa",
+    "basin_code": "LKRW",
+    "continent": "Africa",
+    "countries": [
+      "Tanzania",
+      "Zambia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 79275
+  },
+  {
+    "basin_name": "Lake Turkana",
+    "basin_code": "LKTK",
+    "continent": "Africa",
+    "countries": [
+      "Ethiopia",
+      "Ilemi triangle",
+      "Kenya",
+      "South Sudan",
+      "Uganda"
+    ],
+    "num_countries": 5,
+    "total_area_km2": 173143
+  },
+  {
+    "basin_name": "Limpopo",
+    "basin_code": "LMPO",
+    "continent": "Africa",
+    "countries": [
+      "Botswana",
+      "Mozambique",
+      "South Africa",
+      "Zimbabwe"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 406520
+  },
+  {
+    "basin_name": "Little Scarcies",
+    "basin_code": "LSCR",
+    "continent": "Africa",
+    "countries": [
+      "Guinea",
+      "Sierra Leone"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 18559
+  },
+  {
+    "basin_name": "Loffa",
+    "basin_code": "LOFF",
+    "continent": "Africa",
+    "countries": [
+      "Guinea",
+      "Liberia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 10446
+  },
+  {
+    "basin_name": "Lotagipi Swamp",
+    "basin_code": "LGPS",
+    "continent": "Africa",
+    "countries": [
+      "Ethiopia",
+      "Ilemi triangle",
+      "Kenya",
+      "South Sudan",
+      "Uganda"
+    ],
+    "num_countries": 5,
+    "total_area_km2": 31759
+  },
+  {
+    "basin_name": "Mana-Morro",
+    "basin_code": "MANA",
+    "continent": "Africa",
+    "countries": [
+      "Guinea",
+      "Liberia",
+      "Sierra Leone"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 7634
+  },
+  {
+    "basin_name": "Maputo",
+    "basin_code": "MPUT",
+    "continent": "Africa",
+    "countries": [
+      "Eswatini",
+      "Mozambique",
+      "South Africa"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 30582
+  },
+  {
+    "basin_name": "Mbe",
+    "basin_code": "MBEX",
+    "continent": "Africa",
+    "countries": [
+      "Equatorial Guinea",
+      "Gabon"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8184
+  },
+  {
+    "basin_name": "Medjerda",
+    "basin_code": "MDJD",
+    "continent": "Africa",
+    "countries": [
+      "Algeria",
+      "Tunisia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 23176
+  },
+  {
+    "basin_name": "Moa",
+    "basin_code": "MOAX",
+    "continent": "Africa",
+    "countries": [
+      "Guinea",
+      "Liberia",
+      "Sierra Leone"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 19560
+  },
+  {
+    "basin_name": "Mono",
+    "basin_code": "MONO",
+    "continent": "Africa",
+    "countries": [
+      "Benin",
+      "Togo"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 23988
+  },
+  {
+    "basin_name": "Muni/Utamboni",
+    "basin_code": "UTBN",
+    "continent": "Africa",
+    "countries": [
+      "Equatorial Guinea",
+      "Gabon"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8272
+  },
+  {
+    "basin_name": "Niger",
+    "basin_code": "NGER",
+    "continent": "Africa",
+    "countries": [
+      "Algeria",
+      "Benin",
+      "Burkina Faso",
+      "Cameroon",
+      "Chad",
+      "Côte d'Ivoire",
+      "Guinea",
+      "Mali",
+      "Mauritania",
+      "Niger",
+      "Nigeria"
+    ],
+    "num_countries": 11,
+    "total_area_km2": 2132249
+  },
+  {
+    "basin_name": "Nile",
+    "basin_code": "NILE",
+    "continent": "Africa",
+    "countries": [
+      "Abyei",
+      "Burundi",
+      "DR Congo",
+      "Egypt",
+      "Eritrea",
+      "Ethiopia",
+      "Hala'ib triangle",
+      "Kenya",
+      "Ma'tan al-Sarra",
+      "Rwanda",
+      "South Sudan",
+      "Sudan",
+      "Tanzania",
+      "Uganda"
+    ],
+    "num_countries": 14,
+    "total_area_km2": 2961322
+  },
+  {
+    "basin_name": "Nyanga",
+    "basin_code": "NYGA",
+    "continent": "Africa",
+    "countries": [
+      "Gabon",
+      "Rep. of Congo"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 24963
+  },
+  {
+    "basin_name": "Ogooue",
+    "basin_code": "OGOO",
+    "continent": "Africa",
+    "countries": [
+      "Cameroon",
+      "Equatorial Guinea",
+      "Gabon",
+      "Rep. of Congo"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 214935
+  },
+  {
+    "basin_name": "Okavango",
+    "basin_code": "OKVG",
+    "continent": "Africa",
+    "countries": [
+      "Angola",
+      "Botswana",
+      "Namibia",
+      "Zimbabwe"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 690181
+  },
+  {
+    "basin_name": "Orange",
+    "basin_code": "ORAN",
+    "continent": "Africa",
+    "countries": [
+      "Botswana",
+      "Lesotho",
+      "Namibia",
+      "South Africa"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 965595
+  },
+  {
+    "basin_name": "Oued Bon Naima",
+    "basin_code": "ODBN",
+    "continent": "Africa",
+    "countries": [
+      "Algeria",
+      "Morocco"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 369
+  },
+  {
+    "basin_name": "Oued Bou Namoussa",
+    "basin_code": "BNSA",
+    "continent": "Africa",
+    "countries": [
+      "Algeria",
+      "Tunisia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2763
+  },
+  {
+    "basin_name": "Oueme",
+    "basin_code": "OUEM",
+    "continent": "Africa",
+    "countries": [
+      "Benin",
+      "Nigeria",
+      "Togo"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 59873
+  },
+  {
+    "basin_name": "Pangani",
+    "basin_code": "PANG",
+    "continent": "Africa",
+    "countries": [
+      "Kenya",
+      "Tanzania"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 40316
+  },
+  {
+    "basin_name": "Pungwe",
+    "basin_code": "PUNG",
+    "continent": "Africa",
+    "countries": [
+      "Mozambique",
+      "Zimbabwe"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 32137
+  },
+  {
+    "basin_name": "Ruvuma",
+    "basin_code": "RVMA",
+    "continent": "Africa",
+    "countries": [
+      "Malawi",
+      "Mozambique",
+      "Tanzania"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 155157
+  },
+  {
+    "basin_name": "Sabi",
+    "basin_code": "SABI",
+    "continent": "Africa",
+    "countries": [
+      "Mozambique",
+      "Zimbabwe"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 102395
+  },
+  {
+    "basin_name": "Sanaga",
+    "basin_code": "SANA",
+    "continent": "Africa",
+    "countries": [
+      "Cameroon",
+      "Central African Republic"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 133009
+  },
+  {
+    "basin_name": "Sassandra",
+    "basin_code": "SASS",
+    "continent": "Africa",
+    "countries": [
+      "Côte d'Ivoire",
+      "Guinea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 68124
+  },
+  {
+    "basin_name": "Senegal",
+    "basin_code": "SENG",
+    "continent": "Africa",
+    "countries": [
+      "Guinea",
+      "Mali",
+      "Mauritania",
+      "Senegal"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 448380
+  },
+  {
+    "basin_name": "St. John (Africa)",
+    "basin_code": "SJAF",
+    "continent": "Africa",
+    "countries": [
+      "Guinea",
+      "Liberia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 16318
+  },
+  {
+    "basin_name": "St. Paul",
+    "basin_code": "SPAU",
+    "continent": "Africa",
+    "countries": [
+      "Guinea",
+      "Liberia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 20317
+  },
+  {
+    "basin_name": "Tafna",
+    "basin_code": "TAFN",
+    "continent": "Africa",
+    "countries": [
+      "Algeria",
+      "Morocco"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 7263
+  },
+  {
+    "basin_name": "Tano",
+    "basin_code": "TANO",
+    "continent": "Africa",
+    "countries": [
+      "Côte d'Ivoire",
+      "Ghana"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 16773
+  },
+  {
+    "basin_name": "Umba",
+    "basin_code": "UMBA",
+    "continent": "Africa",
+    "countries": [
+      "Kenya",
+      "Tanzania"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 6674
+  },
+  {
+    "basin_name": "Umbeluzi",
+    "basin_code": "UBLZ",
+    "continent": "Africa",
+    "countries": [
+      "Eswatini",
+      "Mozambique",
+      "South Africa"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 9778
+  },
+  {
+    "basin_name": "Volta",
+    "basin_code": "VOLT",
+    "continent": "Africa",
+    "countries": [
+      "Benin",
+      "Burkina Faso",
+      "Côte d'Ivoire",
+      "Ghana",
+      "Mali",
+      "Togo"
+    ],
+    "num_countries": 6,
+    "total_area_km2": 411244
+  },
+  {
+    "basin_name": "Zambezi",
+    "basin_code": "ZAMB",
+    "continent": "Africa",
+    "countries": [
+      "Angola",
+      "Botswana",
+      "Malawi",
+      "Mozambique",
+      "Namibia",
+      "Tanzania",
+      "Zambia",
+      "Zimbabwe"
+    ],
+    "num_countries": 8,
+    "total_area_km2": 1374975
+  },
+  {
+    "basin_name": "Alakol",
+    "basin_code": "ALKL",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Kazakhstan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 63500
+  },
+  {
+    "basin_name": "Amur",
+    "basin_code": "AMUR",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Mongolia",
+      "North Korea",
+      "Russia"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 2092690
+  },
+  {
+    "basin_name": "An Nahr Al Kabir",
+    "basin_code": "ANAK",
+    "continent": "Asia",
+    "countries": [
+      "Lebanon",
+      "Syria"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1032
+  },
+  {
+    "basin_name": "Aral Sea",
+    "basin_code": "ARAL",
+    "continent": "Asia",
+    "countries": [
+      "Afghanistan",
+      "Kazakhstan",
+      "Kyrgyzstan",
+      "Tajikistan",
+      "Turkmenistan",
+      "Uzbekistan"
+    ],
+    "num_countries": 6,
+    "total_area_km2": 1218378
+  },
+  {
+    "basin_name": "Asi/Orontes",
+    "basin_code": "ASIX",
+    "continent": "Asia",
+    "countries": [
+      "Lebanon",
+      "Syria",
+      "Turkey"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 23830
+  },
+  {
+    "basin_name": "Astara Chay",
+    "basin_code": "ATCY",
+    "continent": "Asia",
+    "countries": [
+      "Azerbaijan",
+      "Iran"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 403
+  },
+  {
+    "basin_name": "Atrak",
+    "basin_code": "ATRK",
+    "continent": "Asia",
+    "countries": [
+      "Iran",
+      "Turkmenistan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 36421
+  },
+  {
+    "basin_name": "Bangau",
+    "basin_code": "BNGU",
+    "continent": "Asia",
+    "countries": [
+      "Brunei Darussalam",
+      "Malaysia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 130
+  },
+  {
+    "basin_name": "Beilun",
+    "basin_code": "BLUN",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Vietnam"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 840
+  },
+  {
+    "basin_name": "Ca/Song Lam",
+    "basin_code": "CAXX",
+    "continent": "Asia",
+    "countries": [
+      "Lao People's Democratic Republic",
+      "Vietnam"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 27249
+  },
+  {
+    "basin_name": "Coruh",
+    "basin_code": "CRUH",
+    "continent": "Asia",
+    "countries": [
+      "Georgia",
+      "Turkey"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 22038
+  },
+  {
+    "basin_name": "Dasht",
+    "basin_code": "DSHT",
+    "continent": "Asia",
+    "countries": [
+      "Iran",
+      "Pakistan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 30984
+  },
+  {
+    "basin_name": "Digul",
+    "basin_code": "DIGL",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Papua New Guinea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 30034
+  },
+  {
+    "basin_name": "Fenney",
+    "basin_code": "FNNY",
+    "continent": "Asia",
+    "countries": [
+      "Bangladesh",
+      "India"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3028
+  },
+  {
+    "basin_name": "Fly",
+    "basin_code": "FLYX",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Papua New Guinea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 71446
+  },
+  {
+    "basin_name": "Ganges-Brahmaputra-Meghna",
+    "basin_code": "GANG",
+    "continent": "Asia",
+    "countries": [
+      "Arunachal Pradesh",
+      "Bangladesh",
+      "Bhutan",
+      "China",
+      "China/India",
+      "India",
+      "Myanmar",
+      "Nepal"
+    ],
+    "num_countries": 8,
+    "total_area_km2": 1661973
+  },
+  {
+    "basin_name": "Golok",
+    "basin_code": "GLOK",
+    "continent": "Asia",
+    "countries": [
+      "Malaysia",
+      "Thailand"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2319
+  },
+  {
+    "basin_name": "Hamun-i-Mashkel/Rakshan",
+    "basin_code": "HIMR",
+    "continent": "Asia",
+    "countries": [
+      "Iran",
+      "Pakistan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 116506
+  },
+  {
+    "basin_name": "Han",
+    "basin_code": "HANX",
+    "continent": "Asia",
+    "countries": [
+      "North Korea",
+      "South Korea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 33378
+  },
+  {
+    "basin_name": "Har Us Nur",
+    "basin_code": "HRUN",
+    "continent": "Asia",
+    "countries": [
+      "Mongolia",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 187177
+  },
+  {
+    "basin_name": "Hari/Harirud",
+    "basin_code": "HARI",
+    "continent": "Asia",
+    "countries": [
+      "Afghanistan",
+      "Iran",
+      "Turkmenistan"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 119096
+  },
+  {
+    "basin_name": "Helmand",
+    "basin_code": "HLMD",
+    "continent": "Asia",
+    "countries": [
+      "Afghanistan",
+      "Iran",
+      "Pakistan"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 403043
+  },
+  {
+    "basin_name": "Ili/Kunes He",
+    "basin_code": "ILIX",
+    "continent": "Asia",
+    "countries": [
+      "Kyrgyzstan"
+    ],
+    "num_countries": 1,
+    "total_area_km2": 727
+  },
+  {
+    "basin_name": "Ili/Yili He",
+    "basin_code": "ILIX",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Kazakhstan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 414212
+  },
+  {
+    "basin_name": "Indus",
+    "basin_code": "INDU",
+    "continent": "Asia",
+    "countries": [
+      "Afghanistan",
+      "Aksai Chin",
+      "China",
+      "China/India",
+      "India",
+      "Jammu and Kashmir",
+      "Pakistan"
+    ],
+    "num_countries": 7,
+    "total_area_km2": 855875
+  },
+  {
+    "basin_name": "Irrawaddy",
+    "basin_code": "IRWD",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "India",
+      "Myanmar"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 375388
+  },
+  {
+    "basin_name": "Jayapura",
+    "basin_code": "JAPR",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Papua New Guinea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 5253
+  },
+  {
+    "basin_name": "Jenisej/Yenisey",
+    "basin_code": "YNSY",
+    "continent": "Asia",
+    "countries": [
+      "Mongolia",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2504604
+  },
+  {
+    "basin_name": "Jordan",
+    "basin_code": "JORD",
+    "continent": "Asia",
+    "countries": [
+      "Egypt",
+      "Israel",
+      "Jordan",
+      "Lebanon",
+      "Syria",
+      "West Bank"
+    ],
+    "num_countries": 6,
+    "total_area_km2": 45005
+  },
+  {
+    "basin_name": "Kaladan",
+    "basin_code": "KALD",
+    "continent": "Asia",
+    "countries": [
+      "India",
+      "Myanmar"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 23698
+  },
+  {
+    "basin_name": "Karnaphuli",
+    "basin_code": "KNFL",
+    "continent": "Asia",
+    "countries": [
+      "Bangladesh",
+      "India"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 13909
+  },
+  {
+    "basin_name": "Kowl E Namaksar",
+    "basin_code": "KOWL",
+    "continent": "Asia",
+    "countries": [
+      "Afghanistan",
+      "Iran"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 42272
+  },
+  {
+    "basin_name": "Kura-Araks",
+    "basin_code": "KURA",
+    "continent": "Asia",
+    "countries": [
+      "Armenia",
+      "Azerbaijan",
+      "Georgia",
+      "Iran",
+      "Turkey"
+    ],
+    "num_countries": 5,
+    "total_area_km2": 189893
+  },
+  {
+    "basin_name": "Lake Sarygamesh",
+    "basin_code": "LKSG",
+    "continent": "Asia",
+    "countries": [
+      "Turkmenistan",
+      "Uzbekistan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 72433
+  },
+  {
+    "basin_name": "Lake Ubsa-Nur",
+    "basin_code": "LKUN",
+    "continent": "Asia",
+    "countries": [
+      "Mongolia",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 70329
+  },
+  {
+    "basin_name": "Loes",
+    "basin_code": "LOES",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Timor-Leste"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2567
+  },
+  {
+    "basin_name": "Ma",
+    "basin_code": "MAXX",
+    "continent": "Asia",
+    "countries": [
+      "Lao People's Democratic Republic",
+      "Vietnam"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 29486
+  },
+  {
+    "basin_name": "Maro",
+    "basin_code": "MARO",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Papua New Guinea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3319
+  },
+  {
+    "basin_name": "Mekong",
+    "basin_code": "MEKO",
+    "continent": "Asia",
+    "countries": [
+      "Cambodia",
+      "China",
+      "Lao People's Democratic Republic",
+      "Myanmar",
+      "Thailand",
+      "Vietnam"
+    ],
+    "num_countries": 6,
+    "total_area_km2": 781643
+  },
+  {
+    "basin_name": "Muhuri (aka Little Feni)",
+    "basin_code": "MHRI",
+    "continent": "Asia",
+    "countries": [
+      "Bangladesh",
+      "India"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3787
+  },
+  {
+    "basin_name": "Murgab",
+    "basin_code": "MRGB",
+    "continent": "Asia",
+    "countries": [
+      "Afghanistan",
+      "Turkmenistan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 93335
+  },
+  {
+    "basin_name": "Naaf River",
+    "basin_code": "NAAF",
+    "continent": "Asia",
+    "countries": [
+      "Bangladesh",
+      "Myanmar"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1610
+  },
+  {
+    "basin_name": "Nahr El Kebir",
+    "basin_code": "NHRK",
+    "continent": "Asia",
+    "countries": [
+      "Syria",
+      "Turkey"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1598
+  },
+  {
+    "basin_name": "Nha Be-Saigon-Song Vam Co Dong",
+    "basin_code": "SAIG",
+    "continent": "Asia",
+    "countries": [
+      "Cambodia",
+      "Vietnam"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 46008
+  },
+  {
+    "basin_name": "Ob",
+    "basin_code": "OBXX",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Kazakhstan",
+      "Mongolia",
+      "Russia"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 3047571
+  },
+  {
+    "basin_name": "Pakchan",
+    "basin_code": "PKCN",
+    "continent": "Asia",
+    "countries": [
+      "Myanmar",
+      "Thailand"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3226
+  },
+  {
+    "basin_name": "Pandaruan",
+    "basin_code": "PNDR",
+    "continent": "Asia",
+    "countries": [
+      "Brunei Darussalam",
+      "Malaysia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1196
+  },
+  {
+    "basin_name": "Pu Lun T'o",
+    "basin_code": "PULT",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Mongolia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 48675
+  },
+  {
+    "basin_name": "Rach Giang Thanh",
+    "basin_code": "RGTH",
+    "continent": "Asia",
+    "countries": [
+      "Cambodia",
+      "Vietnam"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2214
+  },
+  {
+    "basin_name": "Rann of Kutch",
+    "basin_code": "RAKU",
+    "continent": "Asia",
+    "countries": [
+      "India",
+      "Pakistan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 402773
+  },
+  {
+    "basin_name": "Red/Song Hong",
+    "basin_code": "REDX",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Lao People's Democratic Republic",
+      "Vietnam"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 141303
+  },
+  {
+    "basin_name": "Salween",
+    "basin_code": "SALW",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Myanmar",
+      "Thailand"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 265357
+  },
+  {
+    "basin_name": "Sebuku",
+    "basin_code": "SBKU",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Malaysia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3070
+  },
+  {
+    "basin_name": "Sembakung",
+    "basin_code": "SMBK",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Malaysia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 10253
+  },
+  {
+    "basin_name": "Sepik",
+    "basin_code": "SEPK",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Papua New Guinea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 79779
+  },
+  {
+    "basin_name": "Shu/Chu",
+    "basin_code": "SHUR",
+    "continent": "Asia",
+    "countries": [
+      "Kazakhstan",
+      "Kyrgyzstan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 75489
+  },
+  {
+    "basin_name": "Song Tien Yen",
+    "basin_code": "SGTY",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Vietnam"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1159
+  },
+  {
+    "basin_name": "Suifen He",
+    "basin_code": "SUJF",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 16821
+  },
+  {
+    "basin_name": "Talas",
+    "basin_code": "TALA",
+    "continent": "Asia",
+    "countries": [
+      "Kazakhstan",
+      "Kyrgyzstan"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 45425
+  },
+  {
+    "basin_name": "Tami",
+    "basin_code": "TAMI",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Papua New Guinea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 78703
+  },
+  {
+    "basin_name": "Tarim",
+    "basin_code": "TRIM",
+    "continent": "Asia",
+    "countries": [
+      "Aksai Chin",
+      "China",
+      "Jammu and Kashmir",
+      "Kazakhstan",
+      "Kyrgyzstan",
+      "Tajikistan"
+    ],
+    "num_countries": 6,
+    "total_area_km2": 1097859
+  },
+  {
+    "basin_name": "Tigris-Euphrates/Shatt al Arab",
+    "basin_code": "TIGR",
+    "continent": "Asia",
+    "countries": [
+      "Iran",
+      "Iraq",
+      "Jordan",
+      "Saudi Arabia",
+      "Syria",
+      "Turkey"
+    ],
+    "num_countries": 6,
+    "total_area_km2": 868990
+  },
+  {
+    "basin_name": "Tjeroaka-Wanggoe",
+    "basin_code": "TJWA",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Papua New Guinea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8050
+  },
+  {
+    "basin_name": "Tumen",
+    "basin_code": "TUMN",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "North Korea",
+      "Russia"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 33345
+  },
+  {
+    "basin_name": "Vanimo-Green",
+    "basin_code": "VAGR",
+    "continent": "Asia",
+    "countries": [
+      "Indonesia",
+      "Papua New Guinea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2670
+  },
+  {
+    "basin_name": "Yalu",
+    "basin_code": "YALU",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "North Korea"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 62295
+  },
+  {
+    "basin_name": "Zhu Jiang/Hsi",
+    "basin_code": "HSIX",
+    "continent": "Asia",
+    "countries": [
+      "China",
+      "Vietnam"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 401083
+  },
+  {
+    "basin_name": "Adige",
+    "basin_code": "ADIG",
+    "continent": "Europe",
+    "countries": [
+      "Italy",
+      "Switzerland"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 14477
+  },
+  {
+    "basin_name": "Angerman",
+    "basin_code": "ANGE",
+    "continent": "Europe",
+    "countries": [
+      "Norway",
+      "Sweden"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 32947
+  },
+  {
+    "basin_name": "Bann",
+    "basin_code": "BANN",
+    "continent": "Europe",
+    "countries": [
+      "Ireland",
+      "U.K. of Great Britain and Northern Ireland"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 5746
+  },
+  {
+    "basin_name": "Barta",
+    "basin_code": "BRTA",
+    "continent": "Europe",
+    "countries": [
+      "Latvia",
+      "Lithuania"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2726
+  },
+  {
+    "basin_name": "Berbyelva",
+    "basin_code": "BRBY",
+    "continent": "Europe",
+    "countries": [
+      "Norway",
+      "Sweden"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1317
+  },
+  {
+    "basin_name": "Bidasoa",
+    "basin_code": "BDSO",
+    "continent": "Europe",
+    "countries": [
+      "France",
+      "Spain"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 719
+  },
+  {
+    "basin_name": "Castletown",
+    "basin_code": "CSTL",
+    "continent": "Europe",
+    "countries": [
+      "Ireland",
+      "U.K. of Great Britain and Northern Ireland"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 266
+  },
+  {
+    "basin_name": "Cetina",
+    "basin_code": "CTNA",
+    "continent": "Europe",
+    "countries": [
+      "Bosnia and Herzegovina",
+      "Croatia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 5099
+  },
+  {
+    "basin_name": "Danube",
+    "basin_code": "DANU",
+    "continent": "Europe",
+    "countries": [
+      "Albania",
+      "Austria",
+      "Bosnia and Herzegovina",
+      "Bulgaria",
+      "Croatia",
+      "Czech Republic",
+      "Germany",
+      "Hungary",
+      "Italy",
+      "Moldova, Republic of",
+      "Montenegro",
+      "Poland",
+      "Romania",
+      "Serbia",
+      "Slovakia",
+      "Slovenia",
+      "Switzerland",
+      "The former Yugoslav Republic of Macedonia",
+      "Ukraine"
+    ],
+    "num_countries": 19,
+    "total_area_km2": 800970
+  },
+  {
+    "basin_name": "Daugava",
+    "basin_code": "DUGV",
+    "continent": "Europe",
+    "countries": [
+      "Belarus",
+      "Estonia",
+      "Latvia",
+      "Lithuania",
+      "Russia"
+    ],
+    "num_countries": 5,
+    "total_area_km2": 86344
+  },
+  {
+    "basin_name": "Dnieper",
+    "basin_code": "DNPR",
+    "continent": "Europe",
+    "countries": [
+      "Belarus",
+      "Russia",
+      "Ukraine"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 511384
+  },
+  {
+    "basin_name": "Dniester",
+    "basin_code": "DNSR",
+    "continent": "Europe",
+    "countries": [
+      "Moldova, Republic of",
+      "Poland",
+      "Ukraine"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 73382
+  },
+  {
+    "basin_name": "Don",
+    "basin_code": "DONX",
+    "continent": "Europe",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 439277
+  },
+  {
+    "basin_name": "Douro/Duero",
+    "basin_code": "DURO",
+    "continent": "Europe",
+    "countries": [
+      "Portugal",
+      "Spain"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 97380
+  },
+  {
+    "basin_name": "Dragonja",
+    "basin_code": "DRAG",
+    "continent": "Europe",
+    "countries": [
+      "Croatia",
+      "Slovenia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 154
+  },
+  {
+    "basin_name": "Drin",
+    "basin_code": "DRIN",
+    "continent": "Europe",
+    "countries": [
+      "Albania",
+      "Montenegro",
+      "Serbia",
+      "The former Yugoslav Republic of Macedonia"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 18213
+  },
+  {
+    "basin_name": "Ebro",
+    "basin_code": "EBRO",
+    "continent": "Europe",
+    "countries": [
+      "Andorra",
+      "France",
+      "Spain"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 85462
+  },
+  {
+    "basin_name": "Elancik",
+    "basin_code": "ELNK",
+    "continent": "Europe",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1381
+  },
+  {
+    "basin_name": "Elbe",
+    "basin_code": "ELBE",
+    "continent": "Europe",
+    "countries": [
+      "Austria",
+      "Czech Republic",
+      "Germany",
+      "Poland"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 145157
+  },
+  {
+    "basin_name": "Ems/Eems",
+    "basin_code": "EMSX",
+    "continent": "Europe",
+    "countries": [
+      "Germany",
+      "Netherlands"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 15179
+  },
+  {
+    "basin_name": "Erne",
+    "basin_code": "ERNE",
+    "continent": "Europe",
+    "countries": [
+      "Ireland",
+      "U.K. of Great Britain and Northern Ireland"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 4438
+  },
+  {
+    "basin_name": "Fane",
+    "basin_code": "FANE",
+    "continent": "Europe",
+    "countries": [
+      "Ireland",
+      "U.K. of Great Britain and Northern Ireland"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 341
+  },
+  {
+    "basin_name": "Flurry",
+    "basin_code": "FLRY",
+    "continent": "Europe",
+    "countries": [
+      "Ireland",
+      "U.K. of Great Britain and Northern Ireland"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 201
+  },
+  {
+    "basin_name": "Foyle",
+    "basin_code": "FOYL",
+    "continent": "Europe",
+    "countries": [
+      "Ireland",
+      "U.K. of Great Britain and Northern Ireland"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2922
+  },
+  {
+    "basin_name": "Garonne",
+    "basin_code": "GRON",
+    "continent": "Europe",
+    "countries": [
+      "Andorra",
+      "France",
+      "Spain"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 81275
+  },
+  {
+    "basin_name": "Gauja",
+    "basin_code": "GUJA",
+    "continent": "Europe",
+    "countries": [
+      "Estonia",
+      "Latvia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 9206
+  },
+  {
+    "basin_name": "Glama",
+    "basin_code": "GLAM",
+    "continent": "Europe",
+    "countries": [
+      "Norway",
+      "Sweden"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 41376
+  },
+  {
+    "basin_name": "Gruzskiy Yelanchik",
+    "basin_code": "GRYE",
+    "continent": "Europe",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1243
+  },
+  {
+    "basin_name": "Guadiana",
+    "basin_code": "GUDN",
+    "continent": "Europe",
+    "countries": [
+      "Portugal",
+      "Spain"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 67061
+  },
+  {
+    "basin_name": "Indalsalven",
+    "basin_code": "INDL",
+    "continent": "Europe",
+    "countries": [
+      "Norway",
+      "Sweden"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 26580
+  },
+  {
+    "basin_name": "Isonzo",
+    "basin_code": "ISNZ",
+    "continent": "Europe",
+    "countries": [
+      "Italy",
+      "Slovenia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3357
+  },
+  {
+    "basin_name": "Jacobs",
+    "basin_code": "JCBS",
+    "continent": "Europe",
+    "countries": [
+      "Norway",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 944
+  },
+  {
+    "basin_name": "Kemi",
+    "basin_code": "KEMI",
+    "continent": "Europe",
+    "countries": [
+      "Finland",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 53893
+  },
+  {
+    "basin_name": "Klaralven",
+    "basin_code": "KRLV",
+    "continent": "Europe",
+    "countries": [
+      "Norway",
+      "Sweden"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 50091
+  },
+  {
+    "basin_name": "Kogilnik",
+    "basin_code": "KGNK",
+    "continent": "Europe",
+    "countries": [
+      "Moldova, Republic of",
+      "Ukraine"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3972
+  },
+  {
+    "basin_name": "Krka",
+    "basin_code": "KRKA",
+    "continent": "Europe",
+    "countries": [
+      "Bosnia and Herzegovina",
+      "Croatia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2488
+  },
+  {
+    "basin_name": "Lake Prespa",
+    "basin_code": "LKPP",
+    "continent": "Europe",
+    "countries": [
+      "Albania",
+      "Greece",
+      "The former Yugoslav Republic of Macedonia"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 7704
+  },
+  {
+    "basin_name": "Lava/Pregel",
+    "basin_code": "LAVA",
+    "continent": "Europe",
+    "countries": [
+      "Lithuania",
+      "Poland",
+      "Russia"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 14467
+  },
+  {
+    "basin_name": "Lielupe",
+    "basin_code": "LLUP",
+    "continent": "Europe",
+    "countries": [
+      "Latvia",
+      "Lithuania"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 17667
+  },
+  {
+    "basin_name": "Lima",
+    "basin_code": "LIMA",
+    "continent": "Europe",
+    "countries": [
+      "Portugal",
+      "Spain"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2469
+  },
+  {
+    "basin_name": "Lough Melvin",
+    "basin_code": "LMEL",
+    "continent": "Europe",
+    "countries": [
+      "Ireland",
+      "U.K. of Great Britain and Northern Ireland"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 289
+  },
+  {
+    "basin_name": "Maritsa",
+    "basin_code": "MRSA",
+    "continent": "Europe",
+    "countries": [
+      "Bulgaria",
+      "Greece",
+      "Turkey"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 52483
+  },
+  {
+    "basin_name": "Mino",
+    "basin_code": "MINO",
+    "continent": "Europe",
+    "countries": [
+      "Portugal",
+      "Spain"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 16680
+  },
+  {
+    "basin_name": "Mius",
+    "basin_code": "MIUS",
+    "continent": "Europe",
+    "countries": [
+      "Russia",
+      "Ukraine"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 7087
+  },
+  {
+    "basin_name": "Naatamo",
+    "basin_code": "NAAT",
+    "continent": "Europe",
+    "countries": [
+      "Finland",
+      "Norway"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 719
+  },
+  {
+    "basin_name": "Narva",
+    "basin_code": "NRVA",
+    "continent": "Europe",
+    "countries": [
+      "Belarus",
+      "Estonia",
+      "Latvia",
+      "Russia"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 56519
+  },
+  {
+    "basin_name": "Narynka",
+    "basin_code": "NYNK",
+    "continent": "Europe",
+    "countries": [
+      "Kazakhstan",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 91995
+  },
+  {
+    "basin_name": "Neman",
+    "basin_code": "NMAN",
+    "continent": "Europe",
+    "countries": [
+      "Belarus",
+      "Latvia",
+      "Lithuania",
+      "Poland",
+      "Russia"
+    ],
+    "num_countries": 5,
+    "total_area_km2": 92929
+  },
+  {
+    "basin_name": "Neretva",
+    "basin_code": "NRTV",
+    "continent": "Europe",
+    "countries": [
+      "Bosnia and Herzegovina",
+      "Croatia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 6808
+  },
+  {
+    "basin_name": "Nestos",
+    "basin_code": "NSTO",
+    "continent": "Europe",
+    "countries": [
+      "Bulgaria",
+      "Greece"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 5950
+  },
+  {
+    "basin_name": "Nidelva",
+    "basin_code": "NDLV",
+    "continent": "Europe",
+    "countries": [
+      "Norway",
+      "Sweden"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3104
+  },
+  {
+    "basin_name": "Oder/Odra",
+    "basin_code": "ODER",
+    "continent": "Europe",
+    "countries": [
+      "Czech Republic",
+      "Germany",
+      "Poland"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 119253
+  },
+  {
+    "basin_name": "Olanga",
+    "basin_code": "OLNG",
+    "continent": "Europe",
+    "countries": [
+      "Finland",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 41766
+  },
+  {
+    "basin_name": "Oral/Ural",
+    "basin_code": "ORAL",
+    "continent": "Europe",
+    "countries": [
+      "Kazakhstan",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 211721
+  },
+  {
+    "basin_name": "Oulu",
+    "basin_code": "OULU",
+    "continent": "Europe",
+    "countries": [
+      "Finland",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 25971
+  },
+  {
+    "basin_name": "Parnu",
+    "basin_code": "PRNU",
+    "continent": "Europe",
+    "countries": [
+      "Estonia",
+      "Latvia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 6924
+  },
+  {
+    "basin_name": "Pasvik",
+    "basin_code": "PSVK",
+    "continent": "Europe",
+    "countries": [
+      "Finland",
+      "Norway",
+      "Russia"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 17960
+  },
+  {
+    "basin_name": "Peschanaya",
+    "basin_code": "PCHA",
+    "continent": "Europe",
+    "countries": [
+      "Finland",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1335
+  },
+  {
+    "basin_name": "Po",
+    "basin_code": "POXX",
+    "continent": "Europe",
+    "countries": [
+      "France",
+      "Italy",
+      "Switzerland"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 74116
+  },
+  {
+    "basin_name": "Poldnevaya",
+    "basin_code": "PLDV",
+    "continent": "Europe",
+    "countries": [
+      "Kazakhstan",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2569
+  },
+  {
+    "basin_name": "Prohladnaja",
+    "basin_code": "PRLN",
+    "continent": "Europe",
+    "countries": [
+      "Poland",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1791
+  },
+  {
+    "basin_name": "Psou",
+    "basin_code": "PSOU",
+    "continent": "Europe",
+    "countries": [
+      "Georgia",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 424
+  },
+  {
+    "basin_name": "Rezvaya",
+    "basin_code": "REZV",
+    "continent": "Europe",
+    "countries": [
+      "Bulgaria",
+      "Turkey"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 771
+  },
+  {
+    "basin_name": "Rhine-Meuse",
+    "basin_code": "RHIN",
+    "continent": "Europe",
+    "countries": [
+      "Austria",
+      "Belgium",
+      "France",
+      "Germany",
+      "Italy",
+      "Liechtenstein",
+      "Luxembourg",
+      "Netherlands",
+      "Switzerland"
+    ],
+    "num_countries": 9,
+    "total_area_km2": 198296
+  },
+  {
+    "basin_name": "Rhone",
+    "basin_code": "RHON",
+    "continent": "Europe",
+    "countries": [
+      "France",
+      "Switzerland"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 96707
+  },
+  {
+    "basin_name": "Roia",
+    "basin_code": "ROIA",
+    "continent": "Europe",
+    "countries": [
+      "France",
+      "Italy"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 697
+  },
+  {
+    "basin_name": "Salaca",
+    "basin_code": "SALC",
+    "continent": "Europe",
+    "countries": [
+      "Estonia",
+      "Latvia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3586
+  },
+  {
+    "basin_name": "Samur",
+    "basin_code": "SAMR",
+    "continent": "Europe",
+    "countries": [
+      "Azerbaijan",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 6880
+  },
+  {
+    "basin_name": "Sarata",
+    "basin_code": "SRTA",
+    "continent": "Europe",
+    "countries": [
+      "Moldova, Republic of",
+      "Ukraine"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1237
+  },
+  {
+    "basin_name": "Schelde",
+    "basin_code": "SHLD",
+    "continent": "Europe",
+    "countries": [
+      "Belgium",
+      "France",
+      "Netherlands"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 19739
+  },
+  {
+    "basin_name": "Seine",
+    "basin_code": "SEIN",
+    "continent": "Europe",
+    "countries": [
+      "Belgium",
+      "France"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 73632
+  },
+  {
+    "basin_name": "Struma",
+    "basin_code": "STUM",
+    "continent": "Europe",
+    "countries": [
+      "Bulgaria",
+      "Greece",
+      "Serbia",
+      "The former Yugoslav Republic of Macedonia"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 16828
+  },
+  {
+    "basin_name": "Sulak",
+    "basin_code": "SULK",
+    "continent": "Europe",
+    "countries": [
+      "Georgia",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 14151
+  },
+  {
+    "basin_name": "Tagus/Tejo",
+    "basin_code": "TAGU",
+    "continent": "Europe",
+    "countries": [
+      "Portugal",
+      "Spain"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 71190
+  },
+  {
+    "basin_name": "Tana",
+    "basin_code": "TANA",
+    "continent": "Europe",
+    "countries": [
+      "Finland",
+      "Norway"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 16886
+  },
+  {
+    "basin_name": "Terek",
+    "basin_code": "TERK",
+    "continent": "Europe",
+    "countries": [
+      "Georgia",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 43009
+  },
+  {
+    "basin_name": "Torne/Tornealven/Tornionjoki",
+    "basin_code": "TORN",
+    "continent": "Europe",
+    "countries": [
+      "Norway"
+    ],
+    "num_countries": 1,
+    "total_area_km2": 1756
+  },
+  {
+    "basin_name": "Torne/Tornealven/Tornionjoki\r\n",
+    "basin_code": "TORN",
+    "continent": "Europe",
+    "countries": [
+      "Finland",
+      "Sweden"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 39081
+  },
+  {
+    "basin_name": "Tuloma",
+    "basin_code": "TULM",
+    "continent": "Europe",
+    "countries": [
+      "Finland",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 27006
+  },
+  {
+    "basin_name": "Vardar",
+    "basin_code": "VRDR",
+    "continent": "Europe",
+    "countries": [
+      "Greece",
+      "Serbia",
+      "The former Yugoslav Republic of Macedonia"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 24555
+  },
+  {
+    "basin_name": "Vecht",
+    "basin_code": "VCHT",
+    "continent": "Europe",
+    "countries": [
+      "Germany",
+      "Netherlands"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 10610
+  },
+  {
+    "basin_name": "Vefsna",
+    "basin_code": "VFSN",
+    "continent": "Europe",
+    "countries": [
+      "Norway",
+      "Sweden"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 4151
+  },
+  {
+    "basin_name": "Velaka",
+    "basin_code": "VLKA",
+    "continent": "Europe",
+    "countries": [
+      "Bulgaria",
+      "Turkey"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1075
+  },
+  {
+    "basin_name": "Venta",
+    "basin_code": "VENT",
+    "continent": "Europe",
+    "countries": [
+      "Latvia",
+      "Lithuania"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 11900
+  },
+  {
+    "basin_name": "Vijose",
+    "basin_code": "VJSE",
+    "continent": "Europe",
+    "countries": [
+      "Albania",
+      "Greece"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 6816
+  },
+  {
+    "basin_name": "Vistula/Wista",
+    "basin_code": "VSTL",
+    "continent": "Europe",
+    "countries": [
+      "Belarus",
+      "Poland",
+      "Slovakia",
+      "Ukraine"
+    ],
+    "num_countries": 4,
+    "total_area_km2": 192069
+  },
+  {
+    "basin_name": "Volga",
+    "basin_code": "VOLG",
+    "continent": "Europe",
+    "countries": [
+      "Kazakhstan",
+      "Russia"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1411749
+  },
+  {
+    "basin_name": "Vuoksa",
+    "basin_code": "VUKS",
+    "continent": "Europe",
+    "countries": [
+      "Belarus",
+      "Finland",
+      "Russia"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 287094
+  },
+  {
+    "basin_name": "Wiedau",
+    "basin_code": "WIED",
+    "continent": "Europe",
+    "countries": [
+      "Denmark",
+      "Germany"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1352
+  },
+  {
+    "basin_name": "Yser",
+    "basin_code": "YSER",
+    "continent": "Europe",
+    "countries": [
+      "Belgium",
+      "France"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1560
+  },
+  {
+    "basin_name": "Alsek",
+    "basin_code": "ALSK",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 28220
+  },
+  {
+    "basin_name": "Artibonite",
+    "basin_code": "ATBN",
+    "continent": "North America",
+    "countries": [
+      "Dominican Republic",
+      "Haiti"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8860
+  },
+  {
+    "basin_name": "Belize",
+    "basin_code": "BLZE",
+    "continent": "North America",
+    "countries": [
+      "Belize",
+      "Guatemala"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8568
+  },
+  {
+    "basin_name": "Caetani",
+    "basin_code": "CAET",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 867
+  },
+  {
+    "basin_name": "Candelaria",
+    "basin_code": "CDLR",
+    "continent": "North America",
+    "countries": [
+      "Guatemala",
+      "Mexico"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 14609
+  },
+  {
+    "basin_name": "Changuinola",
+    "basin_code": "CGNL",
+    "continent": "North America",
+    "countries": [
+      "Costa Rica",
+      "Panama"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3216
+  },
+  {
+    "basin_name": "Chilkat",
+    "basin_code": "CLKT",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3967
+  },
+  {
+    "basin_name": "Choluteca",
+    "basin_code": "CHLT",
+    "continent": "North America",
+    "countries": [
+      "Honduras",
+      "Nicaragua"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8049
+  },
+  {
+    "basin_name": "Coatan Achute",
+    "basin_code": "CTAT",
+    "continent": "North America",
+    "countries": [
+      "Guatemala",
+      "Mexico"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 679
+  },
+  {
+    "basin_name": "Coco/Segovia",
+    "basin_code": "COCO",
+    "continent": "North America",
+    "countries": [
+      "Honduras",
+      "Nicaragua"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 24509
+  },
+  {
+    "basin_name": "Colorado",
+    "basin_code": "CLDO",
+    "continent": "North America",
+    "countries": [
+      "Mexico",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 662500
+  },
+  {
+    "basin_name": "Columbia",
+    "basin_code": "CLMB",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 654304
+  },
+  {
+    "basin_name": "Connecticut",
+    "basin_code": "CNCT",
+    "continent": "North America",
+    "countries": [
+      "Canada"
+    ],
+    "num_countries": 1,
+    "total_area_km2": 307
+  },
+  {
+    "basin_name": "Connecticut\r\nConnecticut\r\nConnecticut",
+    "basin_code": "CNCT",
+    "continent": "North America",
+    "countries": [
+      "United States"
+    ],
+    "num_countries": 1,
+    "total_area_km2": 28825
+  },
+  {
+    "basin_name": "Copper",
+    "basin_code": "COPR",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 66095
+  },
+  {
+    "basin_name": "Firth",
+    "basin_code": "FRTH",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 6074
+  },
+  {
+    "basin_name": "Fraser",
+    "basin_code": "FRSR",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 231593
+  },
+  {
+    "basin_name": "Goascoran",
+    "basin_code": "GOSR",
+    "continent": "North America",
+    "countries": [
+      "El Salvador",
+      "Honduras"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2746
+  },
+  {
+    "basin_name": "Grijalva",
+    "basin_code": "GJLV",
+    "continent": "North America",
+    "countries": [
+      "Belize",
+      "Guatemala",
+      "Mexico"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 125675
+  },
+  {
+    "basin_name": "Hondo",
+    "basin_code": "HOND",
+    "continent": "North America",
+    "countries": [
+      "Belize",
+      "Guatemala",
+      "Mexico"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 12699
+  },
+  {
+    "basin_name": "Lake Azuei",
+    "basin_code": "LKAZ",
+    "continent": "North America",
+    "countries": [
+      "Dominican Republic",
+      "Haiti"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 914
+  },
+  {
+    "basin_name": "Lake Enriquillo",
+    "basin_code": "LKEQ",
+    "continent": "North America",
+    "countries": [
+      "Dominican Republic",
+      "Haiti"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3067
+  },
+  {
+    "basin_name": "Lempa",
+    "basin_code": "LMPA",
+    "continent": "North America",
+    "countries": [
+      "El Salvador",
+      "Guatemala",
+      "Honduras"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 18216
+  },
+  {
+    "basin_name": "Lucia",
+    "basin_code": "LUCI",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2984
+  },
+  {
+    "basin_name": "Massacre",
+    "basin_code": "MASS",
+    "continent": "North America",
+    "countries": [
+      "Dominican Republic",
+      "Haiti"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 777
+  },
+  {
+    "basin_name": "Mississippi",
+    "basin_code": "MISS",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3264759
+  },
+  {
+    "basin_name": "Moho",
+    "basin_code": "MOHO",
+    "continent": "North America",
+    "countries": [
+      "Belize",
+      "Guatemala"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1189
+  },
+  {
+    "basin_name": "Motaqua",
+    "basin_code": "MOTQ",
+    "continent": "North America",
+    "countries": [
+      "Guatemala",
+      "Honduras"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 16271
+  },
+  {
+    "basin_name": "Negro",
+    "basin_code": "NEGR",
+    "continent": "North America",
+    "countries": [
+      "Honduras",
+      "Nicaragua"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 6160
+  },
+  {
+    "basin_name": "Nelson-Saskatchewan",
+    "basin_code": "NELS",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1088784
+  },
+  {
+    "basin_name": "Paz",
+    "basin_code": "PAZX",
+    "continent": "North America",
+    "countries": [
+      "El Salvador",
+      "Guatemala"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2177
+  },
+  {
+    "basin_name": "Pedernales",
+    "basin_code": "PDNL",
+    "continent": "North America",
+    "countries": [
+      "Dominican Republic",
+      "Haiti"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 320
+  },
+  {
+    "basin_name": "Rio Grande (North America)",
+    "basin_code": "RGNA",
+    "continent": "North America",
+    "countries": [
+      "Mexico",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 538402
+  },
+  {
+    "basin_name": "San Juan",
+    "basin_code": "SJUA",
+    "continent": "North America",
+    "countries": [
+      "Costa Rica",
+      "Nicaragua"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 41360
+  },
+  {
+    "basin_name": "Santa Clara",
+    "basin_code": "SACL",
+    "continent": "North America",
+    "countries": [
+      "Mexico",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 4604
+  },
+  {
+    "basin_name": "Sarstun",
+    "basin_code": "SRTU",
+    "continent": "North America",
+    "countries": [
+      "Belize",
+      "Guatemala"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2165
+  },
+  {
+    "basin_name": "Sixaola",
+    "basin_code": "SIOL",
+    "continent": "North America",
+    "countries": [
+      "Costa Rica",
+      "Panama"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2857
+  },
+  {
+    "basin_name": "Skagit",
+    "basin_code": "SKAG",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8207
+  },
+  {
+    "basin_name": "St. Croix",
+    "basin_code": "SCRO",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 4261
+  },
+  {
+    "basin_name": "St. John (North America)",
+    "basin_code": "SJNA",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 55056
+  },
+  {
+    "basin_name": "St. Lawrence",
+    "basin_code": "SLAW",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 810629
+  },
+  {
+    "basin_name": "Stikine",
+    "basin_code": "STKN",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 50878
+  },
+  {
+    "basin_name": "Suchiate",
+    "basin_code": "SUCT",
+    "continent": "North America",
+    "countries": [
+      "Guatemala",
+      "Mexico"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1409
+  },
+  {
+    "basin_name": "Taku",
+    "basin_code": "TAKU",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 17496
+  },
+  {
+    "basin_name": "Temash",
+    "basin_code": "TEMA",
+    "continent": "North America",
+    "countries": [
+      "Belize",
+      "Guatemala"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 472
+  },
+  {
+    "basin_name": "Tijuana",
+    "basin_code": "TIJU",
+    "continent": "North America",
+    "countries": [
+      "Mexico",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 4430
+  },
+  {
+    "basin_name": "Unuk",
+    "basin_code": "UNUK",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2472
+  },
+  {
+    "basin_name": "Whiting",
+    "basin_code": "WHIT",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2474
+  },
+  {
+    "basin_name": "Yaqui",
+    "basin_code": "YAQU",
+    "continent": "North America",
+    "countries": [
+      "Mexico",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 72878
+  },
+  {
+    "basin_name": "Yukon",
+    "basin_code": "YUKN",
+    "continent": "North America",
+    "countries": [
+      "Canada",
+      "United States"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 848715
+  },
+  {
+    "basin_name": "Amacuro",
+    "basin_code": "AMCR",
+    "continent": "South America",
+    "countries": [
+      "Guyana",
+      "Venezuela"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3718
+  },
+  {
+    "basin_name": "Amazon",
+    "basin_code": "AMZN",
+    "continent": "South America",
+    "countries": [
+      "Bolivia",
+      "Brazil",
+      "Colombia",
+      "Ecuador",
+      "Guyana",
+      "Peru",
+      "Venezuela"
+    ],
+    "num_countries": 7,
+    "total_area_km2": 5952596
+  },
+  {
+    "basin_name": "Aviles",
+    "basin_code": "AVLS",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 296
+  },
+  {
+    "basin_name": "Aysen",
+    "basin_code": "AYSN",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 12553
+  },
+  {
+    "basin_name": "Baker",
+    "basin_code": "BAKR",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 26886
+  },
+  {
+    "basin_name": "Barima",
+    "basin_code": "BRMA",
+    "continent": "South America",
+    "countries": [
+      "Guyana",
+      "Venezuela"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 923
+  },
+  {
+    "basin_name": "Cancoso/Lauca",
+    "basin_code": "CNCS",
+    "continent": "South America",
+    "countries": [
+      "Bolivia",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 32882
+  },
+  {
+    "basin_name": "Carmen Silva/Chico",
+    "basin_code": "CHIC",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2065
+  },
+  {
+    "basin_name": "Catatumbo",
+    "basin_code": "CTTB",
+    "continent": "South America",
+    "countries": [
+      "Colombia",
+      "Venezuela"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 27435
+  },
+  {
+    "basin_name": "Chira",
+    "basin_code": "CHIR",
+    "continent": "South America",
+    "countries": [
+      "Ecuador",
+      "Peru"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 17684
+  },
+  {
+    "basin_name": "Chuy",
+    "basin_code": "CHUY",
+    "continent": "South America",
+    "countries": [
+      "Brazil",
+      "Uruguay"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 722
+  },
+  {
+    "basin_name": "Comau",
+    "basin_code": "COMA",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 910
+  },
+  {
+    "basin_name": "Corantijn/Courantyne",
+    "basin_code": "CRTY",
+    "continent": "South America",
+    "countries": [
+      "Guyana",
+      "Suriname"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 65349
+  },
+  {
+    "basin_name": "Cullen",
+    "basin_code": "CULL",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 918
+  },
+  {
+    "basin_name": "Essequibo",
+    "basin_code": "ESQB",
+    "continent": "South America",
+    "countries": [
+      "Guyana",
+      "Venezuela"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 157529
+  },
+  {
+    "basin_name": "Gallegos/Chico",
+    "basin_code": "GALG",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 16807
+  },
+  {
+    "basin_name": "Jurado",
+    "basin_code": "JURD",
+    "continent": "South America",
+    "countries": [
+      "Colombia",
+      "Panama"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 918
+  },
+  {
+    "basin_name": "La Plata",
+    "basin_code": "LPTA",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Bolivia",
+      "Brazil",
+      "Paraguay",
+      "Uruguay"
+    ],
+    "num_countries": 5,
+    "total_area_km2": 2981517
+  },
+  {
+    "basin_name": "Lagoon Dos Patos-Lagoon Mirim",
+    "basin_code": "LMRM",
+    "continent": "South America",
+    "countries": [
+      "Brazil",
+      "Uruguay"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 168694
+  },
+  {
+    "basin_name": "Laguna Filaret",
+    "basin_code": "LGFL",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 2057
+  },
+  {
+    "basin_name": "Lake Fagnano",
+    "basin_code": "LKFN",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 3557
+  },
+  {
+    "basin_name": "Lake Titicaca-Poopo System",
+    "basin_code": "LKTC",
+    "continent": "South America",
+    "countries": [
+      "Bolivia",
+      "Chile",
+      "Peru"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 112240
+  },
+  {
+    "basin_name": "Loa",
+    "basin_code": "LOAX",
+    "continent": "South America",
+    "countries": [
+      "Bolivia",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 35966
+  },
+  {
+    "basin_name": "Maroni",
+    "basin_code": "MRNI",
+    "continent": "South America",
+    "countries": [
+      "French Guiana",
+      "Suriname"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 66276
+  },
+  {
+    "basin_name": "Mataje",
+    "basin_code": "MTJE",
+    "continent": "South America",
+    "countries": [
+      "Colombia",
+      "Ecuador"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1008
+  },
+  {
+    "basin_name": "Mira",
+    "basin_code": "MIRA",
+    "continent": "South America",
+    "countries": [
+      "Colombia",
+      "Ecuador"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 10467
+  },
+  {
+    "basin_name": "Oiapoque/Oyupock",
+    "basin_code": "OYPK",
+    "continent": "South America",
+    "countries": [
+      "Brazil",
+      "French Guiana"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 25995
+  },
+  {
+    "basin_name": "Orinoco",
+    "basin_code": "ORIN",
+    "continent": "South America",
+    "countries": [
+      "Colombia",
+      "Guyana",
+      "Venezuela"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 973800
+  },
+  {
+    "basin_name": "Palena",
+    "basin_code": "PLNA",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 13230
+  },
+  {
+    "basin_name": "Pascua",
+    "basin_code": "PSCU",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 14107
+  },
+  {
+    "basin_name": "Patia",
+    "basin_code": "PTIA",
+    "continent": "South America",
+    "countries": [
+      "Colombia",
+      "Ecuador"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 22304
+  },
+  {
+    "basin_name": "Puelo",
+    "basin_code": "PUEL",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 9163
+  },
+  {
+    "basin_name": "Rio Grande (South America)",
+    "basin_code": "RGSA",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8632
+  },
+  {
+    "basin_name": "San Martin",
+    "basin_code": "SMAR",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 360
+  },
+  {
+    "basin_name": "Seno Union/Serrano",
+    "basin_code": "SENO",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 8648
+  },
+  {
+    "basin_name": "Tumbes",
+    "basin_code": "TUMB",
+    "continent": "South America",
+    "countries": [
+      "Ecuador",
+      "Peru"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 5371
+  },
+  {
+    "basin_name": "Valdivia",
+    "basin_code": "VDVA",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 10239
+  },
+  {
+    "basin_name": "Yelcho",
+    "basin_code": "YELC",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Chile"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 11409
+  },
+  {
+    "basin_name": "Zapaleri",
+    "basin_code": "ZAPL",
+    "continent": "South America",
+    "countries": [
+      "Argentina",
+      "Bolivia",
+      "Chile"
+    ],
+    "num_countries": 3,
+    "total_area_km2": 2507
+  },
+  {
+    "basin_name": "Zarumilla",
+    "basin_code": "ZARM",
+    "continent": "South America",
+    "countries": [
+      "Ecuador",
+      "Peru"
+    ],
+    "num_countries": 2,
+    "total_area_km2": 1056
+  }
+]

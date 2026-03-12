@@ -51,6 +51,20 @@ COUNTRY_ALIASES = {
     "luxembourg": "groothertogdom luxemburg",
     "suriname": "surinam",
     "mauritius": "republic of mauritius",
+    # Territory name variations
+    "virgin islands (u.k.)": "british virgin islands",
+    "virgin islands (u.s.)": "united states virgin islands",
+    "timor-leste": "east timor",
+    "saint martin": "collectivity of saint martin",
+    "sint maarten": "sint-maarten",
+    "cocos (keeling) islands": "cocos islands",
+    "saint pierre and miquelon": "saint-pierre and miquelon",
+    # Not in MR — skip (small territories)
+    "curaçao": None,
+    "bonaire, sint eustatius and saba": None,
+    "faroe islands": None,
+    "saint barthélemy": None,
+    "british indian ocean territory": None,
 }
 
 

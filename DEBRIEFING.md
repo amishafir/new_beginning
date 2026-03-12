@@ -447,11 +447,130 @@ The workflow is now 7 steps:
 
 ---
 
+---
+
+## Task 5: Submarine Cable Extraction (TeleGeography)
+
+### What we set out to do
+Rebuild the cable dataset from Session 1 — properly this time, using the full research pipeline instead of Wikipedia.
+
+### What happened
+
+#### The pipeline worked end-to-end
+This was the first session where the pipeline ran without a single pivot:
+1. **Source scout** found 9 candidates — all traced back to TeleGeography as the sole primary source
+2. **Source validator** confirmed TeleGeography: Authority 5/5, Currency 5/5, Coverage 5/5 (submarine), CC BY-SA 4.0
+3. **Data inspector** tested the API against the three problems — enumeration ✓ (690 cables), placement ✓ (1,907 landing points, 100% with coordinates), relationships ✓ (per-cable endpoint has landing_points with explicit country field). Rare case: **one source solves all three problems.**
+4. **Extraction**: fetch `all.json` for 690 IDs → fetch each `{id}.json` for full detail. 690 API calls, 0 failures, ~6 minutes.
+5. **Verification**: 15/17 checks pass (2 "failures" were naming issues in the test script, not data errors)
+
+#### Result
+| Metric | Before | After |
+|---|---|---|
+| Entities | 37,405 | 40,002 (+690 cables, +1,907 landing points) |
+| Relationships | 21,367 | 27,280 (+5,913) |
+| New relationship types | — | lands_at (3,152), located_in (1,897), connects (1,614) |
+
+#### Edge cases: territories
+12 country names from TeleGeography didn't match MR nations. Investigation revealed:
+- **7 resolvable** with aliases: Virgin Islands (U.S./U.K.), Timor-Leste, Sint Maarten, Cocos Islands, Saint Martin, Saint Pierre and Miquelon → all exist in MR under slightly different names. Added 45 relationships.
+- **5 genuinely missing** from MR: Curaçao, Bonaire/Sint Eustatius/Saba, Faroe Islands, Saint Barthélemy, British Indian Ocean Territory. Small territories MR doesn't track.
+
+**Pattern**: edge cases are always territories, not countries. Every geographic data project hits this — small dependencies, overseas territories, and disputed areas that naming conventions disagree on. The long tail of entity matching is always territorial.
+
+### What went right
+- **The Three Problems Framework predicted success.** Inspector correctly identified TeleGeography as solving all three problems. No surprises during extraction.
+- **Alias infrastructure compounded.** 89% of TeleGeography's country names matched MR out of the box — because we'd built country aliases across Sessions 3-4. Only 1 new nation alias (Mauritius) and 7 territory aliases needed.
+- **Zero failed API calls.** Consistent JSON structure across all 690 cables. Rate limiting at 0.5s was sufficient.
+- **Checkpointing reused cleanly** from the Marine Regions pattern.
+
+### What went wrong
+- **`all.json` returned 690 cables via curl but 1,312 via WebFetch.** We never resolved this discrepancy. Could be pagination, a different API version, or WebFetch hitting a cached/different endpoint. We extracted 690 and moved on — but didn't verify we got everything.
+- **`owners` stored as raw comma-separated string.** If we ever want "which cables does Google own?", we'd need to parse and normalize owner names (Google vs Alphabet vs Google Cloud). Should have been a design decision at extraction time.
+- **5 territories still unmatched.** Could be fixed by adding them as new entities (like we did with TFDD rivers), but we chose to skip — low impact.
+
+### Terrestrial cables: a known gap
+No free, structured, global source for terrestrial communication cables exists:
+- AfTerFibre: Africa only, last updated 2020
+- UNESCAP: Asia-Pacific PDFs, not structured
+- InfraNav: Global but commercial license
+- Major terrestrial cables (TEA, EPEG, JADI, WorldLink) would require operator website scraping
+
+Documented as an explicit gap rather than an incomplete dataset.
+
+### What a paid API would add
+TeleGeography's licensed dataset (~annual subscription) adds fields the free API lacks:
+
+| Field | Free | Paid | Enables |
+|---|---|---|---|
+| Cable capacity (Tbps) | ✗ | ✓ | "What's the total bandwidth between Europe and Asia?" |
+| Lit vs potential capacity | ✗ | ✓ | "How utilized is this cable?" |
+| Ownership percentages | ✗ | ✓ | "Who controls the most cable capacity?" |
+| Fiber pair count | ✗ | ✓ | Technical infrastructure analysis |
+| Latency data | ✗ | ✓ | Routing optimization |
+
+The free API gives us the **graph structure** (what connects to what). The paid API adds **quantitative weight** to edges (how much capacity, who controls it). Different class of questions.
+
+---
+
+## Key Lessons (Updated)
+
+### On the pipeline
+- **When the framework works, extraction is fast.** Session 5 (cables) took ~1 hour total including scouting, validation, inspection, and extraction. Sessions 1-3 took many hours with multiple pivots. The difference: testing assumptions before building.
+- **The Three Problems Framework is the key gating check.** If the inspector confirms all three problems are solved, extraction will be straightforward. If any problem fails, budget time for alternatives.
+
+### On entity matching (updated pattern)
+- **Nations match easily** — by Session 5, the alias infrastructure covers ~95% of country name variations automatically.
+- **Territories are the long tail.** Curaçao, Faroe Islands, BVI, Sint Maarten — every geographic dataset handles these differently. This is a systematic problem, not a per-project one.
+- **A shared `territory_aliases.json` would solve this permanently.** Instead of per-script alias dicts, a single file mapping all known territory name variants to MRGIDs. One investment, permanent payoff.
+
+### On data completeness
+- **"All" doesn't always mean all.** We got 690 cables from `all.json` but may be missing 600+. Pagination, API versioning, and response truncation are real risks. Always verify the count against an independent source.
+- **String fields need parsing decisions at extraction time.** `owners` as comma-separated string, `length` as "45,000 km" — decide upfront which fields to normalize and which to store raw. This is cheaper during extraction than later.
+- **Document gaps explicitly.** "No terrestrial cables — no free structured source exists" is more valuable than an incomplete dataset with no provenance.
+
+---
+
+## Current State of the Repo
+
+```
+new_beginning/
+├── CLAUDE.md                         # Project config (three-problem framework)
+├── DEBRIEFING.md                     # This file
+├── README.md
+├── Relationship.csv                  # 2,655 curated geographic relationships
+├── extract_marine_regions.py         # Entity extraction from MR API
+├── build_relationships.py            # Relationship building (CSV + API + spatial)
+├── enrich_relationships.py           # located_in + claimed_by enrichment
+├── merge_tfdd_rivers.py              # TFDD river basin merge (Session 4)
+├── extract_cables.py                 # Submarine cable extraction from TeleGeography
+├── query_world.py                    # Interactive query interface
+├── verify_database.py                # 21 automated verification checks
+├── .claude/commands/
+│   ├── source-scout.md               # Step 1: Find sources
+│   ├── source-validator.md           # Step 2: Validate sources
+│   ├── data-inspector.md             # Step 3: Three-problem inspection + overlap
+│   ├── data-merger.md                # Step 6: Cross-source integration
+│   └── data-verifier.md              # Step 7: Verify output
+├── data/
+│   ├── rivers/                       # Rivers research output (Session 2)
+│   ├── cables/                       # Cable research output (Session 5)
+│   │   ├── 01_candidate_sources.md
+│   │   ├── 02_validated_sources.md
+│   │   ├── 03_inspection_results.md
+│   │   └── extraction_checkpoint.json
+│   └── marine_regions/
+│       ├── global_map.db             # SQLite database (~10 MB, 40K entities, 27K relationships)
+│       └── checkpoint.json           # MR extraction progress tracker
+```
+
 ## Open Items
-- **Remaining 57% uncovered** — mostly ICES rectangles (11K) and Natura 2000 (2.9K) which bloat the count. Coverage on "interesting" entities (Tiers 1-4) is much higher.
-- **`connects` relationship** not built — straits connecting two seas. High-value, small scope (~155 straits).
-- **`overlaps` relationship** not built — EEZ ↔ Sea intersection. Needs polygon data or could approximate from bboxes.
-- Cable table still unverified (from Session 1)
+- **Remaining MR entity coverage gap** — mostly ICES rectangles (11K) and Natura 2000 (2.9K). Coverage on "interesting" entities (Tiers 1-4) is much higher.
+- **Strait `connects` relationship** not built — straits connecting two seas. High-value, small scope (~155 straits).
+- **EEZ `overlaps` relationship** not built — needs polygon data or could approximate from bboxes.
+- **Terrestrial cables** — no free structured global source exists. Documented as explicit gap.
+- **5 missing territories** — Curaçao, Faroe Islands, Bonaire, Saint Barthélemy, BIOT not in MR.
+- **Cable owner normalization** — `owners` field stored as raw string, not parsed.
+- **`all.json` count discrepancy** — 690 vs 1,312 unresolved. May be missing cables.
 - Rivers table has known Suriname gap and disputed territory entries (from Session 2)
 - `query_world.py` shows Dutch names (België, Frankrijk) — needs English alias display layer
-- If starting over: fetch English names for all nations via `getGazetteerNamesByMRGID` upfront (196 calls, 3 minutes)

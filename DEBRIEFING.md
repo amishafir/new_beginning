@@ -137,9 +137,246 @@ Example: The TFDD shapefile's `adm0_name` field appeared to contain country name
 
 **General principle:** After extraction, validate categorical values against an authoritative reference list (e.g., ISO 3166 for countries, IATA codes for airports, etc.). Don't assume the source's values are clean just because the source itself is authoritative.
 
-## Open Items
+## Open Items (from Sessions 1-2)
 - Cable table was never rebuilt from TeleGeography API — still based on Wikipedia/secondary sources
 - Rivers table has known Suriname gap in Amazon basin (TFDD source limitation)
 - Rivers table contains 10 entries that are disputed territories / non-sovereign entities, not recognized countries — needs a decision on how to handle them
-- No extraction scripts were saved — Python code was run inline during the session and lost. If re-extraction is needed, the code must be rewritten.
+- ~~No extraction scripts were saved~~ — Fixed in Session 3 (scripts saved as `.py` files)
 - Slash commands were never tested as actual `/command` invocations in a fresh session
+
+---
+
+## Task 3: Global Structured Database (Marine Regions)
+
+### What we set out to do
+Build a queryable graph database of the world: nations, seas, straits, rivers, seafloor features, maritime zones, and ecological regions — all with relationships between them. Answers questions like "What seas border Turkey?" or "Which nations share the South China Sea?"
+
+Primary source: **marineregions.org** (Flanders Marine Institute gazetteer, 449 entity types, REST API).
+
+### What happened
+
+#### Phase 0: API Investigation (the hard part)
+1. Started by testing the documented API endpoints
+2. `getGazetteerRecordsByType.json/13/` returned 404 — type ID `13` is "Nation" in the types list, but the endpoint doesn't accept IDs
+3. Spent ~6 API calls and multiple URL format variations debugging this
+4. **Discovery**: the endpoint uses **type names**, not numeric IDs: `getGazetteerRecordsByType.json/Ocean/` works, `/19/` does not
+5. This was undocumented. The Swagger spec was dynamically generated and didn't load via fetch. Had to discover the correct format empirically.
+
+#### Phase 1: Entity Extraction (worked well)
+6. Built `extract_marine_regions.py` with rate limiting, pagination, checkpointing, retry logic
+7. Extracted 37,149 entities across 7 tiers in ~30 minutes of API time
+8. Used background tasks to parallelize tier extraction (Tier 1-2, then 3-4, then 6-7)
+9. Discovered some types (Spur, Bank, Reef, etc.) weren't fetched in first pass — checkpoint only tracked what ran, so these were fetched in a follow-up run
+
+#### Phase 2: Relationship Extraction (the biggest lesson)
+10. Tested `getGazetteerRelationsByMRGID` — expected rich relationships
+11. **Reality**: it returns only 1-2 parent hierarchy links per entity. Mediterranean Sea → 1 relationship. Pacific Ocean → 1 relationship. Belgium → 1 relationship.
+12. Worse, some were wrong: Strait of Gibraltar → "La Manche" + "North Sea". English Channel → "South Pacific Ocean."
+13. **The plan's core assumption was wrong.** The plan estimated 15,000-25,000 relationships from the API. The API yields ~1 per entity.
+
+#### Pivoting to multiple relationship sources
+14. Discovered `Relationship.csv` already in the repo (2,655 curated relationships from a prior session): land borders, sea adjacency, river flows, hierarchy
+15. Built `build_relationships.py` with three sources:
+    - **CSV import** (1,292 relationships): borders, part_of, adjacent_to, flows_through
+    - **API hierarchy** (407 relationships): nation→continent, sea→parent ocean
+    - **Spatial inference** (482 relationships): bounding box overlap for nation↔sea adjacency
+16. Total: 2,181 relationships — far short of the plan's 15,000-25,000 estimate
+
+#### Name matching nightmare
+17. Marine Regions is maintained by the Flanders Marine Institute (Belgium, Dutch-speaking)
+18. Many nation names are in Dutch: België, Frankrijk, Nederland, Groothertogdom Luxemburg, Türkiye
+19. The CSV uses English names. Matching required 5 rounds of alias additions.
+20. Rivers in CSV are just "Jordan" but DB has "Jordan River" — needed suffix matching
+21. Some CSV entries are sub-national or disputed ("Scotland", "Gaza Strip", "Dhekelia") with no DB match
+
+#### Spatial inference: mixed results
+22. Bounding box overlap correctly identified: Gulf of Riga ↔ Latvia, Caribbean Sea ↔ Nicaragua, Ionian Sea ↔ Albania
+23. But also produced false positives: landlocked Bolivia/Paraguay/Chad "adjacent" to seas (their bounding boxes extend to coastal water body boxes)
+24. Had to add a landlocked-nation exclusion list. Also had to filter out overly broad regions (General Sea Areas spanning entire oceans)
+
+#### What we ended up with
+- **37,149 entities** (98% with coordinates, 47% with bounding boxes)
+- **2,181 relationships** (but only **2% of entities** have any relationship)
+- Verification: 21 automated checks, all passing
+- Query interface works for the entities that have relationships
+
+### What went right
+- **Entity extraction is excellent.** 37,149 entities from a single authoritative source, with coordinates and bounding boxes. The API is great for enumeration.
+- **Checkpointing.** Could resume extraction after interrupts. Background tasks could run in parallel.
+- **Scripts were saved.** Unlike Session 1-2, all extraction code persists as `.py` files that can be re-run.
+- **Verification was built in.** 21 automated checks caught real issues (e.g., Strait of Gibraltar typed as "Sea", Mid-Atlantic Ridge stored as "Medio-Atlantica Ridge").
+- **The pivot was fast.** When the relationship API proved useless, we switched to CSV + spatial within the same session.
+
+### What went wrong
+
+#### 1. The plan was built on an untested assumption
+The entire relationship strategy assumed `getGazetteerRelationsByMRGID` would return rich, typed relationships. We tested the entity endpoints but not the relationship endpoint before committing to the plan. The plan phase should have included **empirical API testing** — not just "investigate parameter format" but "test whether the endpoint returns what we actually need."
+
+**Fix for CLAUDE.md / agents:** Data inspector should explicitly test the **relationship/linkage data**, not just entity data. Add a step: "For graph/relational projects: test whether the source provides the connections you need, not just the nodes."
+
+#### 2. The Relationship.csv was already in the repo — we didn't look
+We had 2,655 curated relationships sitting in the project root from a prior session. We didn't discover this until after the API relationship approach failed. If we'd inventoried existing data first, we could have designed the relationship strategy around extending the CSV rather than starting from scratch with the API.
+
+**Fix:** Before starting extraction, inventory what already exists in the repo. `ls`, `wc -l`, and a quick look at existing data files.
+
+#### 3. The 2% relationship coverage gap
+37,149 entities but only 767 have any relationship. Entire categories have zero relationships: all 10,161 seafloor features, all 15,295 ecological zones, all 578 maritime zones. The database is a catalog, not a graph.
+
+**Root cause:** The CSV only covers nations/seas/rivers. The API only provides parent hierarchy. There's no structured source for "which seamount is in which ocean" or "which MPA overlaps which EEZ."
+
+**What would fix this:**
+- Download the GeoPackage datasets (EEZ v12, IHO v3, EEZ-IHO intersections) — these have pre-computed spatial overlaps
+- Compute spatial containment/overlap from bounding boxes for more entity pairs
+- Use the `getGazetteerRecordsByLatLong` endpoint to determine which features fall within which regions
+
+#### 4. Name matching should have been solved upfront
+We went through 5 iterations of adding aliases (Luxembourg → Groothertogdom Luxemburg, Belgium → België, France → Frankrijk, etc.). This is a known problem with multilingual data sources. Should have:
+- Fetched `getGazetteerNamesByMRGID` for all nations upfront to get English aliases
+- Built a bidirectional name index before attempting any matching
+
+#### 5. Background task management was fragile
+- Several tasks "completed" but had empty output files (buffering issue)
+- One task ID became unfindable
+- Had to poll repeatedly to check status
+- No way to see intermediate progress for long-running tasks
+
+#### 6. Verification was too narrow
+The verify script checks entity counts and a few sample relationships. It doesn't catch the fundamental issue: that 98% of entities are disconnected. Need a coverage metric: "what percentage of entity types have at least N relationships?"
+
+---
+
+## Updated Lessons Learned
+
+### On planning
+- **Test assumptions before committing to a plan.** If your plan depends on an API returning rich data, test that endpoint with real calls before writing 200 lines of extraction code. A 5-minute test could have saved 30 minutes of relationship extraction code that proved useless.
+- **Inventory existing data first.** Before sourcing new data, check what's already in the repo. The Relationship.csv was sitting right there.
+- **Estimate skeptically.** The plan estimated 15,000-25,000 relationships. We got 2,181. When a plan makes optimistic estimates about an untested API, flag that estimate as "pending validation."
+
+### On APIs
+- **Documentation lies (or is incomplete).** The Marine Regions Swagger spec was dynamically generated and couldn't be fetched statically. The `getGazetteerRecordsByType` endpoint silently requires type **names**, not the numeric IDs that `getGazetteerTypes` returns. The relationship endpoint returns wrong data (Strait of Gibraltar → La Manche). Never trust docs — test empirically.
+- **Entity enumeration and relationship quality are independent.** An API can be excellent for listing entities (this one is) and terrible for relationships (this one is). Test both dimensions.
+- **Rate-limit respectfully.** 1-second delays and retry logic kept us in good standing. The API never blocked us.
+
+### On multilingual data
+- **Anticipate name mismatches.** When a data source is maintained in a non-English country, names will be in the local language. Budget time for building a name alias system, or fetch the alternate-names endpoint first.
+- **Build bidirectional name indexes.** Map both "Belgium" → MRGID and "België" → MRGID from the start. Don't add aliases one by one as failures appear.
+
+### On graph databases
+- **Nodes are easy, edges are hard.** Any decent API can give you a list of entities. The relationships between them are the real challenge and require either: (a) a source that explicitly provides them, (b) spatial computation, or (c) manual curation.
+- **Measure connectivity, not just count.** 37,149 entities sounds impressive. 2% relationship coverage means it's a catalog, not a graph. The right metric is: "can the database answer the questions in the plan?"
+- **Bounding box overlap is a crude proxy for adjacency.** It works for large bodies (Caribbean Sea ↔ Nicaragua) but fails for landlocked nations and overly broad regions. Real spatial analysis requires polygon intersection, not box overlap.
+
+### On process
+- **Save your scripts.** Session 1-2 lost all extraction code. This session saved everything as `.py` files. This is non-negotiable for reproducibility.
+- **Decouple extraction from relationship-building.** `extract_marine_regions.py` and `build_relationships.py` being separate scripts was the right design. It let us re-run relationship building without re-fetching entities.
+- **The research pipeline agents (source-scout, etc.) weren't used this session.** When you arrive with a pre-made plan and a known API, the agents don't add value. They're most useful in the discovery phase when you don't yet know where the data lives. The agents are for "what should I use?" — not for "I know what to use, help me extract it."
+
+### On the agent pipeline design (updated)
+The 4-agent pipeline (scout → validate → inspect → verify) remains valid but needs an update:
+
+**New principle: Test linkage, not just structure.**
+The data-inspector agent should be updated to include a check: "If this is a relational/graph project, test whether the source provides the connections between entities, not just the entities themselves." Our inspector would have caught that the relationship API was useless if it had tested 5 sample entities and found only 1 relationship each.
+
+**New principle: Inventory before scouting.**
+Add a "Step 0" before source-scout: check what data already exists in the project. This session had a Relationship.csv with 2,655 rows that we didn't discover until midway through.
+
+---
+
+## Session 3b: Relationship Enrichment
+
+### What happened
+After the debriefing revealed 2% relationship coverage, we implemented two strategies to fix it — without any new API calls or downloads.
+
+#### Strategy #1: Point-in-bbox (`located_in`)
+For every entity with lat/lon coordinates, find the smallest water body or nation whose bounding box contains that point. Pure computation on data already in the DB.
+
+- **17,210 relationships created**
+- 12,217 entities placed in their containing Sea
+- 4,445 entities placed in their containing Nation
+- 548 entities placed in their containing Gulf
+- Key design choice: pick the **smallest** containing bbox (most specific match). Magnaghi Seamount → Tyrrhenian Sea (48°²), not Mediterranean (656°²) or Atlantic (13,249°²). The `part_of` hierarchy already chains upward.
+
+#### Strategy #2: Name parsing (`claimed_by`)
+EEZ names follow the pattern "Albanian Exclusive Economic Zone" → strip suffix → "Albanian" → match to nation via adjective→nation map.
+
+- **476 relationships created** (246 EEZs + 237 territorial seas → 476 matched, 5 unmatched)
+
+#### Result
+| Metric | Before | After |
+|---|---|---|
+| Relationships | 2,181 | **19,867** |
+| Connected entities | 767 (2%) | **16,023 (43%)** |
+| DB size | 6.3 MB | 8.0 MB |
+
+#### What this revealed about strategy
+The enrichment took 15 minutes of coding and produced 9x more relationships than everything before it combined. `located_in` alone (17,210) dwarfs CSV (1,292) + API (407) + spatial (482) + claimed_by (476). It should have been the **first** relationship strategy, not the last.
+
+---
+
+## The Three Problems Framework
+
+The biggest lesson from Session 3. Every data project that builds structured output needs to solve three distinct problems. A single source rarely handles all three.
+
+| # | Problem | Question | What solves it |
+|---|---------|----------|----------------|
+| 1 | **Enumeration** | "What exists?" | API listing, downloadable catalog, web scrape |
+| 2 | **Placement** | "Where is it?" | Coordinates + bounding boxes → `located_in` for free |
+| 3 | **Relationships** | "How are things connected?" | Curated datasets, name parsing, polygon intersection, domain rules |
+
+### How this played out in Session 3
+
+| Source | Entities (#1) | Placement (#2) | Relationships (#3) |
+|---|---|---|---|
+| MR API (enumeration) | Excellent (37K) | Good (98% coords) | Useless (~1 parent/entity) |
+| MR API (relationships) | — | — | Wrong data, sparse |
+| Relationship.csv | — | — | Good (1,292 curated edges) |
+| Point-in-bbox computation | — | — | **Best** (17,210 from existing data) |
+| EEZ name parsing | — | — | Good (476 mechanical matches) |
+
+**The mistake was assuming the MR API would solve all three.** We planned 200 lines of relationship extraction code for an endpoint that returns 1 record per entity. If we'd tested 5 sample calls first, we'd have known in 5 minutes.
+
+### How to apply going forward
+
+Before writing any plan:
+1. **Inventory the repo** — `ls`, check existing files
+2. **Test each source against all three problems** — not just "does it have data" but "does it have entities, coordinates, AND relationships"
+3. **For any gap, decide the fill strategy before planning** — spatial computation? name parsing? curated dataset? polygon download?
+4. **Start with what's free** — `located_in` from coordinates costs zero API calls
+
+Updated in: `CLAUDE.md` (workflow + principles) and `.claude/commands/data-inspector.md` (three-problem framework as Step 1).
+
+---
+
+## Current State of the Repo
+
+```
+new_beginning/
+├── CLAUDE.md                         # Project config (three-problem framework)
+├── DEBRIEFING.md                     # This file
+├── README.md
+├── Relationship.csv                  # 2,655 curated geographic relationships
+├── extract_marine_regions.py         # Entity extraction from MR API
+├── build_relationships.py            # Relationship building (CSV + API + spatial)
+├── enrich_relationships.py           # located_in + claimed_by enrichment
+├── query_world.py                    # Interactive query interface
+├── verify_database.py                # 21 automated verification checks
+├── .claude/commands/
+│   ├── source-scout.md               # Step 1: Find sources
+│   ├── source-validator.md           # Step 2: Validate sources
+│   ├── data-inspector.md             # Step 3: Three-problem inspection
+│   └── data-verifier.md              # Step 4: Verify output
+├── data/
+│   ├── rivers/                       # Rivers research output (Session 2)
+│   └── marine_regions/
+│       ├── global_map.db             # SQLite database (8 MB, 37K entities, 20K relationships)
+│       └── checkpoint.json           # Extraction progress tracker
+```
+
+## Open Items
+- **Remaining 57% uncovered** — mostly ICES rectangles (11K) and Natura 2000 (2.9K) which bloat the count. Coverage on "interesting" entities (Tiers 1-4) is much higher.
+- **`connects` relationship** not built — straits connecting two seas. High-value, small scope (~155 straits).
+- **`overlaps` relationship** not built — EEZ ↔ Sea intersection. Needs polygon data or could approximate from bboxes.
+- Cable table still unverified (from Session 1)
+- Rivers table has known Suriname gap and disputed territory entries (from Session 2)
+- `query_world.py` shows Dutch names (België, Frankrijk) — needs English alias display layer
+- If starting over: fetch English names for all nations via `getGazetteerNamesByMRGID` upfront (196 calls, 3 minutes)

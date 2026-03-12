@@ -138,7 +138,7 @@ Example: The TFDD shapefile's `adm0_name` field appeared to contain country name
 **General principle:** After extraction, validate categorical values against an authoritative reference list (e.g., ISO 3166 for countries, IATA codes for airports, etc.). Don't assume the source's values are clean just because the source itself is authoritative.
 
 ## Open Items (from Sessions 1-2)
-- Cable table was never rebuilt from TeleGeography API — still based on Wikipedia/secondary sources
+- ~~Cable table was never rebuilt from TeleGeography API~~ — Done in Session 5 (690 cables, 1,907 landing points)
 - Rivers table has known Suriname gap in Amazon basin (TFDD source limitation)
 - Rivers table contains 10 entries that are disputed territories / non-sovereign entities, not recognized countries — needs a decision on how to handle them
 - ~~No extraction scripts were saved~~ — Fixed in Session 3 (scripts saved as `.py` files)

@@ -58,6 +58,20 @@ Every data project needs some combination of these. A single source rarely solve
 - Note that manual extraction is required
 - Check if tables or structured data exist within it
 
+## Step 2b: Overlap analysis (if existing data is present)
+
+If Step 0 found existing data, test how the new source overlaps with it **before** planning extraction.
+
+1. **Sample 20-30 entities** from the new source
+2. **Try to match each** against existing entities by name (exact → normalized → alias → suffix-stripped)
+3. **Report the match rate**:
+   - >70%: Sources align well. Plan for enrichment (adding fields/relationships to existing entities).
+   - 30-70%: Partial overlap. Plan for both enrichment AND new entity creation. Build alias dictionary.
+   - <30%: Sources cover different things. Plan for new entity import with thin overlap.
+4. **Check for reference IDs** (ISO codes, standard identifiers) in both sources — if present, matching becomes trivial
+5. **Check name format differences** — language, suffixes ("River", "Basin"), formality level
+6. **Flag integration cost**: "Merging these sources requires [trivial ID join / moderate name matching / extensive alias building]"
+
 ## Step 3: Create the source capability matrix
 
 | Source | Entities | Coordinates | Relationships | Notes |

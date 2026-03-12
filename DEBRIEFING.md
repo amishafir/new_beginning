@@ -358,19 +358,94 @@ new_beginning/
 ├── extract_marine_regions.py         # Entity extraction from MR API
 ├── build_relationships.py            # Relationship building (CSV + API + spatial)
 ├── enrich_relationships.py           # located_in + claimed_by enrichment
+├── merge_tfdd_rivers.py              # TFDD river basin merge (Session 4)
 ├── query_world.py                    # Interactive query interface
 ├── verify_database.py                # 21 automated verification checks
 ├── .claude/commands/
 │   ├── source-scout.md               # Step 1: Find sources
 │   ├── source-validator.md           # Step 2: Validate sources
-│   ├── data-inspector.md             # Step 3: Three-problem inspection
-│   └── data-verifier.md              # Step 4: Verify output
+│   ├── data-inspector.md             # Step 3: Three-problem inspection + overlap
+│   ├── data-merger.md                # Step 6: Cross-source integration
+│   └── data-verifier.md              # Step 7: Verify output
 ├── data/
 │   ├── rivers/                       # Rivers research output (Session 2)
 │   └── marine_regions/
-│       ├── global_map.db             # SQLite database (8 MB, 37K entities, 20K relationships)
+│       ├── global_map.db             # SQLite database (8 MB, 37.4K entities, 21.4K relationships)
 │       └── checkpoint.json           # Extraction progress tracker
 ```
+
+---
+
+## Task 4: Cross-Source Integration (TFDD → Marine Regions)
+
+### What we set out to do
+Merge the 316 transboundary river basins from TFDD (Session 2) into the Marine Regions database (Session 3), adding the world's major rivers and their country relationships.
+
+### What happened
+
+#### The overlap problem
+First tested how many TFDD basins matched MR rivers. **18% match rate** (57 of 316). MR is a marine gazetteer — its 1,107 rivers are mostly coastal features (Belgian streams, estuaries). Major transboundary rivers (Danube, Mekong, Limpopo, Volta, Senegal) simply aren't in MR.
+
+We verified this wasn't an extraction gap: checked all MR river-related types (River, Stream, Tributary, River Outlet), confirmed MR's own type definition says rivers are "water currents that flow out in the sea." The Danube, which flows through 19 countries, isn't in a marine gazetteer.
+
+Also discovered 678 "Basin" entities were seafloor basins (ocean floor depressions), not river basins — "Amazon Basin" at lat -44.8 near New Zealand.
+
+#### The merge
+Built `merge_tfdd_rivers.py` with:
+- River matching: exact → suffix ("Nile" → "Nile River") → alias → slash-split ("Congo/Zaire" → "Congo")
+- Country matching: reused alias infrastructure from `build_relationships.py`, added TFDD-specific aliases (Eswatini → Swaziland, Lao People's Democratic Republic → Laos, etc.)
+- Synthetic MRGIDs (900000+) for new entities
+- Dry run mode before apply
+- Source provenance tracking (`source='TFDD'`, `source_data='tfdd'`)
+
+#### Result
+| Metric | Before | After |
+|---|---|---|
+| Entities | 37,149 | 37,405 (+256 new rivers) |
+| Relationships | 20,617 | 21,367 (+750) |
+| `flows_through` edges | 119 | 869 (7x) |
+| Rivers with country data | 51 | 342 |
+
+9 unmatched "countries" — all disputed territories (Aksai Chin, Abyei, Ilemi triangle, etc.). This is a TFDD data quirk, not a matching gap.
+
+### What went right
+- **Overlap analysis first.** Testing the 18% match rate took 5 minutes and correctly set expectations.
+- **Reused alias infrastructure.** Country matching worked well because we'd already built `NAME_ALIASES` in `build_relationships.py`.
+- **Dry run pattern.** Caught the French Guiana gap (Territory, not Nation) before applying.
+- **Source provenance.** Every new entity and relationship tagged with origin.
+
+### What went wrong
+- **No `source` column on entities at schema creation time.** Had to `ALTER TABLE` to add it.
+- **Alias dictionaries are scattered.** `build_relationships.py` has `NAME_ALIASES`, `enrich_relationships.py` has `ADJECTIVE_TO_NATION`, `merge_tfdd_rivers.py` has `COUNTRY_ALIASES`. Three separate dictionaries for the same problem.
+- **No reference IDs.** If both MR and TFDD used ISO country codes, the entire country-matching problem disappears.
+
+### Key lesson: Entity matching is the real engineering problem
+
+In every session, the hardest part wasn't getting data — it was matching entities across sources:
+- Session 3: CSV country names → MR Dutch names (5 rounds of alias additions)
+- Session 3b: EEZ adjectives → nation names (150-entry dictionary)
+- Session 4: TFDD basin names → MR river names (18% raw match rate)
+
+**This should be first-class infrastructure, not a per-script afterthought.**
+
+---
+
+## Updated Pipeline
+
+The workflow is now 7 steps:
+
+```
+0. Inventory existing data
+1. /source-scout      — find sources
+2. /source-validator   — validate authority
+3. /data-inspector     — three-problem test + overlap analysis
+4. Plan extraction
+5. Extract
+6. /data-merger        — combine sources (entity matching, name resolution, provenance)
+7. /data-verifier      — spot-check against independent sources
+```
+
+---
 
 ## Open Items
 - **Remaining 57% uncovered** — mostly ICES rectangles (11K) and Natura 2000 (2.9K) which bloat the count. Coverage on "interesting" entities (Tiers 1-4) is much higher.

@@ -9,6 +9,7 @@ Build verified, source-backed datasets on any research topic using a disciplined
 ├── source-scout.md       # Find and classify candidate data sources
 ├── source-validator.md   # Validate source authority, currency, and fitness
 ├── data-inspector.md     # Probe sources against the three problems
+├── data-merger.md        # Combine data from multiple sources with entity matching
 ├── data-verifier.md      # Spot-check results against independent primary sources
 data/{topic}/             # Outputs organized by research topic
 ```
@@ -17,10 +18,11 @@ data/{topic}/             # Outputs organized by research topic
 0. **Inventory** — check what data already exists in the repo (`ls`, `head`, `wc -l`). Prior sessions may have left curated datasets.
 1. `/source-scout <topic>` — find sources, classify as primary/secondary, probe availability
 2. `/source-validator` — validate each source: who maintains it, does it have what we need?
-3. `/data-inspector` — probe sources against the three problems (see below), build capability matrix
+3. `/data-inspector` — probe sources against the three problems (see below), build capability matrix. **If existing data is present**, also test overlap with the new source.
 4. **Plan** — design extraction strategy based on what inspector actually found, not assumptions
 5. Extract data (method depends on what inspector finds: script, API calls, etc.)
-6. `/data-verifier` — spot-check output against independent primary sources
+6. `/data-merger` — if combining with existing data: overlap analysis → name resolution → dry run → apply
+7. `/data-verifier` — spot-check output against independent primary sources
 
 ## The Three Problems
 
@@ -46,3 +48,10 @@ For any gap, the inspector should propose how to fill it:
 - **Verify after fetching**: spot-check results against independent authoritative sources
 - **Be transparent about gaps**: flag what's missing rather than guessing
 - **Define done by questions, not counts**: write the queries the dataset must answer, then build until they work
+
+### Design for Integration
+Most projects end up combining multiple sources. Plan for this from day 1:
+- **Add a `source` column** to every table at creation time, not retroactively
+- **Use reference IDs** (ISO country codes, standard identifiers) alongside names — matching on IDs is trivial, matching on names is painful
+- **Build name normalization as shared infrastructure** — a single alias/lookup system, not per-script dictionaries
+- **Test overlap early** — when inspecting a new source, check how many of its entities already exist in your dataset before building extraction logic

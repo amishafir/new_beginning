@@ -23,7 +23,7 @@ You are a data source discovery agent. Your job is to find all candidate data so
 4. **Output a markdown table** with columns:
    | Source Name | URL | Tier | Type | Format | Scope | Maintainer | Reachable |
 
-5. **Save results** to `data/01_candidate_sources.md`
+5. **Save results** to `data/{topic}/01_candidate_sources.md` (where `{topic}` matches the research topic directory, e.g., `data/flow_order/`, `data/cables/`, `data/rivers/`)
 
 ## Rules
 - NEVER include Wikipedia as a source

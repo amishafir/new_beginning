@@ -6,6 +6,24 @@ You are a data integration agent. Your job is to combine entities and relationsh
 ## When to use
 After extraction and verification, when you have a new dataset that overlaps with or extends an existing one. This is the most common real-world task — you rarely get everything from one source.
 
+## Two merge modes
+
+### Mode A: Entity merge (default)
+Adding new entities and relationships from a new source. The classic case — matching entities across sources, importing new ones, transferring relationships. Follow all steps below.
+
+### Mode B: Attribute augmentation
+You're not adding new entities — you're enriching **existing** entities or relationships with a new attribute derived from a new source. Examples: adding flow order (Rank) to existing `flows_through` relationships, adding population data to existing nation entities, adding capacity data to existing cable entities.
+
+**Mode B workflow:**
+1. **Identify targets** — which existing entities/relationships need the new attribute? (e.g., "all 750 `flows_through` relationships from TFDD that lack a Rank value")
+2. **Compute the attribute** — this may involve spatial computation, lookup, or direct transfer from the new source
+3. **Validate before applying** — spot-check 5-10 computed values against known facts
+4. **Dry run** — show what will change: "Will update Rank on X relationships, Y entities unaffected, Z entities have no computable value (flag as gaps)"
+5. **Apply** — `UPDATE` existing rows rather than `INSERT` new ones
+6. **Verify** — run existing verification scripts + check that no existing data was corrupted
+
+**Key difference from Mode A:** You're doing `UPDATE` not `INSERT`. Entity matching is already done (the entities are in the DB). The challenge is computing the correct attribute value, not matching entities across sources.
+
 ## Step 0: Understand both sides
 
 Before writing any code:

@@ -1,0 +1,7515 @@
+{
+  "Akpa": {
+    "main_stem_order": [
+      {
+        "country": "Nigeria",
+        "median_dist_dn_km": 63.7,
+        "n_reaches": 48
+      },
+      {
+        "country": "Cameroon",
+        "median_dist_dn_km": 26.5,
+        "n_reaches": 25
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 495,
+      "main_network_reaches": 494,
+      "main_stem_reaches": 55,
+      "main_stem_km": 115.2,
+      "endorheic": false
+    }
+  },
+  "Allahein": {
+    "main_stem_order": [
+      {
+        "country": "Gambia",
+        "median_dist_dn_km": 13.7,
+        "n_reaches": 9
+      },
+      {
+        "country": "Senegal",
+        "median_dist_dn_km": 10.9,
+        "n_reaches": 10
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 27,
+      "main_network_reaches": 27,
+      "main_stem_reaches": 12,
+      "main_stem_km": 33.2,
+      "endorheic": false
+    }
+  },
+  "Annole": {
+    "main_stem_order": [
+      {
+        "country": "Kenya",
+        "median_dist_dn_km": 266.6,
+        "n_reaches": 48
+      },
+      {
+        "country": "Somalia",
+        "median_dist_dn_km": 80.2,
+        "n_reaches": 28
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 508,
+      "main_network_reaches": 501,
+      "main_stem_reaches": 75,
+      "main_stem_km": 401.8,
+      "endorheic": false
+    }
+  },
+  "Awash": {
+    "main_stem_order": [
+      {
+        "country": "Ethiopia",
+        "median_dist_dn_km": 477.4,
+        "n_reaches": 263
+      }
+    ],
+    "tributary_only": [
+      "Djibouti",
+      "Somalia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 6948,
+      "main_network_reaches": 4074,
+      "main_stem_reaches": 263,
+      "main_stem_km": 980.0,
+      "endorheic": true
+    }
+  },
+  "Bahr at Tubat": {
+    "main_stem_order": [
+      {
+        "country": "Egypt",
+        "median_dist_dn_km": 146.8,
+        "n_reaches": 37
+      },
+      {
+        "country": "Libya",
+        "median_dist_dn_km": 26.3,
+        "n_reaches": 11
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 355,
+      "main_network_reaches": 301,
+      "main_stem_reaches": 45,
+      "main_stem_km": 254.6,
+      "endorheic": true
+    }
+  },
+  "Baraka": {
+    "main_stem_order": [
+      {
+        "country": "Eritrea",
+        "median_dist_dn_km": 360.4,
+        "n_reaches": 109
+      },
+      {
+        "country": "Sudan",
+        "median_dist_dn_km": 118.0,
+        "n_reaches": 63
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3028,
+      "main_network_reaches": 3028,
+      "main_stem_reaches": 165,
+      "main_stem_km": 574.5,
+      "endorheic": false
+    }
+  },
+  "Benito/Ntem": {
+    "main_stem_order": [
+      {
+        "country": "Gabon",
+        "median_dist_dn_km": 339.0,
+        "n_reaches": 63
+      },
+      {
+        "country": "Cameroon",
+        "median_dist_dn_km": 133.6,
+        "n_reaches": 119
+      },
+      {
+        "country": "Equatorial Guinea",
+        "median_dist_dn_km": 30.1,
+        "n_reaches": 21
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 5187,
+      "main_network_reaches": 3232,
+      "main_stem_reaches": 176,
+      "main_stem_km": 425.0,
+      "endorheic": false
+    }
+  },
+  "Bia": {
+    "main_stem_order": [
+      {
+        "country": "Ghana",
+        "median_dist_dn_km": 33.2,
+        "n_reaches": 3
+      },
+      {
+        "country": "C\u00f4te d'Ivoire",
+        "median_dist_dn_km": 16.3,
+        "n_reaches": 11
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 751,
+      "main_network_reaches": 750,
+      "main_stem_reaches": 11,
+      "main_stem_km": 41.4,
+      "endorheic": false
+    }
+  },
+  "Buzi": {
+    "main_stem_order": [
+      {
+        "country": "Zimbabwe",
+        "median_dist_dn_km": 381.3,
+        "n_reaches": 11
+      },
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 157.9,
+        "n_reaches": 110
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1561,
+      "main_network_reaches": 1561,
+      "main_stem_reaches": 120,
+      "main_stem_km": 402.8,
+      "endorheic": false
+    }
+  },
+  "Cavally": {
+    "main_stem_order": [
+      {
+        "country": "Guinea",
+        "median_dist_dn_km": 668.7,
+        "n_reaches": 27
+      },
+      {
+        "country": "C\u00f4te d'Ivoire",
+        "median_dist_dn_km": 391.4,
+        "n_reaches": 213
+      },
+      {
+        "country": "Liberia",
+        "median_dist_dn_km": 195.2,
+        "n_reaches": 152
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3541,
+      "main_network_reaches": 3540,
+      "main_stem_reaches": 295,
+      "main_stem_km": 695.8,
+      "endorheic": false
+    }
+  },
+  "Cestos": {
+    "main_stem_order": [
+      {
+        "country": "Liberia",
+        "median_dist_dn_km": 1.4,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [
+      "C\u00f4te d'Ivoire"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1801,
+      "main_network_reaches": 1786,
+      "main_stem_reaches": 1,
+      "main_stem_km": 1.4,
+      "endorheic": false
+    }
+  },
+  "Chiloango": {
+    "main_stem_order": [
+      {
+        "country": "Congo",
+        "median_dist_dn_km": 203.6,
+        "n_reaches": 11
+      },
+      {
+        "country": "Democratic Republic of the Congo",
+        "median_dist_dn_km": 133.5,
+        "n_reaches": 41
+      },
+      {
+        "country": "Angola",
+        "median_dist_dn_km": 87.2,
+        "n_reaches": 40
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 652,
+      "main_network_reaches": 652,
+      "main_stem_reaches": 56,
+      "main_stem_km": 227.4,
+      "endorheic": false
+    }
+  },
+  "Congo/Zaire": {
+    "main_stem_order": [
+      {
+        "country": "Angola",
+        "median_dist_dn_km": 19.5,
+        "n_reaches": 7
+      }
+    ],
+    "tributary_only": [
+      "Burundi",
+      "Cameroon",
+      "Central African Republic",
+      "Congo",
+      "Democratic Republic of the Congo",
+      "Malawi",
+      "Rwanda",
+      "United Republic of Tanzania",
+      "Zambia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 218199,
+      "main_network_reaches": 218152,
+      "main_stem_reaches": 7,
+      "main_stem_km": 28.7,
+      "endorheic": false
+    }
+  },
+  "Cross": {
+    "main_stem_order": [
+      {
+        "country": "Cameroon",
+        "median_dist_dn_km": 426.9,
+        "n_reaches": 90
+      },
+      {
+        "country": "Nigeria",
+        "median_dist_dn_km": 198.8,
+        "n_reaches": 161
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 7869,
+      "main_network_reaches": 7811,
+      "main_stem_reaches": 243,
+      "main_stem_km": 538.7,
+      "endorheic": false
+    }
+  },
+  "Cuvelai/Etosha": {
+    "main_stem_order": [
+      {
+        "country": "Angola",
+        "median_dist_dn_km": 349.0,
+        "n_reaches": 59
+      },
+      {
+        "country": "Namibia",
+        "median_dist_dn_km": 95.1,
+        "n_reaches": 44
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 6985,
+      "main_network_reaches": 5099,
+      "main_stem_reaches": 102,
+      "main_stem_km": 477.9,
+      "endorheic": true
+    }
+  },
+  "Daoura": {
+    "main_stem_order": [
+      {
+        "country": "Morocco",
+        "median_dist_dn_km": 313.9,
+        "n_reaches": 72
+      },
+      {
+        "country": "Algeria",
+        "median_dist_dn_km": 62.5,
+        "n_reaches": 47
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2340,
+      "main_network_reaches": 2249,
+      "main_stem_reaches": 118,
+      "main_stem_km": 476.9,
+      "endorheic": true
+    }
+  },
+  "Dra": {
+    "main_stem_order": [
+      {
+        "country": "Morocco",
+        "median_dist_dn_km": 516.2,
+        "n_reaches": 252
+      }
+    ],
+    "tributary_only": [
+      "Algeria"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4472,
+      "main_network_reaches": 4472,
+      "main_stem_reaches": 252,
+      "main_stem_km": 1084.3,
+      "endorheic": false
+    }
+  },
+  "Galana": {
+    "main_stem_order": [
+      {
+        "country": "Kenya",
+        "median_dist_dn_km": 310.4,
+        "n_reaches": 156
+      }
+    ],
+    "tributary_only": [
+      "United Republic of Tanzania"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2172,
+      "main_network_reaches": 1813,
+      "main_stem_reaches": 156,
+      "main_stem_km": 636.9,
+      "endorheic": false
+    }
+  },
+  "Gambia": {
+    "main_stem_order": [
+      {
+        "country": "Gambia",
+        "median_dist_dn_km": 11.7,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [
+      "Guinea",
+      "Senegal"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3584,
+      "main_network_reaches": 3371,
+      "main_stem_reaches": 2,
+      "main_stem_km": 14.3,
+      "endorheic": false
+    }
+  },
+  "Gash": {
+    "main_stem_order": [
+      {
+        "country": "Eritrea",
+        "median_dist_dn_km": 3358.2,
+        "n_reaches": 4
+      },
+      {
+        "country": "Sudan",
+        "median_dist_dn_km": 3313.8,
+        "n_reaches": 5
+      }
+    ],
+    "tributary_only": [
+      "Ethiopia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1123,
+      "main_network_reaches": 1123,
+      "main_stem_reaches": 8,
+      "main_stem_km": 3366.3,
+      "endorheic": false
+    }
+  },
+  "Geba-Corubal": {
+    "main_stem_order": [
+      {
+        "country": "Guinea",
+        "median_dist_dn_km": 544.0,
+        "n_reaches": 91
+      },
+      {
+        "country": "Guinea-Bissau",
+        "median_dist_dn_km": 137.5,
+        "n_reaches": 113
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Senegal"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 2713,
+      "main_network_reaches": 1871,
+      "main_stem_reaches": 194,
+      "main_stem_km": 748.5,
+      "endorheic": false
+    }
+  },
+  "Great Scarcies": {
+    "main_stem_order": [
+      {
+        "country": "Guinea",
+        "median_dist_dn_km": 185.6,
+        "n_reaches": 71
+      },
+      {
+        "country": "Sierra Leone",
+        "median_dist_dn_km": 72.3,
+        "n_reaches": 86
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1362,
+      "main_network_reaches": 1357,
+      "main_stem_reaches": 131,
+      "main_stem_km": 273.3,
+      "endorheic": false
+    }
+  },
+  "Guir": {
+    "main_stem_order": [
+      {
+        "country": "Morocco",
+        "median_dist_dn_km": 639.2,
+        "n_reaches": 62
+      },
+      {
+        "country": "Algeria",
+        "median_dist_dn_km": 279.2,
+        "n_reaches": 157
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4896,
+      "main_network_reaches": 4357,
+      "main_stem_reaches": 218,
+      "main_stem_km": 764.4,
+      "endorheic": true
+    }
+  },
+  "Incomati": {
+    "main_stem_order": [
+      {
+        "country": "South Africa",
+        "median_dist_dn_km": 578.3,
+        "n_reaches": 72
+      },
+      {
+        "country": "Eswatini",
+        "median_dist_dn_km": 449.4,
+        "n_reaches": 29
+      },
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 136.9,
+        "n_reaches": 65
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2175,
+      "main_network_reaches": 2175,
+      "main_stem_reaches": 163,
+      "main_stem_km": 722.5,
+      "endorheic": false
+    }
+  },
+  "Juba-Shibeli": {
+    "main_stem_order": [
+      {
+        "country": "Ethiopia",
+        "median_dist_dn_km": 1528.9,
+        "n_reaches": 310
+      },
+      {
+        "country": "Somalia",
+        "median_dist_dn_km": 593.2,
+        "n_reaches": 227
+      }
+    ],
+    "tributary_only": [
+      "Kenya"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 35227,
+      "main_network_reaches": 33030,
+      "main_stem_reaches": 536,
+      "main_stem_km": 2113.9,
+      "endorheic": false
+    }
+  },
+  "Komoe": {
+    "main_stem_order": [
+      {
+        "country": "Burkina Faso",
+        "median_dist_dn_km": 1032.8,
+        "n_reaches": 73
+      },
+      {
+        "country": "C\u00f4te d'Ivoire",
+        "median_dist_dn_km": 488.1,
+        "n_reaches": 267
+      }
+    ],
+    "tributary_only": [
+      "Ghana",
+      "Mali"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4553,
+      "main_network_reaches": 4450,
+      "main_stem_reaches": 299,
+      "main_stem_km": 1179.7,
+      "endorheic": false
+    }
+  },
+  "Kunene": {
+    "main_stem_order": [
+      {
+        "country": "Angola",
+        "median_dist_dn_km": 511.5,
+        "n_reaches": 296
+      },
+      {
+        "country": "Namibia",
+        "median_dist_dn_km": 174.9,
+        "n_reaches": 93
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4909,
+      "main_network_reaches": 4909,
+      "main_stem_reaches": 299,
+      "main_stem_km": 1105.3,
+      "endorheic": false
+    }
+  },
+  "Lak Dera": {
+    "main_stem_order": [
+      {
+        "country": "Kenya",
+        "median_dist_dn_km": 101.5,
+        "n_reaches": 25
+      },
+      {
+        "country": "Somalia",
+        "median_dist_dn_km": 22.2,
+        "n_reaches": 11
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 252,
+      "main_network_reaches": 207,
+      "main_stem_reaches": 35,
+      "main_stem_km": 157.0,
+      "endorheic": false
+    }
+  },
+  "Lake Cayo": {
+    "main_stem_order": [
+      {
+        "country": "Congo",
+        "median_dist_dn_km": 70.6,
+        "n_reaches": 40
+      },
+      {
+        "country": "Angola",
+        "median_dist_dn_km": 0.0,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 194,
+      "main_network_reaches": 194,
+      "main_stem_reaches": 40,
+      "main_stem_km": 152.5,
+      "endorheic": false
+    }
+  },
+  "Lake Chad": {
+    "main_stem_order": [
+      {
+        "country": "Sudan",
+        "median_dist_dn_km": 1671.1,
+        "n_reaches": 44
+      },
+      {
+        "country": "Central African Republic",
+        "median_dist_dn_km": 1253.7,
+        "n_reaches": 142
+      },
+      {
+        "country": "Chad",
+        "median_dist_dn_km": 637.3,
+        "n_reaches": 241
+      },
+      {
+        "country": "Cameroon",
+        "median_dist_dn_km": 108.2,
+        "n_reaches": 22
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Algeria",
+      "Libya",
+      "Niger",
+      "Nigeria"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 113899,
+      "main_network_reaches": 28057,
+      "main_stem_reaches": 390,
+      "main_stem_km": 1835.7,
+      "endorheic": true
+    }
+  },
+  "Lake Chilwa": {
+    "main_stem_order": [
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 69.4,
+        "n_reaches": 11
+      },
+      {
+        "country": "Malawi",
+        "median_dist_dn_km": 40.3,
+        "n_reaches": 21
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 549,
+      "main_network_reaches": 264,
+      "main_stem_reaches": 30,
+      "main_stem_km": 96.5,
+      "endorheic": true
+    }
+  },
+  "Lake Natron": {
+    "main_stem_order": [
+      {
+        "country": "Kenya",
+        "median_dist_dn_km": 131.1,
+        "n_reaches": 42
+      },
+      {
+        "country": "United Republic of Tanzania",
+        "median_dist_dn_km": 27.1,
+        "n_reaches": 16
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1162,
+      "main_network_reaches": 643,
+      "main_stem_reaches": 57,
+      "main_stem_km": 227.8,
+      "endorheic": true
+    }
+  },
+  "Lake Rukwa": {
+    "main_stem_order": [
+      {
+        "country": "United Republic of Tanzania",
+        "median_dist_dn_km": 210.1,
+        "n_reaches": 106
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Zambia"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 3873,
+      "main_network_reaches": 2135,
+      "main_stem_reaches": 106,
+      "main_stem_km": 440.5,
+      "endorheic": true
+    }
+  },
+  "Lake Turkana": {
+    "main_stem_order": [
+      {
+        "country": "Ethiopia",
+        "median_dist_dn_km": 784.8,
+        "n_reaches": 300
+      },
+      {
+        "country": "Kenya",
+        "median_dist_dn_km": 51.4,
+        "n_reaches": 29
+      }
+    ],
+    "tributary_only": [
+      "Ilemi triangle",
+      "South Sudan"
+    ],
+    "no_reaches": [
+      "Uganda"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 8773,
+      "main_network_reaches": 5455,
+      "main_stem_reaches": 328,
+      "main_stem_km": 1181.8,
+      "endorheic": true
+    }
+  },
+  "Limpopo": {
+    "main_stem_order": [
+      {
+        "country": "Botswana",
+        "median_dist_dn_km": 1018.4,
+        "n_reaches": 133
+      },
+      {
+        "country": "South Africa",
+        "median_dist_dn_km": 991.9,
+        "n_reaches": 260
+      },
+      {
+        "country": "Zimbabwe",
+        "median_dist_dn_km": 699.6,
+        "n_reaches": 47
+      },
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 335.6,
+        "n_reaches": 134
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 18878,
+      "main_network_reaches": 18865,
+      "main_stem_reaches": 454,
+      "main_stem_km": 1583.7,
+      "endorheic": false
+    }
+  },
+  "Little Scarcies": {
+    "main_stem_order": [
+      {
+        "country": "Guinea",
+        "median_dist_dn_km": 325.1,
+        "n_reaches": 32
+      },
+      {
+        "country": "Sierra Leone",
+        "median_dist_dn_km": 138.9,
+        "n_reaches": 147
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2988,
+      "main_network_reaches": 2988,
+      "main_stem_reaches": 178,
+      "main_stem_km": 373.8,
+      "endorheic": false
+    }
+  },
+  "Loffa": {
+    "main_stem_order": [
+      {
+        "country": "Liberia",
+        "median_dist_dn_km": 4.2,
+        "n_reaches": 6
+      }
+    ],
+    "tributary_only": [
+      "Guinea"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1801,
+      "main_network_reaches": 1801,
+      "main_stem_reaches": 6,
+      "main_stem_km": 11.4,
+      "endorheic": false
+    }
+  },
+  "Lotagipi Swamp": {
+    "main_stem_order": [
+      {
+        "country": "Uganda",
+        "median_dist_dn_km": 302.9,
+        "n_reaches": 2
+      },
+      {
+        "country": "Kenya",
+        "median_dist_dn_km": 205.0,
+        "n_reaches": 46
+      },
+      {
+        "country": "Ilemi triangle",
+        "median_dist_dn_km": 47.1,
+        "n_reaches": 4
+      },
+      {
+        "country": "South Sudan",
+        "median_dist_dn_km": 15.8,
+        "n_reaches": 12
+      }
+    ],
+    "tributary_only": [
+      "Ethiopia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1399,
+      "main_network_reaches": 1064,
+      "main_stem_reaches": 61,
+      "main_stem_km": 307.6,
+      "endorheic": true
+    }
+  },
+  "Mana-Morro": {
+    "main_stem_order": [
+      {
+        "country": "Guinea",
+        "median_dist_dn_km": 343.9,
+        "n_reaches": 1
+      },
+      {
+        "country": "Liberia",
+        "median_dist_dn_km": 192.1,
+        "n_reaches": 160
+      },
+      {
+        "country": "Sierra Leone",
+        "median_dist_dn_km": 53.0,
+        "n_reaches": 48
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1358,
+      "main_network_reaches": 1357,
+      "main_stem_reaches": 172,
+      "main_stem_km": 343.9,
+      "endorheic": false
+    }
+  },
+  "Maputo": {
+    "main_stem_order": [
+      {
+        "country": "South Africa",
+        "median_dist_dn_km": 361.9,
+        "n_reaches": 34
+      },
+      {
+        "country": "Eswatini",
+        "median_dist_dn_km": 225.1,
+        "n_reaches": 44
+      },
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 57.5,
+        "n_reaches": 22
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1433,
+      "main_network_reaches": 1418,
+      "main_stem_reaches": 95,
+      "main_stem_km": 432.7,
+      "endorheic": false
+    }
+  },
+  "Mbe": {
+    "main_stem_order": [
+      {
+        "country": "Equatorial Guinea",
+        "median_dist_dn_km": 218.2,
+        "n_reaches": 6
+      },
+      {
+        "country": "Gabon",
+        "median_dist_dn_km": 103.1,
+        "n_reaches": 77
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1179,
+      "main_network_reaches": 993,
+      "main_stem_reaches": 82,
+      "main_stem_km": 237.0,
+      "endorheic": false
+    }
+  },
+  "Medjerda": {
+    "main_stem_order": [
+      {
+        "country": "Algeria",
+        "median_dist_dn_km": 389.4,
+        "n_reaches": 47
+      },
+      {
+        "country": "Tunisia",
+        "median_dist_dn_km": 157.7,
+        "n_reaches": 85
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1182,
+      "main_network_reaches": 1182,
+      "main_stem_reaches": 131,
+      "main_stem_km": 449.4,
+      "endorheic": false
+    }
+  },
+  "Moa": {
+    "main_stem_order": [
+      {
+        "country": "Sierra Leone",
+        "median_dist_dn_km": 2.5,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [
+      "Guinea",
+      "Liberia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3198,
+      "main_network_reaches": 3198,
+      "main_stem_reaches": 1,
+      "main_stem_km": 2.5,
+      "endorheic": false
+    }
+  },
+  "Mono": {
+    "main_stem_order": [
+      {
+        "country": "Togo",
+        "median_dist_dn_km": 270.1,
+        "n_reaches": 107
+      },
+      {
+        "country": "Benin",
+        "median_dist_dn_km": 78.7,
+        "n_reaches": 25
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1235,
+      "main_network_reaches": 1234,
+      "main_stem_reaches": 110,
+      "main_stem_km": 508.8,
+      "endorheic": false
+    }
+  },
+  "Muni/Utamboni": {
+    "main_stem_order": [
+      {
+        "country": "Equatorial Guinea",
+        "median_dist_dn_km": 81.8,
+        "n_reaches": 71
+      },
+      {
+        "country": "Gabon",
+        "median_dist_dn_km": 36.5,
+        "n_reaches": 6
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1567,
+      "main_network_reaches": 1384,
+      "main_stem_reaches": 71,
+      "main_stem_km": 169.9,
+      "endorheic": false
+    }
+  },
+  "Niger": {
+    "main_stem_order": [
+      {
+        "country": "Guinea",
+        "median_dist_dn_km": 3941.0,
+        "n_reaches": 176
+      },
+      {
+        "country": "Mali",
+        "median_dist_dn_km": 2724.7,
+        "n_reaches": 377
+      },
+      {
+        "country": "Niger",
+        "median_dist_dn_km": 1550.8,
+        "n_reaches": 173
+      },
+      {
+        "country": "Benin",
+        "median_dist_dn_km": 1328.0,
+        "n_reaches": 24
+      },
+      {
+        "country": "Nigeria",
+        "median_dist_dn_km": 555.0,
+        "n_reaches": 406
+      }
+    ],
+    "tributary_only": [
+      "Algeria",
+      "Burkina Faso",
+      "Cameroon",
+      "Chad",
+      "C\u00f4te d'Ivoire",
+      "Mauritania"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 108537,
+      "main_network_reaches": 104374,
+      "main_stem_reaches": 1132,
+      "main_stem_km": 4201.1,
+      "endorheic": false
+    }
+  },
+  "Nile": {
+    "main_stem_order": [
+      {
+        "country": "Abyei",
+        "median_dist_dn_km": 4515.9,
+        "n_reaches": 42
+      },
+      {
+        "country": "South Sudan",
+        "median_dist_dn_km": 4024.3,
+        "n_reaches": 179
+      },
+      {
+        "country": "Sudan",
+        "median_dist_dn_km": 2831.6,
+        "n_reaches": 816
+      },
+      {
+        "country": "Egypt",
+        "median_dist_dn_km": 876.8,
+        "n_reaches": 478
+      }
+    ],
+    "tributary_only": [
+      "Burundi",
+      "Democratic Republic of the Congo",
+      "Eritrea",
+      "Ethiopia",
+      "Hala'ib triangle",
+      "Kenya",
+      "Ma'tan al-Sarra",
+      "Rwanda",
+      "Uganda",
+      "United Republic of Tanzania"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 135912,
+      "main_network_reaches": 132676,
+      "main_stem_reaches": 1503,
+      "main_stem_km": 5300.5,
+      "endorheic": false
+    }
+  },
+  "Nyanga": {
+    "main_stem_order": [
+      {
+        "country": "Congo",
+        "median_dist_dn_km": 432.4,
+        "n_reaches": 46
+      },
+      {
+        "country": "Gabon",
+        "median_dist_dn_km": 203.4,
+        "n_reaches": 122
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2350,
+      "main_network_reaches": 2350,
+      "main_stem_reaches": 165,
+      "main_stem_km": 536.9,
+      "endorheic": false
+    }
+  },
+  "Ogooue": {
+    "main_stem_order": [
+      {
+        "country": "Congo",
+        "median_dist_dn_km": 961.1,
+        "n_reaches": 53
+      },
+      {
+        "country": "Gabon",
+        "median_dist_dn_km": 488.4,
+        "n_reaches": 291
+      }
+    ],
+    "tributary_only": [
+      "Cameroon",
+      "Equatorial Guinea"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 19934,
+      "main_network_reaches": 19843,
+      "main_stem_reaches": 343,
+      "main_stem_km": 1027.8,
+      "endorheic": false
+    }
+  },
+  "Okavango": {
+    "main_stem_order": [
+      {
+        "country": "Angola",
+        "median_dist_dn_km": 1455.2,
+        "n_reaches": 257
+      },
+      {
+        "country": "Namibia",
+        "median_dist_dn_km": 1091.6,
+        "n_reaches": 121
+      },
+      {
+        "country": "Botswana",
+        "median_dist_dn_km": 425.7,
+        "n_reaches": 205
+      }
+    ],
+    "tributary_only": [
+      "Zimbabwe"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 30499,
+      "main_network_reaches": 26579,
+      "main_stem_reaches": 492,
+      "main_stem_km": 1990.9,
+      "endorheic": true
+    }
+  },
+  "Orange": {
+    "main_stem_order": [
+      {
+        "country": "South Africa",
+        "median_dist_dn_km": 1150.8,
+        "n_reaches": 667
+      },
+      {
+        "country": "Namibia",
+        "median_dist_dn_km": 293.5,
+        "n_reaches": 143
+      }
+    ],
+    "tributary_only": [
+      "Botswana",
+      "Lesotho"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 44486,
+      "main_network_reaches": 40931,
+      "main_stem_reaches": 677,
+      "main_stem_km": 2532.1,
+      "endorheic": false
+    }
+  },
+  "Oued Bon Naima": {
+    "main_stem_order": [
+      {
+        "country": "Algeria",
+        "median_dist_dn_km": 14.1,
+        "n_reaches": 3
+      },
+      {
+        "country": "Morocco",
+        "median_dist_dn_km": 14.1,
+        "n_reaches": 5
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 17,
+      "main_network_reaches": 17,
+      "main_stem_reaches": 5,
+      "main_stem_km": 21.7,
+      "endorheic": false
+    }
+  },
+  "Oued Bou Namoussa": {
+    "main_stem_order": [
+      {
+        "country": "Tunisia",
+        "median_dist_dn_km": 71.1,
+        "n_reaches": 5
+      },
+      {
+        "country": "Algeria",
+        "median_dist_dn_km": 32.3,
+        "n_reaches": 17
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 131,
+      "main_network_reaches": 131,
+      "main_stem_reaches": 19,
+      "main_stem_km": 80.2,
+      "endorheic": false
+    }
+  },
+  "Oueme": {
+    "main_stem_order": [
+      {
+        "country": "Benin",
+        "median_dist_dn_km": 268.1,
+        "n_reaches": 146
+      }
+    ],
+    "tributary_only": [
+      "Nigeria",
+      "Togo"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3086,
+      "main_network_reaches": 3078,
+      "main_stem_reaches": 146,
+      "main_stem_km": 586.2,
+      "endorheic": false
+    }
+  },
+  "Pangani": {
+    "main_stem_order": [
+      {
+        "country": "United Republic of Tanzania",
+        "median_dist_dn_km": 270.2,
+        "n_reaches": 161
+      }
+    ],
+    "tributary_only": [
+      "Kenya"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1945,
+      "main_network_reaches": 1945,
+      "main_stem_reaches": 161,
+      "main_stem_km": 538.9,
+      "endorheic": false
+    }
+  },
+  "Pungwe": {
+    "main_stem_order": [
+      {
+        "country": "Zimbabwe",
+        "median_dist_dn_km": 357.1,
+        "n_reaches": 16
+      },
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 201.9,
+        "n_reaches": 109
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2290,
+      "main_network_reaches": 2214,
+      "main_stem_reaches": 122,
+      "main_stem_km": 379.9,
+      "endorheic": false
+    }
+  },
+  "Ruvuma": {
+    "main_stem_order": [
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 472.6,
+        "n_reaches": 318
+      },
+      {
+        "country": "United Republic of Tanzania",
+        "median_dist_dn_km": 464.2,
+        "n_reaches": 198
+      }
+    ],
+    "tributary_only": [
+      "Malawi"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 9392,
+      "main_network_reaches": 9379,
+      "main_stem_reaches": 348,
+      "main_stem_km": 966.6,
+      "endorheic": false
+    }
+  },
+  "Sabi": {
+    "main_stem_order": [
+      {
+        "country": "Zimbabwe",
+        "median_dist_dn_km": 570.0,
+        "n_reaches": 120
+      },
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 185.3,
+        "n_reaches": 112
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4906,
+      "main_network_reaches": 4905,
+      "main_stem_reaches": 229,
+      "main_stem_km": 795.6,
+      "endorheic": false
+    }
+  },
+  "Sanaga": {
+    "main_stem_order": [
+      {
+        "country": "Cameroon",
+        "median_dist_dn_km": 482.2,
+        "n_reaches": 345
+      }
+    ],
+    "tributary_only": [
+      "Central African Republic"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 9198,
+      "main_network_reaches": 9197,
+      "main_stem_reaches": 345,
+      "main_stem_km": 1027.5,
+      "endorheic": false
+    }
+  },
+  "Sassandra": {
+    "main_stem_order": [
+      {
+        "country": "Guinea",
+        "median_dist_dn_km": 691.3,
+        "n_reaches": 14
+      },
+      {
+        "country": "C\u00f4te d'Ivoire",
+        "median_dist_dn_km": 329.9,
+        "n_reaches": 207
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4027,
+      "main_network_reaches": 4027,
+      "main_stem_reaches": 215,
+      "main_stem_km": 719.6,
+      "endorheic": false
+    }
+  },
+  "Senegal": {
+    "main_stem_order": [
+      {
+        "country": "Mali",
+        "median_dist_dn_km": 1403.7,
+        "n_reaches": 310
+      },
+      {
+        "country": "Senegal",
+        "median_dist_dn_km": 531.1,
+        "n_reaches": 124
+      },
+      {
+        "country": "Mauritania",
+        "median_dist_dn_km": 509.3,
+        "n_reaches": 102
+      }
+    ],
+    "tributary_only": [
+      "Guinea"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 20709,
+      "main_network_reaches": 20441,
+      "main_stem_reaches": 440,
+      "main_stem_km": 2001.0,
+      "endorheic": false
+    }
+  },
+  "St. John (Africa)": {
+    "main_stem_order": [
+      {
+        "country": "Guinea",
+        "median_dist_dn_km": 327.9,
+        "n_reaches": 54
+      },
+      {
+        "country": "Liberia",
+        "median_dist_dn_km": 139.5,
+        "n_reaches": 160
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2492,
+      "main_network_reaches": 2457,
+      "main_stem_reaches": 197,
+      "main_stem_km": 397.7,
+      "endorheic": false
+    }
+  },
+  "St. Paul": {
+    "main_stem_order": [
+      {
+        "country": "Liberia",
+        "median_dist_dn_km": 0.4,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [
+      "Guinea"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3130,
+      "main_network_reaches": 3129,
+      "main_stem_reaches": 2,
+      "main_stem_km": 0.8,
+      "endorheic": false
+    }
+  },
+  "Tafna": {
+    "main_stem_order": [
+      {
+        "country": "Morocco",
+        "median_dist_dn_km": 156.9,
+        "n_reaches": 21
+      },
+      {
+        "country": "Algeria",
+        "median_dist_dn_km": 60.9,
+        "n_reaches": 28
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 358,
+      "main_network_reaches": 358,
+      "main_stem_reaches": 47,
+      "main_stem_km": 189.2,
+      "endorheic": false
+    }
+  },
+  "Tano": {
+    "main_stem_order": [
+      {
+        "country": "C\u00f4te d'Ivoire",
+        "median_dist_dn_km": 20.0,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [
+      "Ghana"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 965,
+      "main_network_reaches": 965,
+      "main_stem_reaches": 2,
+      "main_stem_km": 22.9,
+      "endorheic": false
+    }
+  },
+  "Umba": {
+    "main_stem_order": [
+      {
+        "country": "United Republic of Tanzania",
+        "median_dist_dn_km": 115.5,
+        "n_reaches": 45
+      },
+      {
+        "country": "Kenya",
+        "median_dist_dn_km": 15.4,
+        "n_reaches": 6
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 303,
+      "main_network_reaches": 303,
+      "main_stem_reaches": 48,
+      "main_stem_km": 218.0,
+      "endorheic": false
+    }
+  },
+  "Umbeluzi": {
+    "main_stem_order": [
+      {
+        "country": "Eswatini",
+        "median_dist_dn_km": 149.8,
+        "n_reaches": 36
+      },
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 27.7,
+        "n_reaches": 11
+      }
+    ],
+    "tributary_only": [
+      "South Africa"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 448,
+      "main_network_reaches": 244,
+      "main_stem_reaches": 46,
+      "main_stem_km": 222.8,
+      "endorheic": false
+    }
+  },
+  "Volta": {
+    "main_stem_order": [
+      {
+        "country": "Mali",
+        "median_dist_dn_km": 1670.6,
+        "n_reaches": 79
+      },
+      {
+        "country": "Burkina Faso",
+        "median_dist_dn_km": 1242.1,
+        "n_reaches": 156
+      },
+      {
+        "country": "C\u00f4te d'Ivoire",
+        "median_dist_dn_km": 850.3,
+        "n_reaches": 27
+      },
+      {
+        "country": "Ghana",
+        "median_dist_dn_km": 611.0,
+        "n_reaches": 299
+      }
+    ],
+    "tributary_only": [
+      "Benin",
+      "Togo"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 19918,
+      "main_network_reaches": 19909,
+      "main_stem_reaches": 486,
+      "main_stem_km": 1824.4,
+      "endorheic": false
+    }
+  },
+  "Zambezi": {
+    "main_stem_order": [
+      {
+        "country": "Angola",
+        "median_dist_dn_km": 2743.3,
+        "n_reaches": 80
+      },
+      {
+        "country": "Zambia",
+        "median_dist_dn_km": 1840.4,
+        "n_reaches": 415
+      },
+      {
+        "country": "Namibia",
+        "median_dist_dn_km": 1786.5,
+        "n_reaches": 37
+      },
+      {
+        "country": "Botswana",
+        "median_dist_dn_km": 1699.3,
+        "n_reaches": 3
+      },
+      {
+        "country": "Zimbabwe",
+        "median_dist_dn_km": 1184.1,
+        "n_reaches": 151
+      },
+      {
+        "country": "Mozambique",
+        "median_dist_dn_km": 507.5,
+        "n_reaches": 238
+      }
+    ],
+    "tributary_only": [
+      "Malawi",
+      "United Republic of Tanzania"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 63378,
+      "main_network_reaches": 63304,
+      "main_stem_reaches": 795,
+      "main_stem_km": 2995.1,
+      "endorheic": false
+    }
+  },
+  "Alakol": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 182.5,
+        "n_reaches": 68
+      },
+      {
+        "country": "Kazakhstan",
+        "median_dist_dn_km": 62.7,
+        "n_reaches": 46
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3015,
+      "main_network_reaches": 1292,
+      "main_stem_reaches": 113,
+      "main_stem_km": 302.4,
+      "endorheic": true
+    }
+  },
+  "Amur": {
+    "main_stem_order": [
+      {
+        "country": "Mongolia",
+        "median_dist_dn_km": 4380.9,
+        "n_reaches": 319
+      },
+      {
+        "country": "China",
+        "median_dist_dn_km": 2719.9,
+        "n_reaches": 618
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 1927.3,
+        "n_reaches": 803
+      }
+    ],
+    "tributary_only": [
+      "Dem People's Rep of Korea"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 109358,
+      "main_network_reaches": 104987,
+      "main_stem_reaches": 1368,
+      "main_stem_km": 4873.2,
+      "endorheic": false
+    }
+  },
+  "An Nahr Al Kabir": {
+    "main_stem_order": [
+      {
+        "country": "Lebanon",
+        "median_dist_dn_km": 36.9,
+        "n_reaches": 15
+      },
+      {
+        "country": "Syrian Arab Republic",
+        "median_dist_dn_km": 32.6,
+        "n_reaches": 14
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 63,
+      "main_network_reaches": 63,
+      "main_stem_reaches": 17,
+      "main_stem_km": 73.3,
+      "endorheic": false
+    }
+  },
+  "Aral Sea": {
+    "main_stem_order": [
+      {
+        "country": "Tajikistan",
+        "median_dist_dn_km": 2103.1,
+        "n_reaches": 246
+      },
+      {
+        "country": "Afghanistan",
+        "median_dist_dn_km": 2073.4,
+        "n_reaches": 350
+      },
+      {
+        "country": "Turkmenistan",
+        "median_dist_dn_km": 985.2,
+        "n_reaches": 184
+      },
+      {
+        "country": "Uzbekistan",
+        "median_dist_dn_km": 500.8,
+        "n_reaches": 170
+      }
+    ],
+    "tributary_only": [
+      "Kyrgyzstan"
+    ],
+    "no_reaches": [
+      "Kazakhstan"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 58421,
+      "main_network_reaches": 23543,
+      "main_stem_reaches": 696,
+      "main_stem_km": 2697.8,
+      "endorheic": true
+    }
+  },
+  "Asi/Orontes": {
+    "main_stem_order": [
+      {
+        "country": "Lebanon",
+        "median_dist_dn_km": 408.1,
+        "n_reaches": 26
+      },
+      {
+        "country": "Syrian Arab Republic",
+        "median_dist_dn_km": 200.8,
+        "n_reaches": 89
+      },
+      {
+        "country": "Turkiye",
+        "median_dist_dn_km": 30.3,
+        "n_reaches": 31
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1295,
+      "main_network_reaches": 1291,
+      "main_stem_reaches": 141,
+      "main_stem_km": 435.2,
+      "endorheic": false
+    }
+  },
+  "Astara Chay": {
+    "main_stem_order": [
+      {
+        "country": "Iran  (Islamic Republic of)",
+        "median_dist_dn_km": 15.5,
+        "n_reaches": 4
+      },
+      {
+        "country": "Azerbaijan",
+        "median_dist_dn_km": 10.2,
+        "n_reaches": 8
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 21,
+      "main_network_reaches": 21,
+      "main_stem_reaches": 8,
+      "main_stem_km": 26.0,
+      "endorheic": false
+    }
+  },
+  "Atrak": {
+    "main_stem_order": [
+      {
+        "country": "Iran  (Islamic Republic of)",
+        "median_dist_dn_km": 355.0,
+        "n_reaches": 154
+      },
+      {
+        "country": "Turkmenistan",
+        "median_dist_dn_km": 105.1,
+        "n_reaches": 39
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1843,
+      "main_network_reaches": 1842,
+      "main_stem_reaches": 174,
+      "main_stem_km": 602.5,
+      "endorheic": false
+    }
+  },
+  "Bangau": {
+    "main_stem_order": [
+      {
+        "country": "Brunei Darussalam",
+        "median_dist_dn_km": 3.9,
+        "n_reaches": 5
+      }
+    ],
+    "tributary_only": [
+      "Malaysia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 22,
+      "main_network_reaches": 13,
+      "main_stem_reaches": 5,
+      "main_stem_km": 11.3,
+      "endorheic": false
+    }
+  },
+  "Beilun": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 45.0,
+        "n_reaches": 28
+      },
+      {
+        "country": "Viet Nam",
+        "median_dist_dn_km": 8.6,
+        "n_reaches": 10
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 118,
+      "main_network_reaches": 118,
+      "main_stem_reaches": 32,
+      "main_stem_km": 68.3,
+      "endorheic": false
+    }
+  },
+  "Ca/Song Lam": {
+    "main_stem_order": [
+      {
+        "country": "Lao People's Democratic Republic",
+        "median_dist_dn_km": 426.4,
+        "n_reaches": 50
+      },
+      {
+        "country": "Viet Nam",
+        "median_dist_dn_km": 181.7,
+        "n_reaches": 134
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2613,
+      "main_network_reaches": 2612,
+      "main_stem_reaches": 173,
+      "main_stem_km": 504.1,
+      "endorheic": false
+    }
+  },
+  "Coruh": {
+    "main_stem_order": [
+      {
+        "country": "Turkiye",
+        "median_dist_dn_km": 178.1,
+        "n_reaches": 117
+      },
+      {
+        "country": "Georgia",
+        "median_dist_dn_km": 8.9,
+        "n_reaches": 12
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1551,
+      "main_network_reaches": 1551,
+      "main_stem_reaches": 128,
+      "main_stem_km": 373.4,
+      "endorheic": false
+    }
+  },
+  "Dasht": {
+    "main_stem_order": [
+      {
+        "country": "Pakistan",
+        "median_dist_dn_km": 230.5,
+        "n_reaches": 137
+      }
+    ],
+    "tributary_only": [
+      "Iran  (Islamic Republic of)"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1597,
+      "main_network_reaches": 1597,
+      "main_stem_reaches": 137,
+      "main_stem_km": 418.1,
+      "endorheic": false
+    }
+  },
+  "Digul": {
+    "main_stem_order": [
+      {
+        "country": "Indonesia",
+        "median_dist_dn_km": 393.4,
+        "n_reaches": 294
+      }
+    ],
+    "tributary_only": [
+      "Papua New Guinea"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 7756,
+      "main_network_reaches": 7127,
+      "main_stem_reaches": 294,
+      "main_stem_km": 579.5,
+      "endorheic": false
+    }
+  },
+  "Fenney": {
+    "main_stem_order": [
+      {
+        "country": "Bangladesh",
+        "median_dist_dn_km": 61.3,
+        "n_reaches": 48
+      },
+      {
+        "country": "India",
+        "median_dist_dn_km": 59.8,
+        "n_reaches": 24
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 576,
+      "main_network_reaches": 573,
+      "main_stem_reaches": 55,
+      "main_stem_km": 104.4,
+      "endorheic": false
+    }
+  },
+  "Fly": {
+    "main_stem_order": [
+      {
+        "country": "Papua New Guinea",
+        "median_dist_dn_km": 2.8,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [
+      "Indonesia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 15833,
+      "main_network_reaches": 14857,
+      "main_stem_reaches": 2,
+      "main_stem_km": 4.3,
+      "endorheic": false
+    }
+  },
+  "Ganges-Brahmaputra-Meghna": {
+    "main_stem_order": [
+      {
+        "country": "India",
+        "median_dist_dn_km": 1564.3,
+        "n_reaches": 561
+      },
+      {
+        "country": "Bangladesh",
+        "median_dist_dn_km": 113.9,
+        "n_reaches": 141
+      }
+    ],
+    "tributary_only": [
+      "Arunachal Pradesh",
+      "Bhutan",
+      "China",
+      "China/India",
+      "Myanmar",
+      "Nepal"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 173241,
+      "main_network_reaches": 163481,
+      "main_stem_reaches": 697,
+      "main_stem_km": 2778.9,
+      "endorheic": false
+    }
+  },
+  "Golok": {
+    "main_stem_order": [
+      {
+        "country": "Thailand",
+        "median_dist_dn_km": 60.7,
+        "n_reaches": 12
+      },
+      {
+        "country": "Malaysia",
+        "median_dist_dn_km": 51.1,
+        "n_reaches": 39
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 368,
+      "main_network_reaches": 367,
+      "main_stem_reaches": 39,
+      "main_stem_km": 91.9,
+      "endorheic": false
+    }
+  },
+  "Hamun-i-Mashkel/Rakshan": {
+    "main_stem_order": [
+      {
+        "country": "Iran  (Islamic Republic of)",
+        "median_dist_dn_km": 391.2,
+        "n_reaches": 101
+      },
+      {
+        "country": "Pakistan",
+        "median_dist_dn_km": 128.9,
+        "n_reaches": 60
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 5552,
+      "main_network_reaches": 3301,
+      "main_stem_reaches": 160,
+      "main_stem_km": 518.2,
+      "endorheic": true
+    }
+  },
+  "Han": {
+    "main_stem_order": [
+      {
+        "country": "Republic of Korea",
+        "median_dist_dn_km": 179.1,
+        "n_reaches": 118
+      }
+    ],
+    "tributary_only": [
+      "Dem People's Rep of Korea"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2990,
+      "main_network_reaches": 2248,
+      "main_stem_reaches": 118,
+      "main_stem_km": 402.1,
+      "endorheic": false
+    }
+  },
+  "Har Us Nur": {
+    "main_stem_order": [
+      {
+        "country": "Mongolia",
+        "median_dist_dn_km": 395.6,
+        "n_reaches": 228
+      }
+    ],
+    "tributary_only": [
+      "Russian Federation"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 9197,
+      "main_network_reaches": 6916,
+      "main_stem_reaches": 228,
+      "main_stem_km": 826.1,
+      "endorheic": true
+    }
+  },
+  "Hari/Harirud": {
+    "main_stem_order": [
+      {
+        "country": "Iran  (Islamic Republic of)",
+        "median_dist_dn_km": 751.5,
+        "n_reaches": 10
+      },
+      {
+        "country": "Turkmenistan",
+        "median_dist_dn_km": 544.6,
+        "n_reaches": 73
+      }
+    ],
+    "tributary_only": [
+      "Afghanistan"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 5737,
+      "main_network_reaches": 5718,
+      "main_stem_reaches": 82,
+      "main_stem_km": 778.8,
+      "endorheic": true
+    }
+  },
+  "Helmand": {
+    "main_stem_order": [
+      {
+        "country": "Afghanistan",
+        "median_dist_dn_km": 624.6,
+        "n_reaches": 341
+      },
+      {
+        "country": "Iran  (Islamic Republic of)",
+        "median_dist_dn_km": 31.7,
+        "n_reaches": 9
+      }
+    ],
+    "tributary_only": [
+      "Pakistan"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 18902,
+      "main_network_reaches": 9252,
+      "main_stem_reaches": 346,
+      "main_stem_km": 1246.0,
+      "endorheic": true
+    }
+  },
+  "Ili/Kunes He": {
+    "main_stem_order": [
+      {
+        "country": "Kyrgyzstan",
+        "median_dist_dn_km": 896.2,
+        "n_reaches": 4
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 28,
+      "main_network_reaches": 28,
+      "main_stem_reaches": 4,
+      "main_stem_km": 903.0,
+      "endorheic": true
+    }
+  },
+  "Ili/Yili He": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 1073.5,
+        "n_reaches": 178
+      },
+      {
+        "country": "Kazakhstan",
+        "median_dist_dn_km": 569.3,
+        "n_reaches": 257
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 19828,
+      "main_network_reaches": 10235,
+      "main_stem_reaches": 429,
+      "main_stem_km": 1385.6,
+      "endorheic": true
+    }
+  },
+  "Indus": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 3153.7,
+        "n_reaches": 109
+      },
+      {
+        "country": "China/India",
+        "median_dist_dn_km": 2936.6,
+        "n_reaches": 18
+      },
+      {
+        "country": "Jammu and Kashmir",
+        "median_dist_dn_km": 2547.2,
+        "n_reaches": 265
+      },
+      {
+        "country": "Pakistan",
+        "median_dist_dn_km": 1276.0,
+        "n_reaches": 488
+      }
+    ],
+    "tributary_only": [
+      "Afghanistan",
+      "Aksai Chin",
+      "India"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 48319,
+      "main_network_reaches": 47931,
+      "main_stem_reaches": 875,
+      "main_stem_km": 3342.9,
+      "endorheic": false
+    }
+  },
+  "Irrawaddy": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 1964.6,
+        "n_reaches": 93
+      },
+      {
+        "country": "Myanmar",
+        "median_dist_dn_km": 1132.9,
+        "n_reaches": 951
+      }
+    ],
+    "tributary_only": [
+      "India"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 57759,
+      "main_network_reaches": 57747,
+      "main_stem_reaches": 1043,
+      "main_stem_km": 2065.2,
+      "endorheic": false
+    }
+  },
+  "Jayapura": {
+    "main_stem_order": [
+      {
+        "country": "Indonesia",
+        "median_dist_dn_km": 45.5,
+        "n_reaches": 26
+      }
+    ],
+    "tributary_only": [
+      "Papua New Guinea"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 453,
+      "main_network_reaches": 403,
+      "main_stem_reaches": 26,
+      "main_stem_km": 96.2,
+      "endorheic": false
+    }
+  },
+  "Jenisej/Yenisey": {
+    "main_stem_order": [
+      {
+        "country": "Mongolia",
+        "median_dist_dn_km": 4702.8,
+        "n_reaches": 330
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 2027.1,
+        "n_reaches": 1181
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 136656,
+      "main_network_reaches": 136513,
+      "main_stem_reaches": 1510,
+      "main_stem_km": 5260.3,
+      "endorheic": false
+    }
+  },
+  "Jordan": {
+    "main_stem_order": [
+      {
+        "country": "Syrian Arab Republic",
+        "median_dist_dn_km": 187.5,
+        "n_reaches": 17
+      },
+      {
+        "country": "Israel",
+        "median_dist_dn_km": 126.3,
+        "n_reaches": 16
+      },
+      {
+        "country": "Jordan",
+        "median_dist_dn_km": 118.3,
+        "n_reaches": 62
+      },
+      {
+        "country": "West Bank",
+        "median_dist_dn_km": 63.8,
+        "n_reaches": 20
+      }
+    ],
+    "tributary_only": [
+      "Lebanon"
+    ],
+    "no_reaches": [
+      "Egypt"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 2090,
+      "main_network_reaches": 885,
+      "main_stem_reaches": 69,
+      "main_stem_km": 253.6,
+      "endorheic": true
+    }
+  },
+  "Kaladan": {
+    "main_stem_order": [
+      {
+        "country": "Myanmar",
+        "median_dist_dn_km": 358.7,
+        "n_reaches": 217
+      },
+      {
+        "country": "India",
+        "median_dist_dn_km": 314.2,
+        "n_reaches": 109
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4898,
+      "main_network_reaches": 4233,
+      "main_stem_reaches": 305,
+      "main_stem_km": 618.5,
+      "endorheic": false
+    }
+  },
+  "Karnaphuli": {
+    "main_stem_order": [
+      {
+        "country": "India",
+        "median_dist_dn_km": 234.6,
+        "n_reaches": 76
+      },
+      {
+        "country": "Bangladesh",
+        "median_dist_dn_km": 80.3,
+        "n_reaches": 87
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3088,
+      "main_network_reaches": 3088,
+      "main_stem_reaches": 159,
+      "main_stem_km": 306.9,
+      "endorheic": false
+    }
+  },
+  "Kowl E Namaksar": {
+    "main_stem_order": [
+      {
+        "country": "Iran  (Islamic Republic of)",
+        "median_dist_dn_km": 120.8,
+        "n_reaches": 72
+      },
+      {
+        "country": "Afghanistan",
+        "median_dist_dn_km": 0.7,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2085,
+      "main_network_reaches": 1171,
+      "main_stem_reaches": 73,
+      "main_stem_km": 211.6,
+      "endorheic": true
+    }
+  },
+  "Kura-Araks": {
+    "main_stem_order": [
+      {
+        "country": "Turkiye",
+        "median_dist_dn_km": 914.5,
+        "n_reaches": 117
+      },
+      {
+        "country": "Armenia",
+        "median_dist_dn_km": 712.3,
+        "n_reaches": 35
+      },
+      {
+        "country": "Iran  (Islamic Republic of)",
+        "median_dist_dn_km": 490.1,
+        "n_reaches": 102
+      },
+      {
+        "country": "Azerbaijan",
+        "median_dist_dn_km": 383.2,
+        "n_reaches": 150
+      }
+    ],
+    "tributary_only": [
+      "Georgia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 9377,
+      "main_network_reaches": 9317,
+      "main_stem_reaches": 294,
+      "main_stem_km": 1133.9,
+      "endorheic": false
+    }
+  },
+  "Lake Sarygamesh": {
+    "main_stem_order": [
+      {
+        "country": "Uzbekistan",
+        "median_dist_dn_km": 395.0,
+        "n_reaches": 37
+      },
+      {
+        "country": "Turkmenistan",
+        "median_dist_dn_km": 261.2,
+        "n_reaches": 101
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2732,
+      "main_network_reaches": 1789,
+      "main_stem_reaches": 136,
+      "main_stem_km": 673.8,
+      "endorheic": true
+    }
+  },
+  "Lake Ubsa-Nur": {
+    "main_stem_order": [
+      {
+        "country": "Mongolia",
+        "median_dist_dn_km": 427.5,
+        "n_reaches": 136
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 210.0,
+        "n_reaches": 37
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3331,
+      "main_network_reaches": 2552,
+      "main_stem_reaches": 171,
+      "main_stem_km": 638.2,
+      "endorheic": true
+    }
+  },
+  "Loes": {
+    "main_stem_order": [
+      {
+        "country": "Indonesia",
+        "median_dist_dn_km": 64.0,
+        "n_reaches": 15
+      },
+      {
+        "country": "Timor-Leste",
+        "median_dist_dn_km": 30.5,
+        "n_reaches": 26
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 166,
+      "main_network_reaches": 166,
+      "main_stem_reaches": 32,
+      "main_stem_km": 94.8,
+      "endorheic": false
+    }
+  },
+  "Ma": {
+    "main_stem_order": [
+      {
+        "country": "Lao People's Democratic Republic",
+        "median_dist_dn_km": 290.3,
+        "n_reaches": 35
+      },
+      {
+        "country": "Viet Nam",
+        "median_dist_dn_km": 206.2,
+        "n_reaches": 158
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2657,
+      "main_network_reaches": 2657,
+      "main_stem_reaches": 187,
+      "main_stem_km": 502.0,
+      "endorheic": false
+    }
+  },
+  "Maro": {
+    "main_stem_order": [
+      {
+        "country": "Papua New Guinea",
+        "median_dist_dn_km": 91.7,
+        "n_reaches": 31
+      },
+      {
+        "country": "Indonesia",
+        "median_dist_dn_km": 24.0,
+        "n_reaches": 12
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 326,
+      "main_network_reaches": 326,
+      "main_stem_reaches": 42,
+      "main_stem_km": 139.4,
+      "endorheic": false
+    }
+  },
+  "Mekong": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 3719.9,
+        "n_reaches": 707
+      },
+      {
+        "country": "Myanmar",
+        "median_dist_dn_km": 2641.5,
+        "n_reaches": 87
+      },
+      {
+        "country": "Lao People's Democratic Republic",
+        "median_dist_dn_km": 1711.9,
+        "n_reaches": 666
+      },
+      {
+        "country": "Thailand",
+        "median_dist_dn_km": 1385.1,
+        "n_reaches": 207
+      },
+      {
+        "country": "Cambodia",
+        "median_dist_dn_km": 510.3,
+        "n_reaches": 121
+      },
+      {
+        "country": "Viet Nam",
+        "median_dist_dn_km": 104.8,
+        "n_reaches": 61
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 67645,
+      "main_network_reaches": 66695,
+      "main_stem_reaches": 1625,
+      "main_stem_km": 4837.7,
+      "endorheic": false
+    }
+  },
+  "Muhuri (aka Little Feni)": {
+    "main_stem_order": [
+      {
+        "country": "India",
+        "median_dist_dn_km": 147.4,
+        "n_reaches": 59
+      },
+      {
+        "country": "Bangladesh",
+        "median_dist_dn_km": 45.1,
+        "n_reaches": 65
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 760,
+      "main_network_reaches": 760,
+      "main_stem_reaches": 123,
+      "main_stem_km": 214.7,
+      "endorheic": false
+    }
+  },
+  "Murgab": {
+    "main_stem_order": [
+      {
+        "country": "Turkmenistan",
+        "median_dist_dn_km": 578.7,
+        "n_reaches": 3
+      }
+    ],
+    "tributary_only": [
+      "Afghanistan"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4353,
+      "main_network_reaches": 3646,
+      "main_stem_reaches": 3,
+      "main_stem_km": 584.6,
+      "endorheic": true
+    }
+  },
+  "Naaf River": {
+    "main_stem_order": [
+      {
+        "country": "Myanmar",
+        "median_dist_dn_km": 28.3,
+        "n_reaches": 37
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Bangladesh"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 405,
+      "main_network_reaches": 179,
+      "main_stem_reaches": 37,
+      "main_stem_km": 62.7,
+      "endorheic": false
+    }
+  },
+  "Nahr El Kebir": {
+    "main_stem_order": [
+      {
+        "country": "Turkiye",
+        "median_dist_dn_km": 64.6,
+        "n_reaches": 5
+      },
+      {
+        "country": "Syrian Arab Republic",
+        "median_dist_dn_km": 32.1,
+        "n_reaches": 17
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 90,
+      "main_network_reaches": 63,
+      "main_stem_reaches": 21,
+      "main_stem_km": 70.0,
+      "endorheic": false
+    }
+  },
+  "Nha Be-Saigon-Song Vam Co Dong": {
+    "main_stem_order": [
+      {
+        "country": "Viet Nam",
+        "median_dist_dn_km": 241.9,
+        "n_reaches": 234
+      }
+    ],
+    "tributary_only": [
+      "Cambodia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 6039,
+      "main_network_reaches": 4172,
+      "main_stem_reaches": 234,
+      "main_stem_km": 522.1,
+      "endorheic": false
+    }
+  },
+  "Ob": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 10.3,
+        "n_reaches": 3
+      }
+    ],
+    "tributary_only": [
+      "China",
+      "Kazakhstan",
+      "Mongolia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 157360,
+      "main_network_reaches": 128769,
+      "main_stem_reaches": 3,
+      "main_stem_km": 17.0,
+      "endorheic": false
+    }
+  },
+  "Pakchan": {
+    "main_stem_order": [
+      {
+        "country": "Myanmar",
+        "median_dist_dn_km": 37.5,
+        "n_reaches": 28
+      },
+      {
+        "country": "Thailand",
+        "median_dist_dn_km": 18.2,
+        "n_reaches": 23
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 642,
+      "main_network_reaches": 255,
+      "main_stem_reaches": 36,
+      "main_stem_km": 57.9,
+      "endorheic": false
+    }
+  },
+  "Pandaruan": {
+    "main_stem_order": [
+      {
+        "country": "Brunei Darussalam",
+        "median_dist_dn_km": 43.9,
+        "n_reaches": 34
+      },
+      {
+        "country": "Malaysia",
+        "median_dist_dn_km": 0.0,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 246,
+      "main_network_reaches": 246,
+      "main_stem_reaches": 34,
+      "main_stem_km": 75.7,
+      "endorheic": false
+    }
+  },
+  "Pu Lun T'o": {
+    "main_stem_order": [
+      {
+        "country": "Mongolia",
+        "median_dist_dn_km": 599.5,
+        "n_reaches": 71
+      },
+      {
+        "country": "China",
+        "median_dist_dn_km": 301.7,
+        "n_reaches": 136
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2385,
+      "main_network_reaches": 1568,
+      "main_stem_reaches": 206,
+      "main_stem_km": 741.1,
+      "endorheic": true
+    }
+  },
+  "Rach Giang Thanh": {
+    "main_stem_order": [
+      {
+        "country": "Cambodia",
+        "median_dist_dn_km": 54.9,
+        "n_reaches": 33
+      },
+      {
+        "country": "Viet Nam",
+        "median_dist_dn_km": 11.3,
+        "n_reaches": 12
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 226,
+      "main_network_reaches": 226,
+      "main_stem_reaches": 44,
+      "main_stem_km": 91.8,
+      "endorheic": false
+    }
+  },
+  "Rann of Kutch": {
+    "main_stem_order": [
+      {
+        "country": "India",
+        "median_dist_dn_km": 1358.3,
+        "n_reaches": 124
+      },
+      {
+        "country": "Pakistan",
+        "median_dist_dn_km": 618.6,
+        "n_reaches": 226
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 17689,
+      "main_network_reaches": 13866,
+      "main_stem_reaches": 347,
+      "main_stem_km": 1704.3,
+      "endorheic": false
+    }
+  },
+  "Red/Song Hong": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 972.9,
+        "n_reaches": 174
+      },
+      {
+        "country": "Viet Nam",
+        "median_dist_dn_km": 422.2,
+        "n_reaches": 262
+      }
+    ],
+    "tributary_only": [
+      "Lao People's Democratic Republic"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 13234,
+      "main_network_reaches": 12967,
+      "main_stem_reaches": 433,
+      "main_stem_km": 1205.8,
+      "endorheic": false
+    }
+  },
+  "Salween": {
+    "main_stem_order": [
+      {
+        "country": "Myanmar",
+        "median_dist_dn_km": 7.6,
+        "n_reaches": 7
+      }
+    ],
+    "tributary_only": [
+      "China",
+      "Thailand"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 21164,
+      "main_network_reaches": 21105,
+      "main_stem_reaches": 7,
+      "main_stem_km": 10.3,
+      "endorheic": false
+    }
+  },
+  "Sebuku": {
+    "main_stem_order": [
+      {
+        "country": "Malaysia",
+        "median_dist_dn_km": 156.5,
+        "n_reaches": 14
+      },
+      {
+        "country": "Indonesia",
+        "median_dist_dn_km": 76.0,
+        "n_reaches": 52
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 430,
+      "main_network_reaches": 430,
+      "main_stem_reaches": 65,
+      "main_stem_km": 167.4,
+      "endorheic": false
+    }
+  },
+  "Sembakung": {
+    "main_stem_order": [
+      {
+        "country": "Malaysia",
+        "median_dist_dn_km": 268.1,
+        "n_reaches": 43
+      },
+      {
+        "country": "Indonesia",
+        "median_dist_dn_km": 116.0,
+        "n_reaches": 87
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1508,
+      "main_network_reaches": 1507,
+      "main_stem_reaches": 129,
+      "main_stem_km": 325.3,
+      "endorheic": false
+    }
+  },
+  "Sepik": {
+    "main_stem_order": [
+      {
+        "country": "Indonesia",
+        "median_dist_dn_km": 804.2,
+        "n_reaches": 29
+      },
+      {
+        "country": "Papua New Guinea",
+        "median_dist_dn_km": 575.9,
+        "n_reaches": 376
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 13846,
+      "main_network_reaches": 13845,
+      "main_stem_reaches": 400,
+      "main_stem_km": 988.1,
+      "endorheic": false
+    }
+  },
+  "Shu/Chu": {
+    "main_stem_order": [
+      {
+        "country": "Kyrgyzstan",
+        "median_dist_dn_km": 945.4,
+        "n_reaches": 91
+      },
+      {
+        "country": "Kazakhstan",
+        "median_dist_dn_km": 455.8,
+        "n_reaches": 213
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3419,
+      "main_network_reaches": 3375,
+      "main_stem_reaches": 289,
+      "main_stem_km": 1105.9,
+      "endorheic": true
+    }
+  },
+  "Song Tien Yen": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 57.9,
+        "n_reaches": 4
+      },
+      {
+        "country": "Viet Nam",
+        "median_dist_dn_km": 42.4,
+        "n_reaches": 25
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 127,
+      "main_network_reaches": 123,
+      "main_stem_reaches": 26,
+      "main_stem_km": 69.4,
+      "endorheic": false
+    }
+  },
+  "Suifen He": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 268.8,
+        "n_reaches": 57
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 70.4,
+        "n_reaches": 42
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 804,
+      "main_network_reaches": 804,
+      "main_stem_reaches": 98,
+      "main_stem_km": 374.7,
+      "endorheic": false
+    }
+  },
+  "Talas": {
+    "main_stem_order": [
+      {
+        "country": "Kyrgyzstan",
+        "median_dist_dn_km": 380.8,
+        "n_reaches": 53
+      },
+      {
+        "country": "Kazakhstan",
+        "median_dist_dn_km": 162.8,
+        "n_reaches": 78
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2129,
+      "main_network_reaches": 1955,
+      "main_stem_reaches": 129,
+      "main_stem_km": 484.0,
+      "endorheic": true
+    }
+  },
+  "Tami": {
+    "main_stem_order": [
+      {
+        "country": "Papua New Guinea",
+        "median_dist_dn_km": 881.2,
+        "n_reaches": 10
+      },
+      {
+        "country": "Indonesia",
+        "median_dist_dn_km": 419.5,
+        "n_reaches": 293
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 12418,
+      "main_network_reaches": 12413,
+      "main_stem_reaches": 302,
+      "main_stem_km": 894.3,
+      "endorheic": false
+    }
+  },
+  "Tarim": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 1115.8,
+        "n_reaches": 585
+      }
+    ],
+    "tributary_only": [
+      "Aksai Chin",
+      "Jammu and Kashmir",
+      "Kazakhstan",
+      "Kyrgyzstan",
+      "Tajikistan"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 48123,
+      "main_network_reaches": 32286,
+      "main_stem_reaches": 585,
+      "main_stem_km": 2381.2,
+      "endorheic": true
+    }
+  },
+  "Tigris-Euphrates/Shatt al Arab": {
+    "main_stem_order": [
+      {
+        "country": "Turkiye",
+        "median_dist_dn_km": 2475.0,
+        "n_reaches": 317
+      },
+      {
+        "country": "Syrian Arab Republic",
+        "median_dist_dn_km": 1604.1,
+        "n_reaches": 187
+      },
+      {
+        "country": "Iraq",
+        "median_dist_dn_km": 690.3,
+        "n_reaches": 314
+      },
+      {
+        "country": "Iran  (Islamic Republic of)",
+        "median_dist_dn_km": 48.0,
+        "n_reaches": 10
+      }
+    ],
+    "tributary_only": [
+      "Jordan",
+      "Saudi Arabia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 42233,
+      "main_network_reaches": 40311,
+      "main_stem_reaches": 816,
+      "main_stem_km": 3034.2,
+      "endorheic": false
+    }
+  },
+  "Tjeroaka-Wanggoe": {
+    "main_stem_order": [
+      {
+        "country": "Indonesia",
+        "median_dist_dn_km": 154.5,
+        "n_reaches": 97
+      }
+    ],
+    "tributary_only": [
+      "Papua New Guinea"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 976,
+      "main_network_reaches": 975,
+      "main_stem_reaches": 97,
+      "main_stem_km": 298.4,
+      "endorheic": false
+    }
+  },
+  "Tumen": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 174.1,
+        "n_reaches": 81
+      },
+      {
+        "country": "Dem People's Rep of Korea",
+        "median_dist_dn_km": 98.4,
+        "n_reaches": 35
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 6.5,
+        "n_reaches": 3
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1689,
+      "main_network_reaches": 1688,
+      "main_stem_reaches": 83,
+      "main_stem_km": 332.5,
+      "endorheic": false
+    }
+  },
+  "Vanimo-Green": {
+    "main_stem_order": [
+      {
+        "country": "Papua New Guinea",
+        "median_dist_dn_km": 41.6,
+        "n_reaches": 32
+      }
+    ],
+    "tributary_only": [
+      "Indonesia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 306,
+      "main_network_reaches": 306,
+      "main_stem_reaches": 32,
+      "main_stem_km": 84.9,
+      "endorheic": false
+    }
+  },
+  "Yalu": {
+    "main_stem_order": [
+      {
+        "country": "Dem People's Rep of Korea",
+        "median_dist_dn_km": 400.0,
+        "n_reaches": 152
+      },
+      {
+        "country": "China",
+        "median_dist_dn_km": 276.4,
+        "n_reaches": 128
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3436,
+      "main_network_reaches": 3436,
+      "main_stem_reaches": 176,
+      "main_stem_km": 793.1,
+      "endorheic": false
+    }
+  },
+  "Zhu Jiang/Hsi": {
+    "main_stem_order": [
+      {
+        "country": "China",
+        "median_dist_dn_km": 1050.2,
+        "n_reaches": 724
+      }
+    ],
+    "tributary_only": [
+      "Viet Nam"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 36917,
+      "main_network_reaches": 36062,
+      "main_stem_reaches": 724,
+      "main_stem_km": 2122.8,
+      "endorheic": false
+    }
+  },
+  "Adige": {
+    "main_stem_order": [
+      {
+        "country": "Italy",
+        "median_dist_dn_km": 250.1,
+        "n_reaches": 102
+      }
+    ],
+    "tributary_only": [
+      "Switzerland"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 974,
+      "main_network_reaches": 974,
+      "main_stem_reaches": 102,
+      "main_stem_km": 426.5,
+      "endorheic": false
+    }
+  },
+  "Angerman": {
+    "main_stem_order": [
+      {
+        "country": "Sweden",
+        "median_dist_dn_km": 212.2,
+        "n_reaches": 104
+      }
+    ],
+    "tributary_only": [
+      "Norway"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2355,
+      "main_network_reaches": 2301,
+      "main_stem_reaches": 104,
+      "main_stem_km": 398.6,
+      "endorheic": false
+    }
+  },
+  "Bann": {
+    "main_stem_order": [
+      {
+        "country": "Ireland",
+        "median_dist_dn_km": 133.1,
+        "n_reaches": 2
+      },
+      {
+        "country": "U.K. of Great Britain and Northern Ireland",
+        "median_dist_dn_km": 73.6,
+        "n_reaches": 70
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 595,
+      "main_network_reaches": 594,
+      "main_stem_reaches": 70,
+      "main_stem_km": 154.6,
+      "endorheic": false
+    }
+  },
+  "Barta": {
+    "main_stem_order": [
+      {
+        "country": "Lithuania",
+        "median_dist_dn_km": 67.7,
+        "n_reaches": 9
+      },
+      {
+        "country": "Latvia",
+        "median_dist_dn_km": 22.2,
+        "n_reaches": 20
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 183,
+      "main_network_reaches": 183,
+      "main_stem_reaches": 28,
+      "main_stem_km": 87.2,
+      "endorheic": false
+    }
+  },
+  "Berbyelva": {
+    "main_stem_order": [
+      {
+        "country": "Sweden",
+        "median_dist_dn_km": 44.4,
+        "n_reaches": 17
+      },
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 20.4,
+        "n_reaches": 15
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 105,
+      "main_network_reaches": 105,
+      "main_stem_reaches": 27,
+      "main_stem_km": 99.0,
+      "endorheic": false
+    }
+  },
+  "Bidasoa": {
+    "main_stem_order": [
+      {
+        "country": "Spain",
+        "median_dist_dn_km": 27.7,
+        "n_reaches": 23
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "France"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 87,
+      "main_network_reaches": 87,
+      "main_stem_reaches": 23,
+      "main_stem_km": 55.0,
+      "endorheic": false
+    }
+  },
+  "Castletown": {
+    "main_stem_order": [
+      {
+        "country": "U.K. of Great Britain and Northern Ireland",
+        "median_dist_dn_km": 23.6,
+        "n_reaches": 3
+      },
+      {
+        "country": "Ireland",
+        "median_dist_dn_km": 6.3,
+        "n_reaches": 5
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 19,
+      "main_network_reaches": 19,
+      "main_stem_reaches": 7,
+      "main_stem_km": 32.0,
+      "endorheic": false
+    }
+  },
+  "Cetina": {
+    "main_stem_order": [
+      {
+        "country": "Bosnia and Herzegovina",
+        "median_dist_dn_km": 108.5,
+        "n_reaches": 2
+      },
+      {
+        "country": "Croatia",
+        "median_dist_dn_km": 67.8,
+        "n_reaches": 42
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 454,
+      "main_network_reaches": 117,
+      "main_stem_reaches": 43,
+      "main_stem_km": 112.1,
+      "endorheic": false
+    }
+  },
+  "Danube": {
+    "main_stem_order": [
+      {
+        "country": "Germany",
+        "median_dist_dn_km": 2683.4,
+        "n_reaches": 162
+      },
+      {
+        "country": "Austria",
+        "median_dist_dn_km": 2210.8,
+        "n_reaches": 100
+      },
+      {
+        "country": "Slovakia",
+        "median_dist_dn_km": 1904.3,
+        "n_reaches": 36
+      },
+      {
+        "country": "Hungary",
+        "median_dist_dn_km": 1692.0,
+        "n_reaches": 71
+      },
+      {
+        "country": "Croatia",
+        "median_dist_dn_km": 1470.6,
+        "n_reaches": 32
+      },
+      {
+        "country": "Serbia",
+        "median_dist_dn_km": 1204.8,
+        "n_reaches": 142
+      },
+      {
+        "country": "Bulgaria",
+        "median_dist_dn_km": 642.1,
+        "n_reaches": 119
+      },
+      {
+        "country": "Romania",
+        "median_dist_dn_km": 547.3,
+        "n_reaches": 154
+      },
+      {
+        "country": "Ukraine",
+        "median_dist_dn_km": 75.2,
+        "n_reaches": 10
+      }
+    ],
+    "tributary_only": [
+      "Albania",
+      "Bosnia and Herzegovina",
+      "Czech Republic",
+      "Italy",
+      "Moldova, Republic of",
+      "Montenegro",
+      "Poland",
+      "Slovenia",
+      "Switzerland",
+      "The former Yugoslav Republic of Macedonia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 43740,
+      "main_network_reaches": 42994,
+      "main_stem_reaches": 712,
+      "main_stem_km": 2945.7,
+      "endorheic": false
+    }
+  },
+  "Daugava": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 839.4,
+        "n_reaches": 61
+      },
+      {
+        "country": "Belarus",
+        "median_dist_dn_km": 517.4,
+        "n_reaches": 87
+      },
+      {
+        "country": "Latvia",
+        "median_dist_dn_km": 171.4,
+        "n_reaches": 89
+      }
+    ],
+    "tributary_only": [
+      "Estonia",
+      "Lithuania"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4207,
+      "main_network_reaches": 4189,
+      "main_stem_reaches": 232,
+      "main_stem_km": 976.0,
+      "endorheic": false
+    }
+  },
+  "Dnieper": {
+    "main_stem_order": [
+      {
+        "country": "Belarus",
+        "median_dist_dn_km": 1295.9,
+        "n_reaches": 99
+      },
+      {
+        "country": "Ukraine",
+        "median_dist_dn_km": 602.8,
+        "n_reaches": 341
+      }
+    ],
+    "tributary_only": [
+      "Russian Federation"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 25263,
+      "main_network_reaches": 25263,
+      "main_stem_reaches": 438,
+      "main_stem_km": 1756.0,
+      "endorheic": false
+    }
+  },
+  "Dniester": {
+    "main_stem_order": [
+      {
+        "country": "Ukraine",
+        "median_dist_dn_km": 886.9,
+        "n_reaches": 167
+      },
+      {
+        "country": "Moldova, Republic of",
+        "median_dist_dn_km": 390.8,
+        "n_reaches": 94
+      }
+    ],
+    "tributary_only": [
+      "Poland"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3405,
+      "main_network_reaches": 3405,
+      "main_stem_reaches": 243,
+      "main_stem_km": 1290.5,
+      "endorheic": false
+    }
+  },
+  "Don": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 953.5,
+        "n_reaches": 442
+      }
+    ],
+    "tributary_only": [
+      "Ukraine"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 22219,
+      "main_network_reaches": 22208,
+      "main_stem_reaches": 442,
+      "main_stem_km": 1882.5,
+      "endorheic": false
+    }
+  },
+  "Douro/Duero": {
+    "main_stem_order": [
+      {
+        "country": "Spain",
+        "median_dist_dn_km": 466.5,
+        "n_reaches": 131
+      },
+      {
+        "country": "Portugal",
+        "median_dist_dn_km": 121.1,
+        "n_reaches": 86
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 5243,
+      "main_network_reaches": 5243,
+      "main_stem_reaches": 197,
+      "main_stem_km": 700.5,
+      "endorheic": false
+    }
+  },
+  "Dragonja": {
+    "main_stem_order": [
+      {
+        "country": "Croatia",
+        "median_dist_dn_km": 5.2,
+        "n_reaches": 4
+      },
+      {
+        "country": "Slovenia",
+        "median_dist_dn_km": 5.2,
+        "n_reaches": 4
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 11,
+      "main_network_reaches": 11,
+      "main_stem_reaches": 4,
+      "main_stem_km": 14.1,
+      "endorheic": false
+    }
+  },
+  "Drin": {
+    "main_stem_order": [
+      {
+        "country": "Serbia",
+        "median_dist_dn_km": 217.3,
+        "n_reaches": 40
+      },
+      {
+        "country": "Albania",
+        "median_dist_dn_km": 90.3,
+        "n_reaches": 58
+      },
+      {
+        "country": "Montenegro",
+        "median_dist_dn_km": 7.3,
+        "n_reaches": 4
+      }
+    ],
+    "tributary_only": [
+      "The former Yugoslav Republic of Macedonia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1709,
+      "main_network_reaches": 1606,
+      "main_stem_reaches": 97,
+      "main_stem_km": 298.9,
+      "endorheic": false
+    }
+  },
+  "Ebro": {
+    "main_stem_order": [
+      {
+        "country": "Spain",
+        "median_dist_dn_km": 431.1,
+        "n_reaches": 221
+      }
+    ],
+    "tributary_only": [
+      "Andorra",
+      "France"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 5021,
+      "main_network_reaches": 4982,
+      "main_stem_reaches": 221,
+      "main_stem_km": 844.7,
+      "endorheic": false
+    }
+  },
+  "Elancik": {
+    "main_stem_order": [
+      {
+        "country": "Ukraine",
+        "median_dist_dn_km": 72.6,
+        "n_reaches": 5
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 33.4,
+        "n_reaches": 13
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 63,
+      "main_network_reaches": 63,
+      "main_stem_reaches": 17,
+      "main_stem_km": 76.1,
+      "endorheic": false
+    }
+  },
+  "Elbe": {
+    "main_stem_order": [
+      {
+        "country": "Austria",
+        "median_dist_dn_km": 1071.6,
+        "n_reaches": 7
+      },
+      {
+        "country": "Czech Republic",
+        "median_dist_dn_km": 858.8,
+        "n_reaches": 98
+      },
+      {
+        "country": "Germany",
+        "median_dist_dn_km": 344.9,
+        "n_reaches": 131
+      }
+    ],
+    "tributary_only": [
+      "Poland"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 7215,
+      "main_network_reaches": 6818,
+      "main_stem_reaches": 232,
+      "main_stem_km": 1084.7,
+      "endorheic": false
+    }
+  },
+  "Ems/Eems": {
+    "main_stem_order": [
+      {
+        "country": "Germany",
+        "median_dist_dn_km": 153.4,
+        "n_reaches": 89
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Netherlands"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 870,
+      "main_network_reaches": 714,
+      "main_stem_reaches": 89,
+      "main_stem_km": 306.3,
+      "endorheic": false
+    }
+  },
+  "Erne": {
+    "main_stem_order": [
+      {
+        "country": "Ireland",
+        "median_dist_dn_km": 110.1,
+        "n_reaches": 18
+      },
+      {
+        "country": "U.K. of Great Britain and Northern Ireland",
+        "median_dist_dn_km": 51.5,
+        "n_reaches": 35
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 479,
+      "main_network_reaches": 479,
+      "main_stem_reaches": 51,
+      "main_stem_km": 150.8,
+      "endorheic": false
+    }
+  },
+  "Fane": {
+    "main_stem_order": [
+      {
+        "country": "Ireland",
+        "median_dist_dn_km": 31.9,
+        "n_reaches": 10
+      },
+      {
+        "country": "U.K. of Great Britain and Northern Ireland",
+        "median_dist_dn_km": 24.4,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 26,
+      "main_network_reaches": 26,
+      "main_stem_reaches": 10,
+      "main_stem_km": 44.6,
+      "endorheic": false
+    }
+  },
+  "Flurry": {
+    "main_stem_order": [
+      {
+        "country": "U.K. of Great Britain and Northern Ireland",
+        "median_dist_dn_km": 12.5,
+        "n_reaches": 2
+      },
+      {
+        "country": "Ireland",
+        "median_dist_dn_km": 5.9,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 10,
+      "main_network_reaches": 5,
+      "main_stem_reaches": 3,
+      "main_stem_km": 13.2,
+      "endorheic": false
+    }
+  },
+  "Foyle": {
+    "main_stem_order": [
+      {
+        "country": "U.K. of Great Britain and Northern Ireland",
+        "median_dist_dn_km": 40.4,
+        "n_reaches": 28
+      },
+      {
+        "country": "Ireland",
+        "median_dist_dn_km": 27.7,
+        "n_reaches": 3
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 324,
+      "main_network_reaches": 324,
+      "main_stem_reaches": 28,
+      "main_stem_km": 81.9,
+      "endorheic": false
+    }
+  },
+  "Garonne": {
+    "main_stem_order": [
+      {
+        "country": "France",
+        "median_dist_dn_km": 273.4,
+        "n_reaches": 166
+      }
+    ],
+    "tributary_only": [
+      "Spain"
+    ],
+    "no_reaches": [
+      "Andorra"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 5010,
+      "main_network_reaches": 3114,
+      "main_stem_reaches": 166,
+      "main_stem_km": 576.4,
+      "endorheic": false
+    }
+  },
+  "Gauja": {
+    "main_stem_order": [
+      {
+        "country": "Estonia",
+        "median_dist_dn_km": 204.2,
+        "n_reaches": 4
+      },
+      {
+        "country": "Latvia",
+        "median_dist_dn_km": 170.7,
+        "n_reaches": 73
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 474,
+      "main_network_reaches": 474,
+      "main_stem_reaches": 73,
+      "main_stem_km": 350.6,
+      "endorheic": false
+    }
+  },
+  "Glama": {
+    "main_stem_order": [
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 304.7,
+        "n_reaches": 175
+      }
+    ],
+    "tributary_only": [
+      "Sweden"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2904,
+      "main_network_reaches": 2897,
+      "main_stem_reaches": 175,
+      "main_stem_km": 574.9,
+      "endorheic": false
+    }
+  },
+  "Gruzskiy Yelanchik": {
+    "main_stem_order": [
+      {
+        "country": "Ukraine",
+        "median_dist_dn_km": 26.4,
+        "n_reaches": 13
+      }
+    ],
+    "tributary_only": [
+      "Russian Federation"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 49,
+      "main_network_reaches": 49,
+      "main_stem_reaches": 13,
+      "main_stem_km": 68.9,
+      "endorheic": false
+    }
+  },
+  "Guadiana": {
+    "main_stem_order": [
+      {
+        "country": "Portugal",
+        "median_dist_dn_km": 0.0,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [
+      "Spain"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3145,
+      "main_network_reaches": 3141,
+      "main_stem_reaches": 1,
+      "main_stem_km": 0.0,
+      "endorheic": false
+    }
+  },
+  "Indalsalven": {
+    "main_stem_order": [
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 402.8,
+        "n_reaches": 10
+      },
+      {
+        "country": "Sweden",
+        "median_dist_dn_km": 222.2,
+        "n_reaches": 106
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2121,
+      "main_network_reaches": 2074,
+      "main_stem_reaches": 115,
+      "main_stem_km": 414.1,
+      "endorheic": false
+    }
+  },
+  "Isonzo": {
+    "main_stem_order": [
+      {
+        "country": "Slovenia",
+        "median_dist_dn_km": 84.6,
+        "n_reaches": 30
+      },
+      {
+        "country": "Italy",
+        "median_dist_dn_km": 18.4,
+        "n_reaches": 13
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 357,
+      "main_network_reaches": 355,
+      "main_stem_reaches": 42,
+      "main_stem_km": 130.2,
+      "endorheic": false
+    }
+  },
+  "Jacobs": {
+    "main_stem_order": [
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 4.2,
+        "n_reaches": 7
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Russian Federation"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 52,
+      "main_network_reaches": 17,
+      "main_stem_reaches": 7,
+      "main_stem_km": 19.6,
+      "endorheic": false
+    }
+  },
+  "Kemi": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 447.6,
+        "n_reaches": 27
+      },
+      {
+        "country": "Finland",
+        "median_dist_dn_km": 205.8,
+        "n_reaches": 119
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2712,
+      "main_network_reaches": 2712,
+      "main_stem_reaches": 144,
+      "main_stem_km": 527.5,
+      "endorheic": false
+    }
+  },
+  "Klaralven": {
+    "main_stem_order": [
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 588.1,
+        "n_reaches": 42
+      },
+      {
+        "country": "Sweden",
+        "median_dist_dn_km": 231.3,
+        "n_reaches": 111
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2627,
+      "main_network_reaches": 2626,
+      "main_stem_reaches": 151,
+      "main_stem_km": 703.8,
+      "endorheic": false
+    }
+  },
+  "Kogilnik": {
+    "main_stem_order": [
+      {
+        "country": "Moldova, Republic of",
+        "median_dist_dn_km": 160.7,
+        "n_reaches": 18
+      },
+      {
+        "country": "Ukraine",
+        "median_dist_dn_km": 82.0,
+        "n_reaches": 23
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 162,
+      "main_network_reaches": 162,
+      "main_stem_reaches": 40,
+      "main_stem_km": 221.7,
+      "endorheic": false
+    }
+  },
+  "Krka": {
+    "main_stem_order": [
+      {
+        "country": "Croatia",
+        "median_dist_dn_km": 4.0,
+        "n_reaches": 4
+      }
+    ],
+    "tributary_only": [
+      "Bosnia and Herzegovina"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 178,
+      "main_network_reaches": 177,
+      "main_stem_reaches": 4,
+      "main_stem_km": 10.1,
+      "endorheic": false
+    }
+  },
+  "Lake Prespa": {
+    "main_stem_order": [
+      {
+        "country": "Albania",
+        "median_dist_dn_km": 125.2,
+        "n_reaches": 62
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Greece",
+      "The former Yugoslav Republic of Macedonia"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 552,
+      "main_network_reaches": 467,
+      "main_stem_reaches": 62,
+      "main_stem_km": 244.2,
+      "endorheic": false
+    }
+  },
+  "Lava/Pregel": {
+    "main_stem_order": [
+      {
+        "country": "Poland",
+        "median_dist_dn_km": 188.3,
+        "n_reaches": 34
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 39.5,
+        "n_reaches": 38
+      }
+    ],
+    "tributary_only": [
+      "Lithuania"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 732,
+      "main_network_reaches": 726,
+      "main_stem_reaches": 71,
+      "main_stem_km": 264.4,
+      "endorheic": false
+    }
+  },
+  "Lielupe": {
+    "main_stem_order": [
+      {
+        "country": "Lithuania",
+        "median_dist_dn_km": 171.7,
+        "n_reaches": 28
+      },
+      {
+        "country": "Latvia",
+        "median_dist_dn_km": 59.0,
+        "n_reaches": 21
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 794,
+      "main_network_reaches": 793,
+      "main_stem_reaches": 48,
+      "main_stem_km": 248.9,
+      "endorheic": false
+    }
+  },
+  "Lima": {
+    "main_stem_order": [
+      {
+        "country": "Spain",
+        "median_dist_dn_km": 98.4,
+        "n_reaches": 24
+      },
+      {
+        "country": "Portugal",
+        "median_dist_dn_km": 32.5,
+        "n_reaches": 30
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 260,
+      "main_network_reaches": 260,
+      "main_stem_reaches": 53,
+      "main_stem_km": 126.5,
+      "endorheic": false
+    }
+  },
+  "Lough Melvin": {
+    "main_stem_order": [
+      {
+        "country": "U.K. of Great Britain and Northern Ireland",
+        "median_dist_dn_km": 21.4,
+        "n_reaches": 6
+      },
+      {
+        "country": "Ireland",
+        "median_dist_dn_km": 9.8,
+        "n_reaches": 6
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 36,
+      "main_network_reaches": 35,
+      "main_stem_reaches": 11,
+      "main_stem_km": 31.3,
+      "endorheic": false
+    }
+  },
+  "Maritsa": {
+    "main_stem_order": [
+      {
+        "country": "Bulgaria",
+        "median_dist_dn_km": 347.9,
+        "n_reaches": 100
+      },
+      {
+        "country": "Greece",
+        "median_dist_dn_km": 108.3,
+        "n_reaches": 34
+      },
+      {
+        "country": "Turkiye",
+        "median_dist_dn_km": 89.7,
+        "n_reaches": 29
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2542,
+      "main_network_reaches": 2542,
+      "main_stem_reaches": 139,
+      "main_stem_km": 477.9,
+      "endorheic": false
+    }
+  },
+  "Mino": {
+    "main_stem_order": [
+      {
+        "country": "Spain",
+        "median_dist_dn_km": 143.3,
+        "n_reaches": 108
+      },
+      {
+        "country": "Portugal",
+        "median_dist_dn_km": 37.6,
+        "n_reaches": 13
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1551,
+      "main_network_reaches": 1551,
+      "main_stem_reaches": 111,
+      "main_stem_km": 324.8,
+      "endorheic": false
+    }
+  },
+  "Mius": {
+    "main_stem_order": [
+      {
+        "country": "Ukraine",
+        "median_dist_dn_km": 142.3,
+        "n_reaches": 16
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 54.2,
+        "n_reaches": 25
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 331,
+      "main_network_reaches": 331,
+      "main_stem_reaches": 40,
+      "main_stem_km": 176.1,
+      "endorheic": false
+    }
+  },
+  "Naatamo": {
+    "main_stem_order": [
+      {
+        "country": "Finland",
+        "median_dist_dn_km": 17.8,
+        "n_reaches": 3
+      },
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 7.6,
+        "n_reaches": 7
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 23,
+      "main_network_reaches": 17,
+      "main_stem_reaches": 9,
+      "main_stem_km": 19.0,
+      "endorheic": false
+    }
+  },
+  "Narva": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 301.4,
+        "n_reaches": 114
+      },
+      {
+        "country": "Estonia",
+        "median_dist_dn_km": 38.0,
+        "n_reaches": 18
+      }
+    ],
+    "tributary_only": [
+      "Belarus",
+      "Latvia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2776,
+      "main_network_reaches": 2776,
+      "main_stem_reaches": 119,
+      "main_stem_km": 585.2,
+      "endorheic": false
+    }
+  },
+  "Narynka": {
+    "main_stem_order": [
+      {
+        "country": "Kazakhstan",
+        "median_dist_dn_km": 191.9,
+        "n_reaches": 90
+      }
+    ],
+    "tributary_only": [
+      "Russian Federation"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4499,
+      "main_network_reaches": 3842,
+      "main_stem_reaches": 90,
+      "main_stem_km": 410.6,
+      "endorheic": true
+    }
+  },
+  "Neman": {
+    "main_stem_order": [
+      {
+        "country": "Belarus",
+        "median_dist_dn_km": 720.6,
+        "n_reaches": 119
+      },
+      {
+        "country": "Lithuania",
+        "median_dist_dn_km": 236.0,
+        "n_reaches": 79
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 65.1,
+        "n_reaches": 18
+      }
+    ],
+    "tributary_only": [
+      "Latvia",
+      "Poland"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4628,
+      "main_network_reaches": 4628,
+      "main_stem_reaches": 202,
+      "main_stem_km": 944.1,
+      "endorheic": false
+    }
+  },
+  "Neretva": {
+    "main_stem_order": [
+      {
+        "country": "Bosnia and Herzegovina",
+        "median_dist_dn_km": 126.8,
+        "n_reaches": 80
+      },
+      {
+        "country": "Croatia",
+        "median_dist_dn_km": 15.3,
+        "n_reaches": 9
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 748,
+      "main_network_reaches": 660,
+      "main_stem_reaches": 88,
+      "main_stem_km": 218.7,
+      "endorheic": false
+    }
+  },
+  "Nestos": {
+    "main_stem_order": [
+      {
+        "country": "Bulgaria",
+        "median_dist_dn_km": 189.9,
+        "n_reaches": 30
+      },
+      {
+        "country": "Greece",
+        "median_dist_dn_km": 72.0,
+        "n_reaches": 35
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 301,
+      "main_network_reaches": 301,
+      "main_stem_reaches": 64,
+      "main_stem_km": 241.9,
+      "endorheic": false
+    }
+  },
+  "Nidelva": {
+    "main_stem_order": [
+      {
+        "country": "Sweden",
+        "median_dist_dn_km": 139.6,
+        "n_reaches": 12
+      },
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 63.6,
+        "n_reaches": 55
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 338,
+      "main_network_reaches": 338,
+      "main_stem_reaches": 66,
+      "main_stem_km": 149.6,
+      "endorheic": false
+    }
+  },
+  "Oder/Odra": {
+    "main_stem_order": [
+      {
+        "country": "Poland",
+        "median_dist_dn_km": 459.1,
+        "n_reaches": 202
+      },
+      {
+        "country": "Germany",
+        "median_dist_dn_km": 109.4,
+        "n_reaches": 13
+      }
+    ],
+    "tributary_only": [
+      "Czech Republic"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 5783,
+      "main_network_reaches": 5782,
+      "main_stem_reaches": 204,
+      "main_stem_km": 865.8,
+      "endorheic": false
+    }
+  },
+  "Olanga": {
+    "main_stem_order": [
+      {
+        "country": "Finland",
+        "median_dist_dn_km": 386.7,
+        "n_reaches": 4
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 188.4,
+        "n_reaches": 83
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2198,
+      "main_network_reaches": 2198,
+      "main_stem_reaches": 86,
+      "main_stem_km": 389.1,
+      "endorheic": false
+    }
+  },
+  "Oral/Ural": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 1635.9,
+        "n_reaches": 335
+      },
+      {
+        "country": "Kazakhstan",
+        "median_dist_dn_km": 615.1,
+        "n_reaches": 212
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 11011,
+      "main_network_reaches": 10983,
+      "main_stem_reaches": 518,
+      "main_stem_km": 2238.1,
+      "endorheic": false
+    }
+  },
+  "Oulu": {
+    "main_stem_order": [
+      {
+        "country": "Finland",
+        "median_dist_dn_km": 226.4,
+        "n_reaches": 112
+      }
+    ],
+    "tributary_only": [
+      "Russian Federation"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1348,
+      "main_network_reaches": 1348,
+      "main_stem_reaches": 112,
+      "main_stem_km": 407.7,
+      "endorheic": false
+    }
+  },
+  "Parnu": {
+    "main_stem_order": [
+      {
+        "country": "Estonia",
+        "median_dist_dn_km": 44.6,
+        "n_reaches": 25
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Latvia"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 344,
+      "main_network_reaches": 344,
+      "main_stem_reaches": 25,
+      "main_stem_km": 118.3,
+      "endorheic": false
+    }
+  },
+  "Pasvik": {
+    "main_stem_order": [
+      {
+        "country": "Finland",
+        "median_dist_dn_km": 184.0,
+        "n_reaches": 52
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 55.4,
+        "n_reaches": 19
+      },
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 50.8,
+        "n_reaches": 24
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 847,
+      "main_network_reaches": 847,
+      "main_stem_reaches": 79,
+      "main_stem_km": 308.4,
+      "endorheic": false
+    }
+  },
+  "Peschanaya": {
+    "main_stem_order": [
+      {
+        "country": "Finland",
+        "median_dist_dn_km": 72.2,
+        "n_reaches": 13
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 7.9,
+        "n_reaches": 3
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 57,
+      "main_network_reaches": 57,
+      "main_stem_reaches": 15,
+      "main_stem_km": 91.3,
+      "endorheic": false
+    }
+  },
+  "Po": {
+    "main_stem_order": [
+      {
+        "country": "Italy",
+        "median_dist_dn_km": 416.5,
+        "n_reaches": 196
+      }
+    ],
+    "tributary_only": [
+      "France",
+      "Switzerland"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 6198,
+      "main_network_reaches": 6150,
+      "main_stem_reaches": 196,
+      "main_stem_km": 651.3,
+      "endorheic": false
+    }
+  },
+  "Poldnevaya": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 82.2,
+        "n_reaches": 16
+      },
+      {
+        "country": "Kazakhstan",
+        "median_dist_dn_km": 36.2,
+        "n_reaches": 10
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 111,
+      "main_network_reaches": 111,
+      "main_stem_reaches": 20,
+      "main_stem_km": 127.0,
+      "endorheic": false
+    }
+  },
+  "Prohladnaja": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 20.6,
+        "n_reaches": 14
+      }
+    ],
+    "tributary_only": [
+      "Poland"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 90,
+      "main_network_reaches": 65,
+      "main_stem_reaches": 14,
+      "main_stem_km": 49.9,
+      "endorheic": false
+    }
+  },
+  "Psou": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 28.6,
+        "n_reaches": 20
+      },
+      {
+        "country": "Georgia",
+        "median_dist_dn_km": 19.6,
+        "n_reaches": 13
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 68,
+      "main_network_reaches": 68,
+      "main_stem_reaches": 23,
+      "main_stem_km": 50.6,
+      "endorheic": false
+    }
+  },
+  "Rezvaya": {
+    "main_stem_order": [
+      {
+        "country": "Turkiye",
+        "median_dist_dn_km": 52.6,
+        "n_reaches": 11
+      },
+      {
+        "country": "Bulgaria",
+        "median_dist_dn_km": 45.5,
+        "n_reaches": 6
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 31,
+      "main_network_reaches": 31,
+      "main_stem_reaches": 11,
+      "main_stem_km": 83.2,
+      "endorheic": false
+    }
+  },
+  "Rhine-Meuse": {
+    "main_stem_order": [
+      {
+        "country": "Switzerland",
+        "median_dist_dn_km": 1072.0,
+        "n_reaches": 126
+      },
+      {
+        "country": "France",
+        "median_dist_dn_km": 787.7,
+        "n_reaches": 45
+      },
+      {
+        "country": "Germany",
+        "median_dist_dn_km": 539.8,
+        "n_reaches": 204
+      },
+      {
+        "country": "Netherlands",
+        "median_dist_dn_km": 90.8,
+        "n_reaches": 35
+      }
+    ],
+    "tributary_only": [
+      "Austria",
+      "Belgium",
+      "Italy",
+      "Liechtenstein",
+      "Luxembourg"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 12772,
+      "main_network_reaches": 10699,
+      "main_stem_reaches": 367,
+      "main_stem_km": 1246.3,
+      "endorheic": false
+    }
+  },
+  "Rhone": {
+    "main_stem_order": [
+      {
+        "country": "France",
+        "median_dist_dn_km": 384.9,
+        "n_reaches": 213
+      }
+    ],
+    "tributary_only": [
+      "Switzerland"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 7140,
+      "main_network_reaches": 7082,
+      "main_stem_reaches": 213,
+      "main_stem_km": 738.5,
+      "endorheic": false
+    }
+  },
+  "Roia": {
+    "main_stem_order": [
+      {
+        "country": "France",
+        "median_dist_dn_km": 30.0,
+        "n_reaches": 13
+      },
+      {
+        "country": "Italy",
+        "median_dist_dn_km": 2.2,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 60,
+      "main_network_reaches": 60,
+      "main_stem_reaches": 14,
+      "main_stem_km": 44.1,
+      "endorheic": false
+    }
+  },
+  "Salaca": {
+    "main_stem_order": [
+      {
+        "country": "Estonia",
+        "median_dist_dn_km": 157.5,
+        "n_reaches": 2
+      },
+      {
+        "country": "Latvia",
+        "median_dist_dn_km": 74.6,
+        "n_reaches": 34
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 194,
+      "main_network_reaches": 194,
+      "main_stem_reaches": 35,
+      "main_stem_km": 160.6,
+      "endorheic": false
+    }
+  },
+  "Samur": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 130.4,
+        "n_reaches": 56
+      },
+      {
+        "country": "Azerbaijan",
+        "median_dist_dn_km": 37.8,
+        "n_reaches": 5
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 364,
+      "main_network_reaches": 363,
+      "main_stem_reaches": 56,
+      "main_stem_km": 213.6,
+      "endorheic": false
+    }
+  },
+  "Sarata": {
+    "main_stem_order": [
+      {
+        "country": "Moldova, Republic of",
+        "median_dist_dn_km": 112.2,
+        "n_reaches": 2
+      },
+      {
+        "country": "Ukraine",
+        "median_dist_dn_km": 79.7,
+        "n_reaches": 11
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 43,
+      "main_network_reaches": 43,
+      "main_stem_reaches": 12,
+      "main_stem_km": 117.9,
+      "endorheic": false
+    }
+  },
+  "Schelde": {
+    "main_stem_order": [
+      {
+        "country": "France",
+        "median_dist_dn_km": 220.2,
+        "n_reaches": 31
+      },
+      {
+        "country": "Belgium",
+        "median_dist_dn_km": 105.9,
+        "n_reaches": 46
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Netherlands"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 1271,
+      "main_network_reaches": 1236,
+      "main_stem_reaches": 76,
+      "main_stem_km": 284.3,
+      "endorheic": false
+    }
+  },
+  "Seine": {
+    "main_stem_order": [
+      {
+        "country": "France",
+        "median_dist_dn_km": 410.4,
+        "n_reaches": 142
+      }
+    ],
+    "tributary_only": [
+      "Belgium"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3681,
+      "main_network_reaches": 3674,
+      "main_stem_reaches": 142,
+      "main_stem_km": 682.5,
+      "endorheic": false
+    }
+  },
+  "Struma": {
+    "main_stem_order": [
+      {
+        "country": "Bulgaria",
+        "median_dist_dn_km": 217.1,
+        "n_reaches": 70
+      },
+      {
+        "country": "Greece",
+        "median_dist_dn_km": 66.0,
+        "n_reaches": 43
+      }
+    ],
+    "tributary_only": [
+      "Serbia",
+      "The former Yugoslav Republic of Macedonia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 836,
+      "main_network_reaches": 836,
+      "main_stem_reaches": 112,
+      "main_stem_km": 352.3,
+      "endorheic": false
+    }
+  },
+  "Sulak": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 168.6,
+        "n_reaches": 50
+      }
+    ],
+    "tributary_only": [
+      "Georgia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 701,
+      "main_network_reaches": 701,
+      "main_stem_reaches": 50,
+      "main_stem_km": 270.1,
+      "endorheic": false
+    }
+  },
+  "Tagus/Tejo": {
+    "main_stem_order": [
+      {
+        "country": "Portugal",
+        "median_dist_dn_km": 9.3,
+        "n_reaches": 3
+      }
+    ],
+    "tributary_only": [
+      "Spain"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3443,
+      "main_network_reaches": 3428,
+      "main_stem_reaches": 3,
+      "main_stem_km": 17.8,
+      "endorheic": false
+    }
+  },
+  "Tana": {
+    "main_stem_order": [
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 187.9,
+        "n_reaches": 62
+      },
+      {
+        "country": "Finland",
+        "median_dist_dn_km": 116.5,
+        "n_reaches": 40
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 964,
+      "main_network_reaches": 963,
+      "main_stem_reaches": 84,
+      "main_stem_km": 323.4,
+      "endorheic": false
+    }
+  },
+  "Terek": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 351.3,
+        "n_reaches": 127
+      }
+    ],
+    "tributary_only": [
+      "Georgia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2332,
+      "main_network_reaches": 2332,
+      "main_stem_reaches": 127,
+      "main_stem_km": 593.6,
+      "endorheic": false
+    }
+  },
+  "Torne/Tornealven/Tornionjoki": {
+    "main_stem_order": [
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 407.6,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 99,
+      "main_network_reaches": 96,
+      "main_stem_reaches": 2,
+      "main_stem_km": 414.4,
+      "endorheic": false
+    }
+  },
+  "Torne/Tornealven/Tornionjoki\r\n": {
+    "main_stem_order": [
+      {
+        "country": "Sweden",
+        "median_dist_dn_km": 265.3,
+        "n_reaches": 124
+      },
+      {
+        "country": "Finland",
+        "median_dist_dn_km": 65.4,
+        "n_reaches": 22
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2122,
+      "main_network_reaches": 2122,
+      "main_stem_reaches": 128,
+      "main_stem_km": 526.2,
+      "endorheic": false
+    }
+  },
+  "Tuloma": {
+    "main_stem_order": [
+      {
+        "country": "Finland",
+        "median_dist_dn_km": 281.0,
+        "n_reaches": 15
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 144.4,
+        "n_reaches": 62
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1514,
+      "main_network_reaches": 1487,
+      "main_stem_reaches": 76,
+      "main_stem_km": 302.9,
+      "endorheic": false
+    }
+  },
+  "Vardar": {
+    "main_stem_order": [
+      {
+        "country": "The former Yugoslav Republic of Macedonia",
+        "median_dist_dn_km": 210.3,
+        "n_reaches": 93
+      },
+      {
+        "country": "Greece",
+        "median_dist_dn_km": 38.3,
+        "n_reaches": 15
+      }
+    ],
+    "tributary_only": [
+      "Serbia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1330,
+      "main_network_reaches": 1330,
+      "main_stem_reaches": 107,
+      "main_stem_km": 380.6,
+      "endorheic": false
+    }
+  },
+  "Vecht": {
+    "main_stem_order": [
+      {
+        "country": "Germany",
+        "median_dist_dn_km": 158.2,
+        "n_reaches": 16
+      },
+      {
+        "country": "Netherlands",
+        "median_dist_dn_km": 41.6,
+        "n_reaches": 19
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 554,
+      "main_network_reaches": 554,
+      "main_stem_reaches": 34,
+      "main_stem_km": 199.4,
+      "endorheic": false
+    }
+  },
+  "Vefsna": {
+    "main_stem_order": [
+      {
+        "country": "Sweden",
+        "median_dist_dn_km": 125.7,
+        "n_reaches": 16
+      },
+      {
+        "country": "Norway",
+        "median_dist_dn_km": 44.4,
+        "n_reaches": 57
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 736,
+      "main_network_reaches": 736,
+      "main_stem_reaches": 72,
+      "main_stem_km": 168.0,
+      "endorheic": false
+    }
+  },
+  "Velaka": {
+    "main_stem_order": [
+      {
+        "country": "Turkiye",
+        "median_dist_dn_km": 86.6,
+        "n_reaches": 5
+      },
+      {
+        "country": "Bulgaria",
+        "median_dist_dn_km": 43.3,
+        "n_reaches": 10
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 47,
+      "main_network_reaches": 47,
+      "main_stem_reaches": 14,
+      "main_stem_km": 95.7,
+      "endorheic": false
+    }
+  },
+  "Venta": {
+    "main_stem_order": [
+      {
+        "country": "Lithuania",
+        "median_dist_dn_km": 231.6,
+        "n_reaches": 32
+      },
+      {
+        "country": "Latvia",
+        "median_dist_dn_km": 76.4,
+        "n_reaches": 38
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 706,
+      "main_network_reaches": 706,
+      "main_stem_reaches": 69,
+      "main_stem_km": 284.9,
+      "endorheic": false
+    }
+  },
+  "Vijose": {
+    "main_stem_order": [
+      {
+        "country": "Greece",
+        "median_dist_dn_km": 204.2,
+        "n_reaches": 22
+      },
+      {
+        "country": "Albania",
+        "median_dist_dn_km": 90.2,
+        "n_reaches": 54
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 613,
+      "main_network_reaches": 611,
+      "main_stem_reaches": 75,
+      "main_stem_km": 247.8,
+      "endorheic": false
+    }
+  },
+  "Vistula/Wista": {
+    "main_stem_order": [
+      {
+        "country": "Poland",
+        "median_dist_dn_km": 170.0,
+        "n_reaches": 27
+      }
+    ],
+    "tributary_only": [
+      "Belarus",
+      "Slovakia",
+      "Ukraine"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 9525,
+      "main_network_reaches": 9525,
+      "main_stem_reaches": 27,
+      "main_stem_km": 217.5,
+      "endorheic": false
+    }
+  },
+  "Volga": {
+    "main_stem_order": [
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 1779.5,
+        "n_reaches": 850
+      }
+    ],
+    "tributary_only": [
+      "Kazakhstan"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 72279,
+      "main_network_reaches": 72229,
+      "main_stem_reaches": 850,
+      "main_stem_km": 3773.4,
+      "endorheic": false
+    }
+  },
+  "Vuoksa": {
+    "main_stem_order": [
+      {
+        "country": "Belarus",
+        "median_dist_dn_km": 928.1,
+        "n_reaches": 9
+      },
+      {
+        "country": "Russian Federation",
+        "median_dist_dn_km": 376.9,
+        "n_reaches": 233
+      }
+    ],
+    "tributary_only": [
+      "Finland"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 13553,
+      "main_network_reaches": 13545,
+      "main_stem_reaches": 240,
+      "main_stem_km": 952.6,
+      "endorheic": false
+    }
+  },
+  "Wiedau": {
+    "main_stem_order": [
+      {
+        "country": "Denmark",
+        "median_dist_dn_km": 37.1,
+        "n_reaches": 26
+      }
+    ],
+    "tributary_only": [
+      "Germany"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 86,
+      "main_network_reaches": 86,
+      "main_stem_reaches": 26,
+      "main_stem_km": 67.9,
+      "endorheic": false
+    }
+  },
+  "Yser": {
+    "main_stem_order": [
+      {
+        "country": "France",
+        "median_dist_dn_km": 51.8,
+        "n_reaches": 8
+      },
+      {
+        "country": "Belgium",
+        "median_dist_dn_km": 27.4,
+        "n_reaches": 18
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 109,
+      "main_network_reaches": 109,
+      "main_stem_reaches": 25,
+      "main_stem_km": 69.0,
+      "endorheic": false
+    }
+  },
+  "Alsek": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 1.5,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [
+      "Canada"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2993,
+      "main_network_reaches": 2991,
+      "main_stem_reaches": 1,
+      "main_stem_km": 1.5,
+      "endorheic": false
+    }
+  },
+  "Artibonite": {
+    "main_stem_order": [
+      {
+        "country": "Dominican Republic",
+        "median_dist_dn_km": 156.3,
+        "n_reaches": 2
+      },
+      {
+        "country": "Haiti",
+        "median_dist_dn_km": 134.9,
+        "n_reaches": 80
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 539,
+      "main_network_reaches": 539,
+      "main_stem_reaches": 80,
+      "main_stem_km": 256.8,
+      "endorheic": false
+    }
+  },
+  "Belize": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 238.2,
+        "n_reaches": 46
+      },
+      {
+        "country": "Belize",
+        "median_dist_dn_km": 94.6,
+        "n_reaches": 63
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 799,
+      "main_network_reaches": 795,
+      "main_stem_reaches": 105,
+      "main_stem_km": 288.9,
+      "endorheic": false
+    }
+  },
+  "Caetani": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 78.7,
+        "n_reaches": 15
+      },
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 37.0,
+        "n_reaches": 23
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 252,
+      "main_network_reaches": 252,
+      "main_stem_reaches": 37,
+      "main_stem_km": 90.5,
+      "endorheic": false
+    }
+  },
+  "Candelaria": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 253.6,
+        "n_reaches": 17
+      },
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 90.0,
+        "n_reaches": 67
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 783,
+      "main_network_reaches": 783,
+      "main_stem_reaches": 83,
+      "main_stem_km": 325.0,
+      "endorheic": false
+    }
+  },
+  "Changuinola": {
+    "main_stem_order": [
+      {
+        "country": "Panama",
+        "median_dist_dn_km": 60.3,
+        "n_reaches": 48
+      }
+    ],
+    "tributary_only": [
+      "Costa Rica"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 627,
+      "main_network_reaches": 627,
+      "main_stem_reaches": 48,
+      "main_stem_km": 116.5,
+      "endorheic": false
+    }
+  },
+  "Chilkat": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 86.8,
+        "n_reaches": 8
+      },
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 48.6,
+        "n_reaches": 43
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 459,
+      "main_network_reaches": 459,
+      "main_stem_reaches": 49,
+      "main_stem_km": 108.4,
+      "endorheic": false
+    }
+  },
+  "Choluteca": {
+    "main_stem_order": [
+      {
+        "country": "Honduras",
+        "median_dist_dn_km": 148.1,
+        "n_reaches": 92
+      },
+      {
+        "country": "Nicaragua",
+        "median_dist_dn_km": 131.1,
+        "n_reaches": 3
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 519,
+      "main_network_reaches": 518,
+      "main_stem_reaches": 92,
+      "main_stem_km": 316.1,
+      "endorheic": false
+    }
+  },
+  "Coatan Achute": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 87.7,
+        "n_reaches": 14
+      },
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 29.6,
+        "n_reaches": 14
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 70,
+      "main_network_reaches": 70,
+      "main_stem_reaches": 27,
+      "main_stem_km": 99.0,
+      "endorheic": false
+    }
+  },
+  "Coco/Segovia": {
+    "main_stem_order": [
+      {
+        "country": "Nicaragua",
+        "median_dist_dn_km": 431.4,
+        "n_reaches": 176
+      },
+      {
+        "country": "Honduras",
+        "median_dist_dn_km": 235.3,
+        "n_reaches": 229
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2792,
+      "main_network_reaches": 2791,
+      "main_stem_reaches": 303,
+      "main_stem_km": 758.5,
+      "endorheic": false
+    }
+  },
+  "Colorado": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 1173.8,
+        "n_reaches": 690
+      },
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 75.8,
+        "n_reaches": 35
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 33526,
+      "main_network_reaches": 31454,
+      "main_stem_reaches": 719,
+      "main_stem_km": 2518.5,
+      "endorheic": false
+    }
+  },
+  "Columbia": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 1670.5,
+        "n_reaches": 169
+      },
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 648.1,
+        "n_reaches": 416
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 42321,
+      "main_network_reaches": 42147,
+      "main_stem_reaches": 582,
+      "main_stem_km": 1969.6,
+      "endorheic": false
+    }
+  },
+  "Connecticut": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 559.9,
+        "n_reaches": 6
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 26,
+      "main_network_reaches": 26,
+      "main_stem_reaches": 6,
+      "main_stem_km": 567.5,
+      "endorheic": false
+    }
+  },
+  "Connecticut\r\nConnecticut\r\nConnecticut": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 288.1,
+        "n_reaches": 215
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2741,
+      "main_network_reaches": 2737,
+      "main_stem_reaches": 215,
+      "main_stem_km": 596.1,
+      "endorheic": false
+    }
+  },
+  "Copper": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 170.0,
+        "n_reaches": 173
+      }
+    ],
+    "tributary_only": [
+      "Canada"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 7119,
+      "main_network_reaches": 7119,
+      "main_stem_reaches": 173,
+      "main_stem_km": 454.8,
+      "endorheic": false
+    }
+  },
+  "Firth": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 184.2,
+        "n_reaches": 16
+      },
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 68.5,
+        "n_reaches": 31
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 262,
+      "main_network_reaches": 262,
+      "main_stem_reaches": 46,
+      "main_stem_km": 213.3,
+      "endorheic": false
+    }
+  },
+  "Fraser": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 10.4,
+        "n_reaches": 8
+      }
+    ],
+    "tributary_only": [
+      "United States of America"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 15273,
+      "main_network_reaches": 15261,
+      "main_stem_reaches": 8,
+      "main_stem_km": 14.0,
+      "endorheic": false
+    }
+  },
+  "Goascoran": {
+    "main_stem_order": [
+      {
+        "country": "Honduras",
+        "median_dist_dn_km": 80.3,
+        "n_reaches": 40
+      },
+      {
+        "country": "El Salvador",
+        "median_dist_dn_km": 42.8,
+        "n_reaches": 22
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 184,
+      "main_network_reaches": 184,
+      "main_stem_reaches": 44,
+      "main_stem_km": 127.5,
+      "endorheic": false
+    }
+  },
+  "Grijalva": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 789.2,
+        "n_reaches": 217
+      },
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 289.9,
+        "n_reaches": 197
+      }
+    ],
+    "tributary_only": [
+      "Belize"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 14153,
+      "main_network_reaches": 13902,
+      "main_stem_reaches": 366,
+      "main_stem_km": 1052.6,
+      "endorheic": false
+    }
+  },
+  "Hondo": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 212.9,
+        "n_reaches": 24
+      },
+      {
+        "country": "Belize",
+        "median_dist_dn_km": 87.0,
+        "n_reaches": 31
+      },
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 78.7,
+        "n_reaches": 47
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 674,
+      "main_network_reaches": 674,
+      "main_stem_reaches": 76,
+      "main_stem_km": 255.9,
+      "endorheic": false
+    }
+  },
+  "Lake Azuei": {
+    "main_stem_order": [
+      {
+        "country": "Haiti",
+        "median_dist_dn_km": 9.3,
+        "n_reaches": 8
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Dominican Republic"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 45,
+      "main_network_reaches": 27,
+      "main_stem_reaches": 8,
+      "main_stem_km": 42.4,
+      "endorheic": true
+    }
+  },
+  "Lake Enriquillo": {
+    "main_stem_order": [
+      {
+        "country": "Dominican Republic",
+        "median_dist_dn_km": 20.9,
+        "n_reaches": 15
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Haiti"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 144,
+      "main_network_reaches": 86,
+      "main_stem_reaches": 15,
+      "main_stem_km": 48.0,
+      "endorheic": true
+    }
+  },
+  "Lempa": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 314.7,
+        "n_reaches": 31
+      },
+      {
+        "country": "El Salvador",
+        "median_dist_dn_km": 130.0,
+        "n_reaches": 97
+      },
+      {
+        "country": "Honduras",
+        "median_dist_dn_km": 113.5,
+        "n_reaches": 13
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1652,
+      "main_network_reaches": 1626,
+      "main_stem_reaches": 126,
+      "main_stem_km": 366.5,
+      "endorheic": false
+    }
+  },
+  "Lucia": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 0.0,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [
+      "Canada"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 964,
+      "main_network_reaches": 964,
+      "main_stem_reaches": 1,
+      "main_stem_km": 0.0,
+      "endorheic": false
+    }
+  },
+  "Massacre": {
+    "main_stem_order": [
+      {
+        "country": "Dominican Republic",
+        "median_dist_dn_km": 25.9,
+        "n_reaches": 9
+      },
+      {
+        "country": "Haiti",
+        "median_dist_dn_km": 6.7,
+        "n_reaches": 7
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 39,
+      "main_network_reaches": 39,
+      "main_stem_reaches": 11,
+      "main_stem_km": 43.0,
+      "endorheic": false
+    }
+  },
+  "Mississippi": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 3039.8,
+        "n_reaches": 1466
+      }
+    ],
+    "tributary_only": [
+      "Canada"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 174750,
+      "main_network_reaches": 170530,
+      "main_stem_reaches": 1466,
+      "main_stem_km": 6010.9,
+      "endorheic": false
+    }
+  },
+  "Moho": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 71.8,
+        "n_reaches": 12
+      },
+      {
+        "country": "Belize",
+        "median_dist_dn_km": 21.9,
+        "n_reaches": 20
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 179,
+      "main_network_reaches": 179,
+      "main_stem_reaches": 29,
+      "main_stem_km": 87.2,
+      "endorheic": false
+    }
+  },
+  "Motaqua": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 213.9,
+        "n_reaches": 153
+      },
+      {
+        "country": "Honduras",
+        "median_dist_dn_km": 2.6,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1626,
+      "main_network_reaches": 1626,
+      "main_stem_reaches": 153,
+      "main_stem_km": 435.9,
+      "endorheic": false
+    }
+  },
+  "Negro": {
+    "main_stem_order": [
+      {
+        "country": "Nicaragua",
+        "median_dist_dn_km": 62.7,
+        "n_reaches": 36
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Honduras"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 543,
+      "main_network_reaches": 334,
+      "main_stem_reaches": 36,
+      "main_stem_km": 106.2,
+      "endorheic": false
+    }
+  },
+  "Nelson-Saskatchewan": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 1154.6,
+        "n_reaches": 505
+      }
+    ],
+    "tributary_only": [
+      "United States of America"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 53069,
+      "main_network_reaches": 49002,
+      "main_stem_reaches": 505,
+      "main_stem_km": 2268.2,
+      "endorheic": false
+    }
+  },
+  "Paz": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 57.5,
+        "n_reaches": 38
+      },
+      {
+        "country": "El Salvador",
+        "median_dist_dn_km": 23.6,
+        "n_reaches": 18
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 209,
+      "main_network_reaches": 209,
+      "main_stem_reaches": 41,
+      "main_stem_km": 107.3,
+      "endorheic": false
+    }
+  },
+  "Pedernales": {
+    "main_stem_order": [
+      {
+        "country": "Haiti",
+        "median_dist_dn_km": 17.7,
+        "n_reaches": 8
+      },
+      {
+        "country": "Dominican Republic",
+        "median_dist_dn_km": 9.0,
+        "n_reaches": 3
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 19,
+      "main_network_reaches": 19,
+      "main_stem_reaches": 8,
+      "main_stem_km": 28.4,
+      "endorheic": false
+    }
+  },
+  "Rio Grande (North America)": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 1556.2,
+        "n_reaches": 760
+      },
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 977.0,
+        "n_reaches": 362
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 25848,
+      "main_network_reaches": 22769,
+      "main_stem_reaches": 836,
+      "main_stem_km": 2705.5,
+      "endorheic": false
+    }
+  },
+  "San Juan": {
+    "main_stem_order": [
+      {
+        "country": "Nicaragua",
+        "median_dist_dn_km": 326.2,
+        "n_reaches": 171
+      },
+      {
+        "country": "Costa Rica",
+        "median_dist_dn_km": 42.3,
+        "n_reaches": 35
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3783,
+      "main_network_reaches": 3766,
+      "main_stem_reaches": 191,
+      "main_stem_km": 634.0,
+      "endorheic": false
+    }
+  },
+  "Santa Clara": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 131.3,
+        "n_reaches": 1
+      },
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 68.8,
+        "n_reaches": 27
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 197,
+      "main_network_reaches": 197,
+      "main_stem_reaches": 27,
+      "main_stem_km": 131.3,
+      "endorheic": false
+    }
+  },
+  "Sarstun": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 68.4,
+        "n_reaches": 36
+      },
+      {
+        "country": "Belize",
+        "median_dist_dn_km": 21.2,
+        "n_reaches": 14
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 355,
+      "main_network_reaches": 354,
+      "main_stem_reaches": 43,
+      "main_stem_km": 112.4,
+      "endorheic": false
+    }
+  },
+  "Sixaola": {
+    "main_stem_order": [
+      {
+        "country": "Costa Rica",
+        "median_dist_dn_km": 84.8,
+        "n_reaches": 71
+      },
+      {
+        "country": "Panama",
+        "median_dist_dn_km": 33.2,
+        "n_reaches": 24
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 603,
+      "main_network_reaches": 603,
+      "main_stem_reaches": 72,
+      "main_stem_km": 145.4,
+      "endorheic": false
+    }
+  },
+  "Skagit": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 214.9,
+        "n_reaches": 21
+      },
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 103.2,
+        "n_reaches": 93
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1035,
+      "main_network_reaches": 1035,
+      "main_stem_reaches": 113,
+      "main_stem_km": 246.2,
+      "endorheic": false
+    }
+  },
+  "St. Croix": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 64.3,
+        "n_reaches": 35
+      },
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 15.8,
+        "n_reaches": 7
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 363,
+      "main_network_reaches": 345,
+      "main_stem_reaches": 35,
+      "main_stem_km": 111.7,
+      "endorheic": false
+    }
+  },
+  "St. John (North America)": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 529.8,
+        "n_reaches": 119
+      },
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 245.0,
+        "n_reaches": 150
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4725,
+      "main_network_reaches": 4725,
+      "main_stem_reaches": 241,
+      "main_stem_km": 710.5,
+      "endorheic": false
+    }
+  },
+  "St. Lawrence": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 8.2,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [
+      "United States of America"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 50133,
+      "main_network_reaches": 50029,
+      "main_stem_reaches": 2,
+      "main_stem_km": 11.4,
+      "endorheic": false
+    }
+  },
+  "Stikine": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 10.2,
+        "n_reaches": 7
+      }
+    ],
+    "tributary_only": [
+      "Canada"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4467,
+      "main_network_reaches": 4467,
+      "main_stem_reaches": 7,
+      "main_stem_km": 15.3,
+      "endorheic": false
+    }
+  },
+  "Suchiate": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 53.7,
+        "n_reaches": 23
+      },
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 9.8,
+        "n_reaches": 9
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 160,
+      "main_network_reaches": 160,
+      "main_stem_reaches": 26,
+      "main_stem_km": 82.0,
+      "endorheic": false
+    }
+  },
+  "Taku": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 26.2,
+        "n_reaches": 1
+      },
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 12.0,
+        "n_reaches": 12
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1661,
+      "main_network_reaches": 1661,
+      "main_stem_reaches": 12,
+      "main_stem_km": 26.2,
+      "endorheic": false
+    }
+  },
+  "Temash": {
+    "main_stem_order": [
+      {
+        "country": "Guatemala",
+        "median_dist_dn_km": 45.9,
+        "n_reaches": 2
+      },
+      {
+        "country": "Belize",
+        "median_dist_dn_km": 26.4,
+        "n_reaches": 13
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 73,
+      "main_network_reaches": 65,
+      "main_stem_reaches": 14,
+      "main_stem_km": 48.5,
+      "endorheic": false
+    }
+  },
+  "Tijuana": {
+    "main_stem_order": [
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 61.5,
+        "n_reaches": 30
+      },
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 2.4,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 190,
+      "main_network_reaches": 190,
+      "main_stem_reaches": 31,
+      "main_stem_km": 120.3,
+      "endorheic": false
+    }
+  },
+  "Unuk": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 71.9,
+        "n_reaches": 29
+      },
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 23.2,
+        "n_reaches": 21
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 402,
+      "main_network_reaches": 389,
+      "main_stem_reaches": 49,
+      "main_stem_km": 101.0,
+      "endorheic": false
+    }
+  },
+  "Whiting": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 1.4,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [
+      "Canada"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 397,
+      "main_network_reaches": 397,
+      "main_stem_reaches": 1,
+      "main_stem_km": 1.4,
+      "endorheic": false
+    }
+  },
+  "Yaqui": {
+    "main_stem_order": [
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 765.6,
+        "n_reaches": 40
+      },
+      {
+        "country": "Mexico",
+        "median_dist_dn_km": 405.5,
+        "n_reaches": 217
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3809,
+      "main_network_reaches": 3809,
+      "main_stem_reaches": 256,
+      "main_stem_km": 832.8,
+      "endorheic": false
+    }
+  },
+  "Yukon": {
+    "main_stem_order": [
+      {
+        "country": "Canada",
+        "median_dist_dn_km": 2683.4,
+        "n_reaches": 267
+      },
+      {
+        "country": "United States of America",
+        "median_dist_dn_km": 1009.0,
+        "n_reaches": 503
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 43590,
+      "main_network_reaches": 42703,
+      "main_stem_reaches": 769,
+      "main_stem_km": 3132.8,
+      "endorheic": false
+    }
+  },
+  "Amacuro": {
+    "main_stem_order": [
+      {
+        "country": "Guyana",
+        "median_dist_dn_km": 118.7,
+        "n_reaches": 20
+      },
+      {
+        "country": "Venezuela",
+        "median_dist_dn_km": 52.5,
+        "n_reaches": 64
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 481,
+      "main_network_reaches": 481,
+      "main_stem_reaches": 81,
+      "main_stem_km": 143.5,
+      "endorheic": false
+    }
+  },
+  "Amazon": {
+    "main_stem_order": [
+      {
+        "country": "Peru",
+        "median_dist_dn_km": 3904.3,
+        "n_reaches": 1018
+      },
+      {
+        "country": "Colombia",
+        "median_dist_dn_km": 2961.1,
+        "n_reaches": 17
+      },
+      {
+        "country": "Brazil",
+        "median_dist_dn_km": 1733.8,
+        "n_reaches": 996
+      }
+    ],
+    "tributary_only": [
+      "Bolivia",
+      "Ecuador",
+      "Guyana",
+      "Venezuela"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 753863,
+      "main_network_reaches": 744757,
+      "main_stem_reaches": 2024,
+      "main_stem_km": 5157.8,
+      "endorheic": false
+    }
+  },
+  "Aviles": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 40.6,
+        "n_reaches": 1
+      },
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 27.0,
+        "n_reaches": 7
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 15,
+      "main_network_reaches": 15,
+      "main_stem_reaches": 7,
+      "main_stem_km": 40.6,
+      "endorheic": false
+    }
+  },
+  "Aysen": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 97.2,
+        "n_reaches": 93
+      }
+    ],
+    "tributary_only": [
+      "Argentina"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1633,
+      "main_network_reaches": 1605,
+      "main_stem_reaches": 93,
+      "main_stem_km": 206.9,
+      "endorheic": false
+    }
+  },
+  "Baker": {
+    "main_stem_order": [
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 392.3,
+        "n_reaches": 29
+      },
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 162.1,
+        "n_reaches": 84
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1750,
+      "main_network_reaches": 1750,
+      "main_stem_reaches": 112,
+      "main_stem_km": 474.6,
+      "endorheic": false
+    }
+  },
+  "Barima": {
+    "main_stem_order": [
+      {
+        "country": "Guyana",
+        "median_dist_dn_km": 83.4,
+        "n_reaches": 1
+      },
+      {
+        "country": "Venezuela",
+        "median_dist_dn_km": 41.8,
+        "n_reaches": 41
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 144,
+      "main_network_reaches": 144,
+      "main_stem_reaches": 41,
+      "main_stem_km": 83.4,
+      "endorheic": false
+    }
+  },
+  "Cancoso/Lauca": {
+    "main_stem_order": [
+      {
+        "country": "Bolivia",
+        "median_dist_dn_km": 86.3,
+        "n_reaches": 35
+      }
+    ],
+    "tributary_only": [
+      "Chile"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1597,
+      "main_network_reaches": 826,
+      "main_stem_reaches": 35,
+      "main_stem_km": 140.8,
+      "endorheic": true
+    }
+  },
+  "Carmen Silva/Chico": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 94.2,
+        "n_reaches": 12
+      },
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 27.9,
+        "n_reaches": 12
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 89,
+      "main_network_reaches": 89,
+      "main_stem_reaches": 23,
+      "main_stem_km": 114.2,
+      "endorheic": false
+    }
+  },
+  "Catatumbo": {
+    "main_stem_order": [
+      {
+        "country": "Colombia",
+        "median_dist_dn_km": 289.8,
+        "n_reaches": 63
+      },
+      {
+        "country": "Venezuela",
+        "median_dist_dn_km": 106.3,
+        "n_reaches": 55
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2733,
+      "main_network_reaches": 2733,
+      "main_stem_reaches": 117,
+      "main_stem_km": 389.7,
+      "endorheic": false
+    }
+  },
+  "Chira": {
+    "main_stem_order": [
+      {
+        "country": "Ecuador",
+        "median_dist_dn_km": 262.3,
+        "n_reaches": 67
+      },
+      {
+        "country": "Peru",
+        "median_dist_dn_km": 84.3,
+        "n_reaches": 43
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 945,
+      "main_network_reaches": 945,
+      "main_stem_reaches": 103,
+      "main_stem_km": 359.0,
+      "endorheic": false
+    }
+  },
+  "Chuy": {
+    "main_stem_order": [
+      {
+        "country": "Brazil",
+        "median_dist_dn_km": 32.1,
+        "n_reaches": 17
+      },
+      {
+        "country": "Uruguay",
+        "median_dist_dn_km": 5.4,
+        "n_reaches": 4
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 58,
+      "main_network_reaches": 51,
+      "main_stem_reaches": 19,
+      "main_stem_km": 56.6,
+      "endorheic": false
+    }
+  },
+  "Comau": {
+    "main_stem_order": [
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 39.5,
+        "n_reaches": 1
+      },
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 11.2,
+        "n_reaches": 14
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 97,
+      "main_network_reaches": 97,
+      "main_stem_reaches": 14,
+      "main_stem_km": 39.5,
+      "endorheic": false
+    }
+  },
+  "Corantijn/Courantyne": {
+    "main_stem_order": [
+      {
+        "country": "Suriname",
+        "median_dist_dn_km": 427.5,
+        "n_reaches": 212
+      },
+      {
+        "country": "Guyana",
+        "median_dist_dn_km": 315.3,
+        "n_reaches": 174
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4987,
+      "main_network_reaches": 4907,
+      "main_stem_reaches": 255,
+      "main_stem_km": 842.7,
+      "endorheic": false
+    }
+  },
+  "Cullen": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 28.7,
+        "n_reaches": 4
+      },
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 5.6,
+        "n_reaches": 6
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 47,
+      "main_network_reaches": 47,
+      "main_stem_reaches": 9,
+      "main_stem_km": 42.1,
+      "endorheic": false
+    }
+  },
+  "Essequibo": {
+    "main_stem_order": [
+      {
+        "country": "Venezuela",
+        "median_dist_dn_km": 552.1,
+        "n_reaches": 124
+      },
+      {
+        "country": "Guyana",
+        "median_dist_dn_km": 212.1,
+        "n_reaches": 172
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 19164,
+      "main_network_reaches": 18822,
+      "main_stem_reaches": 291,
+      "main_stem_km": 747.6,
+      "endorheic": false
+    }
+  },
+  "Gallegos/Chico": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 249.6,
+        "n_reaches": 24
+      },
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 82.0,
+        "n_reaches": 47
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 935,
+      "main_network_reaches": 667,
+      "main_stem_reaches": 70,
+      "main_stem_km": 298.8,
+      "endorheic": false
+    }
+  },
+  "Jurado": {
+    "main_stem_order": [
+      {
+        "country": "Panama",
+        "median_dist_dn_km": 48.0,
+        "n_reaches": 15
+      },
+      {
+        "country": "Colombia",
+        "median_dist_dn_km": 17.1,
+        "n_reaches": 19
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 238,
+      "main_network_reaches": 238,
+      "main_stem_reaches": 33,
+      "main_stem_km": 60.1,
+      "endorheic": false
+    }
+  },
+  "La Plata": {
+    "main_stem_order": [
+      {
+        "country": "Brazil",
+        "median_dist_dn_km": 2825.9,
+        "n_reaches": 336
+      },
+      {
+        "country": "Bolivia",
+        "median_dist_dn_km": 2358.5,
+        "n_reaches": 17
+      },
+      {
+        "country": "Paraguay",
+        "median_dist_dn_km": 1741.7,
+        "n_reaches": 262
+      },
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 727.3,
+        "n_reaches": 299
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Uruguay"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 171946,
+      "main_network_reaches": 137103,
+      "main_stem_reaches": 795,
+      "main_stem_km": 3452.0,
+      "endorheic": false
+    }
+  },
+  "Lagoon Dos Patos-Lagoon Mirim": {
+    "main_stem_order": [
+      {
+        "country": "Brazil",
+        "median_dist_dn_km": 294.8,
+        "n_reaches": 223
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [
+      "Uruguay"
+    ],
+    "stats": {
+      "total_reaches_in_basin": 16080,
+      "main_network_reaches": 7775,
+      "main_stem_reaches": 223,
+      "main_stem_km": 630.3,
+      "endorheic": false
+    }
+  },
+  "Laguna Filaret": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 22.7,
+        "n_reaches": 11
+      },
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 2.1,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 99,
+      "main_network_reaches": 99,
+      "main_stem_reaches": 11,
+      "main_stem_km": 47.9,
+      "endorheic": false
+    }
+  },
+  "Lake Fagnano": {
+    "main_stem_order": [
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 83.9,
+        "n_reaches": 18
+      },
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 14.9,
+        "n_reaches": 9
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 177,
+      "main_network_reaches": 177,
+      "main_stem_reaches": 26,
+      "main_stem_km": 129.8,
+      "endorheic": false
+    }
+  },
+  "Lake Titicaca-Poopo System": {
+    "main_stem_order": [
+      {
+        "country": "Peru",
+        "median_dist_dn_km": 1037.8,
+        "n_reaches": 100
+      },
+      {
+        "country": "Bolivia",
+        "median_dist_dn_km": 451.2,
+        "n_reaches": 154
+      }
+    ],
+    "tributary_only": [
+      "Chile"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 5308,
+      "main_network_reaches": 5308,
+      "main_stem_reaches": 249,
+      "main_stem_km": 1154.4,
+      "endorheic": true
+    }
+  },
+  "Loa": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 314.5,
+        "n_reaches": 126
+      }
+    ],
+    "tributary_only": [
+      "Bolivia"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1635,
+      "main_network_reaches": 1609,
+      "main_stem_reaches": 126,
+      "main_stem_km": 451.7,
+      "endorheic": false
+    }
+  },
+  "Maroni": {
+    "main_stem_order": [
+      {
+        "country": "Suriname",
+        "median_dist_dn_km": 308.0,
+        "n_reaches": 185
+      },
+      {
+        "country": "French Guiana",
+        "median_dist_dn_km": 254.2,
+        "n_reaches": 159
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 7727,
+      "main_network_reaches": 7693,
+      "main_stem_reaches": 229,
+      "main_stem_km": 538.3,
+      "endorheic": false
+    }
+  },
+  "Mataje": {
+    "main_stem_order": [
+      {
+        "country": "Colombia",
+        "median_dist_dn_km": 23.4,
+        "n_reaches": 14
+      },
+      {
+        "country": "Ecuador",
+        "median_dist_dn_km": 21.7,
+        "n_reaches": 10
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 152,
+      "main_network_reaches": 55,
+      "main_stem_reaches": 17,
+      "main_stem_km": 47.3,
+      "endorheic": false
+    }
+  },
+  "Mira": {
+    "main_stem_order": [
+      {
+        "country": "Ecuador",
+        "median_dist_dn_km": 223.4,
+        "n_reaches": 81
+      },
+      {
+        "country": "Colombia",
+        "median_dist_dn_km": 54.9,
+        "n_reaches": 40
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1666,
+      "main_network_reaches": 1666,
+      "main_stem_reaches": 120,
+      "main_stem_km": 297.7,
+      "endorheic": false
+    }
+  },
+  "Oiapoque/Oyupock": {
+    "main_stem_order": [
+      {
+        "country": "Brazil",
+        "median_dist_dn_km": 207.8,
+        "n_reaches": 137
+      },
+      {
+        "country": "French Guiana",
+        "median_dist_dn_km": 148.8,
+        "n_reaches": 122
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 3972,
+      "main_network_reaches": 3971,
+      "main_stem_reaches": 177,
+      "main_stem_km": 369.2,
+      "endorheic": false
+    }
+  },
+  "Orinoco": {
+    "main_stem_order": [
+      {
+        "country": "Venezuela",
+        "median_dist_dn_km": 1.0,
+        "n_reaches": 1
+      }
+    ],
+    "tributary_only": [
+      "Colombia",
+      "Guyana"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 135535,
+      "main_network_reaches": 133699,
+      "main_stem_reaches": 1,
+      "main_stem_km": 1.0,
+      "endorheic": false
+    }
+  },
+  "Palena": {
+    "main_stem_order": [
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 210.8,
+        "n_reaches": 62
+      },
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 85.9,
+        "n_reaches": 97
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 2736,
+      "main_network_reaches": 2725,
+      "main_stem_reaches": 157,
+      "main_stem_km": 327.8,
+      "endorheic": false
+    }
+  },
+  "Pascua": {
+    "main_stem_order": [
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 241.0,
+        "n_reaches": 29
+      },
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 100.8,
+        "n_reaches": 46
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 784,
+      "main_network_reaches": 779,
+      "main_stem_reaches": 68,
+      "main_stem_km": 296.1,
+      "endorheic": false
+    }
+  },
+  "Patia": {
+    "main_stem_order": [
+      {
+        "country": "Colombia",
+        "median_dist_dn_km": 194.0,
+        "n_reaches": 222
+      }
+    ],
+    "tributary_only": [
+      "Ecuador"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 4189,
+      "main_network_reaches": 4180,
+      "main_stem_reaches": 222,
+      "main_stem_km": 414.8,
+      "endorheic": false
+    }
+  },
+  "Puelo": {
+    "main_stem_order": [
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 122.7,
+        "n_reaches": 22
+      },
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 38.6,
+        "n_reaches": 36
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 908,
+      "main_network_reaches": 908,
+      "main_stem_reaches": 56,
+      "main_stem_km": 162.0,
+      "endorheic": false
+    }
+  },
+  "Rio Grande (South America)": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 114.1,
+        "n_reaches": 25
+      },
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 21.9,
+        "n_reaches": 13
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 433,
+      "main_network_reaches": 425,
+      "main_stem_reaches": 37,
+      "main_stem_km": 181.2,
+      "endorheic": false
+    }
+  },
+  "San Martin": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 21.0,
+        "n_reaches": 8
+      },
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 1.4,
+        "n_reaches": 2
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 20,
+      "main_network_reaches": 20,
+      "main_stem_reaches": 9,
+      "main_stem_km": 45.2,
+      "endorheic": false
+    }
+  },
+  "Seno Union/Serrano": {
+    "main_stem_order": [
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 25.8,
+        "n_reaches": 23
+      }
+    ],
+    "tributary_only": [
+      "Argentina"
+    ],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 708,
+      "main_network_reaches": 708,
+      "main_stem_reaches": 23,
+      "main_stem_km": 42.4,
+      "endorheic": false
+    }
+  },
+  "Tumbes": {
+    "main_stem_order": [
+      {
+        "country": "Ecuador",
+        "median_dist_dn_km": 160.9,
+        "n_reaches": 36
+      },
+      {
+        "country": "Peru",
+        "median_dist_dn_km": 63.1,
+        "n_reaches": 26
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 292,
+      "main_network_reaches": 292,
+      "main_stem_reaches": 55,
+      "main_stem_km": 216.4,
+      "endorheic": false
+    }
+  },
+  "Valdivia": {
+    "main_stem_order": [
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 227.1,
+        "n_reaches": 18
+      },
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 123.2,
+        "n_reaches": 95
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1515,
+      "main_network_reaches": 1515,
+      "main_stem_reaches": 112,
+      "main_stem_km": 256.5,
+      "endorheic": false
+    }
+  },
+  "Yelcho": {
+    "main_stem_order": [
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 216.8,
+        "n_reaches": 75
+      },
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 71.5,
+        "n_reaches": 73
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 1547,
+      "main_network_reaches": 1547,
+      "main_stem_reaches": 147,
+      "main_stem_km": 298.2,
+      "endorheic": false
+    }
+  },
+  "Zapaleri": {
+    "main_stem_order": [
+      {
+        "country": "Bolivia",
+        "median_dist_dn_km": 60.3,
+        "n_reaches": 5
+      },
+      {
+        "country": "Argentina",
+        "median_dist_dn_km": 40.6,
+        "n_reaches": 9
+      },
+      {
+        "country": "Chile",
+        "median_dist_dn_km": 17.2,
+        "n_reaches": 12
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 121,
+      "main_network_reaches": 88,
+      "main_stem_reaches": 24,
+      "main_stem_km": 66.5,
+      "endorheic": true
+    }
+  },
+  "Zarumilla": {
+    "main_stem_order": [
+      {
+        "country": "Ecuador",
+        "median_dist_dn_km": 30.5,
+        "n_reaches": 6
+      },
+      {
+        "country": "Peru",
+        "median_dist_dn_km": 21.0,
+        "n_reaches": 6
+      }
+    ],
+    "tributary_only": [],
+    "no_reaches": [],
+    "stats": {
+      "total_reaches_in_basin": 39,
+      "main_network_reaches": 37,
+      "main_stem_reaches": 8,
+      "main_stem_km": 45.0,
+      "endorheic": false
+    }
+  }
+}

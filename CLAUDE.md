@@ -15,6 +15,8 @@ data/{topic}/             # Outputs organized by research topic
 ```
 
 ## Workflow
+
+### Forward pipeline (building a new dataset)
 0. **Inventory** — check what data already exists in the repo (`ls`, `head`, `wc -l`). Prior sessions may have left curated datasets.
 1. `/source-scout <topic>` — find sources, classify as primary/secondary, probe availability
 2. `/source-validator` — validate each source: who maintains it, does it have what we need?
@@ -24,20 +26,34 @@ data/{topic}/             # Outputs organized by research topic
 6. `/data-merger` — if combining with existing data: overlap analysis → name resolution → dry run → apply
 7. `/data-verifier` — spot-check output against independent primary sources
 
-## The Three Problems
+### Backwards pipeline (enriching an existing dataset)
+When you start from a question the DB can't answer yet, work backwards:
+1. **Define the query** — write the exact SQL/question the dataset must answer
+2. **Model the gap** — what entity, relationship, or attribute is missing? Is it a new relationship type, a new attribute on existing relationships, or new entities entirely?
+3. **Assess existing data** — can the gap be filled by computation on data already in the DB? (spatial inference, name parsing, etc.) If yes, skip to extraction.
+4. **Source if needed** — only if existing data can't fill the gap: `/source-scout` → `/source-validator` → `/data-inspector` (use enrichment mode — test whether the source has the specific attribute, not the three problems)
+5. **Extract & compute** — download source, compute the missing attribute (often involves spatial joins between the new source and existing data)
+6. `/data-merger` (attribute augmentation mode) — update existing entities/relationships with the computed attribute
+7. `/data-verifier` — spot-check against independent sources
 
-Every data project that builds structured/relational output needs to solve three problems. A single source rarely handles all three. **Test each one before committing to a plan.**
+## The Four Problems
+
+Every data project that builds structured/relational output needs to solve up to four problems. A single source rarely handles all of them. **Test each one before committing to a plan.**
 
 | # | Problem | Question | How to test |
 |---|---------|----------|-------------|
 | 1 | **Enumeration** | "What exists?" | Fetch a list endpoint. Count records. Check fields. |
 | 2 | **Placement** | "Where is it?" | Check for coordinates/geometry. If entities have lat/lon and containers have bounding boxes, `located_in` is free. |
 | 3 | **Relationships** | "How are things connected?" | Fetch relationships for 5-10 entities. Count per entity. If avg <3, this source can't be your relationship backbone. |
+| 4 | **Properties** | "What qualities do the connections have?" | Do relationships have direction, weight, ordering, or capacity? Rivers flow (upstream→downstream). Cables have bandwidth. Trade routes have volume. A relationship without properties is a line without an arrow — structure exists but you can't navigate it. |
+
+Problems 1-3 get you a graph. Problem 4 makes it useful. You often discover Problem 4 only when you try to answer a real query against the data.
 
 For any gap, the inspector should propose how to fill it:
 - Missing relationships → curated dataset? spatial computation? name parsing? polygon intersection?
 - Missing coordinates → different source? geocoding?
 - Missing entities → different source? different endpoint?
+- Missing properties → topology dataset? attribute enrichment? computation from existing geometry?
 
 ## Principles
 - **Primary sources only**: operator websites, intergovernmental bodies, industry databases

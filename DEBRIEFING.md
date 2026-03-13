@@ -574,3 +574,146 @@ new_beginning/
 - **`all.json` count discrepancy** — 690 vs 1,312 unresolved. May be missing cables.
 - Rivers table has known Suriname gap and disputed territory entries (from Session 2)
 - `query_world.py` shows Dutch names (België, Frankrijk) — needs English alias display layer
+- **27 unranked flows_through relationships** — Dutch names (Frankrijk, België, Nederland, Groothertogdom Luxemburg) and edge cases. Low priority.
+- **Zambezi source country** — algorithm puts Angola at Rank 0, but documented source is Zambia (Kalene Hills, near Angola border). Consider swapping.
+- **La Plata/Bolivia** — Bolivia ranked as Rank 1 on main stem, but the Paraná doesn't flow through Bolivia. Should be tributary-only.
+
+---
+
+## Task 6: River Flow Order (HydroRIVERS)
+
+### What we set out to do
+Add upstream→downstream country ordering to every transboundary river in the DB, enabling queries like "In Asia, how many countries are upper riparian states?"
+
+This was the first **backwards pipeline** task — starting from the query, not the source.
+
+### What happened
+
+#### Phase 0: Working backwards from the query
+1. Defined the target query: `SELECT country, COUNT(*) WHERE rank = 0 AND continent = 'Asia'`
+2. Identified the gap: 342 rivers have `flows_through` relationships but only 51 had `Rank` values (from an old CSV of suspect quality — Drava had Hungary×3)
+3. Assessed existing data: TFDD BCU shapefile has country polygons per basin but no flow order. Tested spatial distance-from-mouth approach on BCU alone — worked for simple rivers, failed for complex ones (tributaries).
+4. Concluded: need a hydrological topology source (flow direction + river network).
+
+#### Phase 1: Source discovery (fast — we knew what we needed)
+5. Source scout found 7 candidates. HydroRIVERS (WWF/McGill) was the clear winner: 8.5M river reaches with `NEXT_DOWN` (flow topology), `DIST_DN_KM` (distance to outlet), `MAIN_RIV` (river network grouping).
+6. Same HydroSHEDS ecosystem as TFDD — spatial alignment guaranteed.
+7. Free for all use, no registration, direct download via Cloudflare CDN.
+
+#### Phase 2: Algorithm development (the hard part)
+8. Downloaded HydroRIVERS Europe (68 MB) for testing.
+9. **v1: Strahler order filter** — keep only high-order reaches, rank countries by median DIST_DN_KM. Problem: missed source countries (headwater reaches are low Strahler order by definition).
+10. **v2: NEXT_DOWN chain tracing** — trace main stem from mouth upstream, always following the reach with largest `UPLAND_SKM`. **Perfect for Danube** (9 countries correct). Problem: missed source countries where headwaters branch off the main-stem trace.
+11. **v3: All reaches, high-order only** — included all countries but noisy (tributary countries ranked alongside main-stem ones).
+12. **v4: All reaches, median DIST_DN_KM** — captured source countries (Lebanon in Orontes, Russia in Dnieper) but also included tributary-only countries.
+13. **Final: Hybrid v2+v4** — NEXT_DOWN tracing for main-stem ordering + all-reaches check for country detection. Countries on the traced main stem get a Rank; countries in the network but not on the main stem get `tributary_only` (-1).
+
+#### Phase 3: Full extraction
+14. Downloaded all 8 HydroRIVERS regions (af, ar, as, au, eu, na, sa, si — ~500 MB total).
+15. First run: 281/316 basins computed, 35 failed. All failures were **region mapping gaps** — Middle East rivers (AS continent) were in the EU HydroRIVERS region, Indonesia/PNG rivers in AU region, Alaska rivers in AR region.
+16. Fixed: added fallback regions (AS→also check EU+AU, NA→also check AR).
+17. Second run: **316/316 basins, zero failures.**
+18. Applied 842/869 Rank values to the database (97% coverage). 27 unranked due to Dutch country names and edge cases.
+
+#### Phase 4: Verification
+19. Spot-checked 10 rivers against independent primary sources (MRC, ICPDR, Niger Basin Authority, FAO, Britannica).
+20. Results: 6 perfect, 3 minor discrepancies, 1 partial. **90% accuracy.**
+21. Minor issues: Zambezi (Angola vs Zambia source — near-border ambiguity), Rhine (France border vs flow-through), La Plata (Bolivia tributary misclassified as main stem).
+
+### Result
+| Metric | Before | After |
+|---|---|---|
+| Rivers with flow order | 51 (suspect quality) | 842 relationships ranked across 316 basins |
+| Source countries identified | 0 reliably | 340 |
+| Tributary-only countries | (concept didn't exist) | 171 |
+| Target query works? | No | Yes — "26 Asian countries are upper riparian" |
+
+### What went right
+- **The backwards pipeline worked.** Starting from the query made every decision crisp. No over-sourcing, no extra attributes, no scope creep.
+- **One new source was enough.** HydroRIVERS solved the entire problem. We didn't need HydroBASINS, RiverATLAS, GRIT, or MERIT Hydro.
+- **Existing data did most of the work.** TFDD BCU polygons (already in repo) + HydroRIVERS topology = flow order. No new entities, no new relationships — just one attribute added to existing relationships.
+- **Algorithm iteration was fast.** Four versions in one session, with live testing against the Danube (known 9-country ordering). Each version's failure mode was obvious and informative.
+- **Region fallbacks saved the re-run.** When 35 basins failed, the root cause was clear (region mapping) and the fix was a 3-line config change, not a redesign.
+
+### What went wrong
+- **Country name matching — again.** 27 relationships unranked because the DB uses Dutch names (Frankrijk, België, Nederland) and the TFDD uses formal names (Lao People's Democratic Republic, Viet Nam). Six sessions in, this is still not fully solved. A shared `country_aliases.json` would prevent this permanently.
+- **The algorithm was 90% of the effort, but no agent helped with it.** The scout, validator, inspector, merger, verifier — none of them help design an algorithm. The gap between "I have DIST_DN_KM" and "I have correct country ordering" required 4 iterations of spatial logic. This is a skill that doesn't fit the current agent framework.
+- **Tributary-only is a new concept without a clear definition.** Is Uganda "tributary-only" on the Nile? The White Nile's source is in Burundi (via Uganda). But our NEXT_DOWN trace doesn't reach it because the algorithm follows the highest upstream area at each junction. The definition of "main stem" is ambiguous for rivers with multiple major tributaries.
+
+---
+
+## Key Lessons (Session 6)
+
+### On the backwards pipeline
+- **Start from the query when your dataset already exists.** The forward pipeline (source → extract → load) is for building. The backwards pipeline (query → gap → compute) is for making it useful. This session added zero entities and zero relationships — just one attribute — and unlocked a whole class of queries.
+- **The query defines "done."** Previous sessions measured progress by counts (37K entities! 27K relationships!). This session had one acceptance criterion: does the SQL query return correct results? Binary, concrete, testable.
+- **Problems 1-3 build the graph. Problem 4 makes it queryable.** Enumeration, Placement, Relationships give you structure. Properties (direction, weight, ordering) give you meaning. A `flows_through` without direction is a road without arrows.
+
+### On enrichment vs building
+- **Attribute augmentation is a different beast from entity import.** No new entities, no name matching for import, no synthetic IDs. The challenge is: compute the correct value for an attribute on existing relationships. The data model is stable — only the values change.
+- **Existing data is the platform.** TFDD BCU polygons + HydroRIVERS topology + existing `flows_through` relationships = flow order. Each piece was necessary, none sufficient alone. The value was in combining them, not in any individual source.
+
+### On algorithm development
+- **Budget for algorithm iterations.** The first approach (Strahler filter) was wrong. The second (NEXT_DOWN trace) was 80% right. The fourth was the answer. Each failure mode taught something specific: v1 showed that headwaters are low-order, v2 showed that source countries branch off the main trace, v3 showed that including all reaches is noisy.
+- **Test against a known complex case.** The Danube (19 basin countries, 9 main-stem countries) was the perfect test case. If the algorithm handles the Danube correctly, it handles everything. Pick your hardest case first.
+- **No agent can design your algorithm.** The pipeline agents (scout, validate, inspect) are for finding and assessing data. The algorithm that bridges raw data to the target attribute is pure engineering — specific to the problem, requiring domain knowledge, and not automatable.
+
+### On verification from queries
+- **The query IS the verification framework.** "Is China the top upper riparian in Asia?" — if the answer is obviously right, the data is probably right. Previous sessions required tedious entity-by-entity spot-checking. Query-level verification is faster and higher-signal.
+
+---
+
+## Updated Pipeline
+
+The framework is now:
+- **Four Problems** (not three): Enumeration, Placement, Relationships, **Properties**
+- **Two pipelines**: Forward (build) and Backwards (enrich)
+- **Two merge modes**: Entity import (Mode A) and Attribute augmentation (Mode B)
+
+```
+Forward pipeline (building):
+  0. Inventory → 1. Scout → 2. Validate → 3. Inspect (4 problems)
+  → 4. Plan → 5. Extract → 6. Merge (entity import) → 7. Verify
+
+Backwards pipeline (enriching):
+  1. Define query → 2. Model gap → 3. Assess existing data
+  → 4. Source if needed → 5. Extract & compute → 6. Merge (attribute augmentation) → 7. Verify
+```
+
+---
+
+## Current State of the Repo
+
+```
+new_beginning/
+├── CLAUDE.md                         # Project config (four-problem framework, two pipelines)
+├── DEBRIEFING.md                     # This file
+├── README.md
+├── extract_marine_regions.py         # Entity extraction from MR API
+├── build_relationships.py            # Relationship building (CSV + API + spatial)
+├── enrich_relationships.py           # located_in + claimed_by enrichment
+├── merge_tfdd_rivers.py              # TFDD river basin merge (Session 4)
+├── extract_cables.py                 # Submarine cable extraction from TeleGeography
+├── compute_flow_order.py             # River flow order from HydroRIVERS (Session 6)
+├── query_world.py                    # Interactive query interface
+├── verify_database.py                # 21 automated verification checks
+├── .claude/commands/
+│   ├── source-scout.md               # Step 1: Find sources
+│   ├── source-validator.md           # Step 2: Validate sources
+│   ├── data-inspector.md             # Step 3: Four-problem inspection + enrichment mode
+│   ├── data-merger.md                # Step 6: Entity import + attribute augmentation
+│   └── data-verifier.md              # Step 7: Verify output
+├── data/
+│   ├── rivers/                       # Rivers research output (Session 2)
+│   ├── cables/                       # Cable research output (Session 5)
+│   ├── flow_order/                   # Flow order research output (Session 6)
+│   │   ├── 01_candidate_sources.md
+│   │   ├── 02_validated_sources.md
+│   │   ├── 03_inspection_results.md
+│   │   ├── 04_verification_report.md
+│   │   ├── flow_order_results.json   # Computed flow order for 316 basins
+│   │   └── raw/                      # HydroRIVERS shapefiles (~500 MB)
+│   └── marine_regions/
+│       ├── global_map.db             # SQLite database (~10 MB, 40K entities, 27K relationships, 842 ranked)
+│       └── checkpoint.json           # MR extraction progress tracker
+```

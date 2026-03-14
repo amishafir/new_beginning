@@ -7,14 +7,20 @@ Build verified, source-backed datasets on any research topic using a disciplined
 ```
 .claude/commands/
 ├── source-scout.md       # Find and classify candidate data sources
+├── source-surveyor.md    # Map an organization's full data offerings against our DB
 ├── source-validator.md   # Validate source authority, currency, and fitness
-├── data-inspector.md     # Probe sources against the three problems
+├── data-inspector.md     # Probe sources against the four problems
 ├── data-merger.md        # Combine data from multiple sources with entity matching
 ├── data-verifier.md      # Spot-check results against independent primary sources
 data/{topic}/             # Outputs organized by research topic
 ```
 
 ## Workflow
+
+### Source survey (mapping an organization's offerings)
+When you already know the source but need to discover what it offers:
+- `/source-surveyor <url>` — catalog all data products, map to entities/relationships/attributes, rank by integration value
+- Then pick the highest-value datasets and run them through the forward or backwards pipeline below
 
 ### Forward pipeline (building a new dataset)
 0. **Inventory** — check what data already exists in the repo (`ls`, `head`, `wc -l`). Prior sessions may have left curated datasets.
@@ -64,6 +70,19 @@ For any gap, the inspector should propose how to fill it:
 - **Verify after fetching**: spot-check results against independent authoritative sources
 - **Be transparent about gaps**: flag what's missing rather than guessing
 - **Define done by questions, not counts**: write the queries the dataset must answer, then build until they work
+
+### Curate the Head, Compute the Tail
+When deriving relationships from existing data (spatial joins, name parsing, type inference):
+- **Curate the top N entities** where errors are visible and costly — use domain knowledge
+- **Compute the long tail** where errors are tolerable — use automation
+- **Define N before starting** and verify the boundary between curated and computed
+- This pattern appears in every session: alias dictionaries + fuzzy matching, strait connections + bbox overlap, river overrides + spatial join
+
+### Spatial Computation Guard Rails
+Bounding box overlap is a starting point, not an answer:
+- **Always apply an area filter** — exclude overly broad regions (oceans' bboxes cover entire continents)
+- **Domain-validate the top N results** — landlocked nations shouldn't border seas, tributaries don't reach oceans, inland coordinates don't map to distant seas
+- **Never filter by entity type alone** — sources misclassify entities (Strait of Gibraltar typed as "Sea", seafloor basins typed as "Basin"). Always add name-pattern fallbacks.
 
 ### Design for Integration
 Most projects end up combining multiple sources. Plan for this from day 1:

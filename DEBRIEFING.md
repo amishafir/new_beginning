@@ -713,7 +713,186 @@ new_beginning/
 │   │   ├── 04_verification_report.md
 │   │   ├── flow_order_results.json   # Computed flow order for 316 basins
 │   │   └── raw/                      # HydroRIVERS shapefiles (~500 MB)
+│   ├── unctad/                      # UNCTAD source assessment (Session 7)
+│   │   └── 00_source_assessment.md
 │   └── marine_regions/
 │       ├── global_map.db             # SQLite database (~10 MB, 40K entities, 27K relationships, 842 ranked)
 │       └── checkpoint.json           # MR extraction progress tracker
+├── build_iso_mapping.py             # ISO 3166 → MRGID mapping (Session 7)
 ```
+
+---
+
+## Task 7: UNCTAD Source Survey & ISO Infrastructure
+
+### What we set out to do
+Inspect UNCTAD (unctad.org) as a data source — map everything it offers, translate to entities/relationships/attributes, assess integration potential with our DB. Then build the critical infrastructure needed before any extraction.
+
+### What happened
+
+#### Phase 0: Skills gap
+Recognized that existing skills (source-scout, data-inspector) didn't cover the task pattern: "given a known source, map all its offerings." Source-scout works topic→sources; this task works source→topics. Created `source-surveyor.md` — a new skill for mapping an organization's full data landscape.
+
+#### Phase 1: Source survey
+Explored UNCTAD's data infrastructure systematically:
+- **UNCTADstat Data Hub** — primary platform, 150+ indicators, JS-rendered (WebFetch can't see the Data Centre content)
+- **6 specialized databases** — Investment Policy Hub, TRAINS, GSP, Cyberlaw Tracker, etc.
+- **Programmatic access** — CSV bulk download via UI, UNdata SDMX API (JSON/XML/CSV), WITS API for TRAINS data
+- **Classifications** — ISO 3166 + UN M49 for countries, HS/SITC for products
+
+#### Phase 2: Schema mapping
+Cataloged datasets by integration value using the Four Problems framework:
+
+**Tier 1 — Bilateral/relational data (creates graph edges):**
+- **LSBCI** (Bilateral Liner Shipping Connectivity Index): country-pair shipping connectivity scores. ~19K directed weighted edges. Unique to UNCTAD.
+- **Merchandise Trade Matrix**: country-to-country trade flows by product. Massive bilateral edge set.
+- **Bilateral FDI**: 206 economies, 40+ years of directed investment flows.
+- **BITs** (Bilateral Investment Treaties): 2,864 treaties between country pairs. UNCTAD is the sole authority.
+
+**Tier 2 — Country attributes (enriches existing nations):**
+- LSCI (shipping connectivity score), merchant fleet, container throughput, GDP
+
+**Tier 3 — New entity types:**
+- Port LSCI (individual ports, but no coordinates — would need a separate port database)
+
+#### Phase 3: ISO country code infrastructure
+Identified the critical prerequisite: all UNCTAD data uses ISO 3166 codes, but our 196 Nation entities had empty `iso_code` fields. Built `build_iso_mapping.py`:
+- Exact name match via `pycountry`: 136/196
+- Manual alias dictionary (Dutch names, legacy names, MR-specific names): 60/196
+- **Result: 196/196 nations mapped, zero unmatched**
+- Applied to database — all nations now have ISO alpha-3 codes
+
+### Key Lessons (Session 7)
+
+#### On source surveys vs. dataset inspection
+- **Survey the source organization before committing to one access method.** In Session 3, we went straight to the MR REST API without asking what else marineregions.org offers. The GeoPackage downloads (pre-computed spatial intersections) could have saved hours of bounding-box computation. The survey pattern forces you to map the full landscape first.
+
+#### On reference IDs as infrastructure
+- **Establish reference IDs on core entities before your second source arrives, not your seventh.** The `iso_code` column existed from Session 3 — empty for 6 sessions. Every session fought country name matching (Dutch ↔ English ↔ formal ↔ informal, five rounds of alias additions, per-script dictionaries). Populating ISO codes took 30 minutes and eliminates the problem permanently. This should have been Session 3's first task.
+
+#### On ranking extraction targets
+- **Edges are more valuable than nodes.** The UNCTAD assessment distinguished bilateral data (creates edges, high value) from country attributes (enriches nodes, medium) from new entity types (lower). In Session 3, we treated all 449 MR entity types equally — extracting 11K ICES rectangles that still have zero relationships 4 sessions later. Rank by graph value, not record count.
+
+#### On query-driven source selection
+- **Define target queries before choosing what to extract.** The UNCTAD assessment ranked datasets by "what new questions can the DB answer?" — backwards pipeline thinking applied at source selection, not just enrichment. Sessions 3-4 measured progress by counts (37K entities!) when 98% had no relationships.
+
+#### On prerequisites
+- **Map how sources will join to existing data before starting extraction.** The survey identified the ISO mapping as a blocker before touching any UNCTAD data. In earlier sessions, prerequisites (alias dictionaries, name resolution, region fallbacks) were discovered mid-extraction. The survey step forces prerequisite discovery upfront.
+
+#### On the updated pipeline
+The source-surveyor fills a gap that existed from the start:
+```
+0. Inventory existing data
+1. /source-surveyor  — map source landscape, rank by graph value, identify join prerequisites
+2. Build integration infrastructure (reference IDs, alias tables)
+3. /data-inspector   — probe top-ranked datasets against four problems
+4. Extract (highest graph-value first)
+5. /data-verifier
+```
+
+The original pipeline jumped from "find sources" to "inspect a dataset" with no step for "understand the whole source and plan how it connects to what you have."
+
+### Result
+| Metric | Before | After |
+|---|---|---|
+| Nations with ISO codes | 0 | 196 (100%) |
+| UNCTAD datasets cataloged | 0 | 16 (7 bilateral, 9 attribute/entity) |
+| New skills | 5 | 6 (+source-surveyor) |
+
+### Open Items
+- **LSBCI extraction** — highest-value bilateral dataset, needs data-inspector probe
+- **BITs extraction** — 2,864 treaty edges, no API (web scraping needed)
+- **Trade Matrix** — massive bilateral dataset, needs careful design
+- **Bilateral FDI** — 206 economies, 40 years
+- **Port LSCI** — needs a separate port coordinate source for placement
+- **MR WFS datasets** — EEZ Boundaries and EEZ-IHO Intersection (see Session 7b below)
+
+---
+
+## Session 7b: Marine Regions Retrospective Survey
+
+### What we set out to do
+Apply the source-surveyor to marineregions.org — the source we've used since Session 3 — to test whether a survey would have found datasets we missed.
+
+### What we found
+
+We used exactly ONE access method in Sessions 3-5: the REST API (`/rest/getGazetteerRecordsByType`, `/rest/getGazetteerRelationsByMRGID`). Marine Regions actually offers **four** data delivery mechanisms:
+
+| Method | What it provides | We used it? |
+|--------|-----------------|-------------|
+| REST API | Single-record lookups, 15 endpoints | ✓ (2 of 15 endpoints) |
+| **WFS (Web Feature Service)** | **55 layers** with full polygons, CSV/GeoJSON export, spatial queries | ✗ |
+| **GeoPackage/Shapefile downloads** | Pre-built boundary datasets | ✗ |
+| WMS (Web Map Service) | Map image rendering | ✗ (low data value) |
+
+### Three datasets we missed
+
+#### 1. EEZ Boundaries (WFS: `MarineRegions:eez_boundaries`)
+
+**2,349 maritime boundary lines.** Each line has:
+- `mrgid_sov1` + `mrgid_sov2` — the two nations on each side (MRGIDs matching our DB)
+- `line_type` — Treaty (267), Median line (204), Connection line (247), Court ruling (25), Joint regime (21), Unsettled (52)
+- `length_km` — boundary length
+- `source1`, `url1`, `doc_date` — legal provenance (actual treaty documents, court rulings, UN notes verbales)
+
+Of these, **826 lines are between two distinct sovereigns**, representing **330 unique nation pairs**.
+
+**Compared to what we have:**
+- Our DB has 313 `borders` pairs (from the Session 1 CSV — these are **land** borders)
+- 121 pairs overlap (nations that share both land and maritime borders)
+- **209 pairs are NEW** — purely maritime borders not in our DB
+
+These 209 new pairs include:
+- Island nations' maritime neighbors (UK–Belgium, UK–France, UK–Netherlands)
+- Overseas territory boundaries (France–Brazil, France–Madagascar, France–Vanuatu via overseas territories)
+- Cross-sea boundaries (Netherlands–Venezuela via Caribbean EEZs)
+
+**Line type breakdown for new pairs:** 173 Treaty, 133 Connection, 112 Median, 13 Joint regime, 9 Court ruling, 21 Unsettled.
+
+**What this means:** We can add a `maritime_border` relationship type — distinct from `borders` (land) — with legal provenance, line type classification, and length. This is authoritative international law data, not computed heuristics.
+
+**What we did instead in Session 3:** Computed 482 `adjacent_to(sea, nation)` from bounding box overlap, got false positives (landlocked nations), built an exclusion list. The EEZ Boundaries dataset provides the **nation↔nation** maritime adjacency directly, with legal sourcing.
+
+#### 2. EEZ-IHO Intersection (WFS: `MarineRegions:eez_iho`)
+
+**572 pre-computed intersections.** Each feature maps a nation's EEZ to an IHO Sea Area:
+- `mrgid_sov1`, `sovereign1`, `iso_ter1` — which nation
+- `iho_mrgid`, `iho_sea` — which sea
+- `area_km2` — intersection area (enables weighted adjacency)
+- Direct MRGID + ISO code match to our DB
+
+**Compared to what we have:**
+- 489 existing `adjacent_to(sea, nation)` relationships (from CSV + spatial inference)
+- The 572 EEZ-IHO intersections provide **authoritative** sea↔nation adjacency with **area in km²** — a property our current relationships lack
+- Overlap is partial: our `adjacent_to` includes straits, bays, gulfs; EEZ-IHO is strictly IHO Sea Areas × EEZs
+
+**What this means:** We could either replace or supplement our existing `adjacent_to` with authoritative, area-weighted relationships. "Albania borders the Adriatic Sea (12,127 km²) and the Ionian Sea (39 km²)" — the area tells you which sea matters more to each nation.
+
+#### 3. Alternate Names API (`getGazetteerNamesByMRGID`)
+
+Returns alternate language names per entity. For MRGID 14 (België): `["Belgium", "Bélgica"]`.
+
+**What we did instead:** Built alias dictionaries manually over 5 sessions:
+- Session 3: 5 rounds of adding Dutch→English aliases
+- Session 3b: 150-entry adjective→nation dictionary for EEZ parsing
+- Session 4: TFDD-specific alias dictionary
+- Session 5: 7 territory alias additions
+- Session 7: Full ISO mapping (which finally solved it permanently)
+
+**What this would have given us:** 196 API calls (~3 minutes) to get English names for all Dutch-named entities. Would have cut hours of cumulative name-matching work.
+
+### Value Assessment
+
+| Dataset | New relationships | New properties | Integration effort | Value |
+|---------|------------------|---------------|-------------------|-------|
+| EEZ Boundaries | +209 maritime border pairs (new type) | line_type, length_km, legal source | Trivial — MRGID match, WFS CSV | **HIGH** |
+| EEZ-IHO Intersection | ~572 nation↔sea (overlaps/replaces 489 existing) | area_km2 | Trivial — MRGID match, WFS CSV | **HIGH** |
+| Alternate Names | Infrastructure | N/A | Easy — 196 API calls | **Moot** (ISO codes now solve the problem) |
+
+### Key Lesson
+
+**The REST API was the worst access method for our use case.** It's designed for interactive single-record lookups in a web application. The WFS is designed for bulk geographic data — exactly what we needed. The downloads page has pre-built intersection datasets — exactly the relationships we spent hours computing.
+
+We didn't even look at the downloads page or web services page in Session 3. One visit to `marineregions.org/downloads.php` would have revealed the EEZ-IHO intersection dataset. One visit to `marineregions.org/webservices.php` would have revealed the WFS with 55 queryable layers.
+
+**This is the source-surveyor lesson made concrete.** The cost of not surveying wasn't just inefficiency — it was building crude approximations of datasets that already existed in authoritative, pre-computed form.

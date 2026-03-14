@@ -136,9 +136,20 @@ Save results to `data/{topic}/03_inspection_results.md` including:
 - Which problems each source solves and which it doesn't
 - Proposed strategy for filling gaps
 
+## Step 4b: Type consistency check (after entity extraction)
+
+If entities have been extracted, verify classification consistency:
+- Are there entities whose **name** implies a different type than their **type** field?
+  - Names containing "Strait" but type != Strait (MR classified Strait of Gibraltar, Malacca Strait as "Sea")
+  - Names containing "River" but type != River
+  - Names containing "Bay" but type != Bay/Gulf
+- Run: `SELECT name, type FROM entities WHERE name LIKE '%Strait%' AND type != 'Strait'`
+- Document misclassifications — they WILL break downstream queries that filter by type.
+
 ## Rules
 - Always fetch REAL sample data — never assume a field exists without seeing it
 - Test at least 2-3 different records to confirm field consistency
 - Document what you ACTUALLY see, not what you expect to see
 - If a source claims to have data but the fields don't match our needs, say so clearly
 - **Never write a plan that depends on an untested assumption about a source's capabilities**
+- **Never filter by entity type alone** — always add name-pattern fallbacks (e.g., `WHERE type='Strait' OR name LIKE '%Strait%'`)

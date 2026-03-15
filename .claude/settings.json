@@ -1,5 +1,6 @@
 {
   "permissions": {
+    "default": "allowlist",
     "allow": [
       "Read",
       "Edit",
@@ -7,7 +8,34 @@
       "Glob",
       "Grep",
       "WebFetch",
-      "WebSearch"
+      "WebSearch",
+      "Bash(python3 *)",
+      "Bash(python *)",
+      "Bash(pip3 *)",
+      "Bash(pip *)",
+      "Bash(git *)",
+      "Bash(curl *)",
+      "Bash(ls)",
+      "Bash(ls *)",
+      "Bash(wc *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(cat *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(cd *)",
+      "Bash(sqlite3 *)",
+      "Bash(which *)",
+      "Bash(echo *)",
+      "Bash(sort *)",
+      "Bash(uniq *)",
+      "Bash(du *)",
+      "Bash(file *)",
+      "Bash(unzip *)",
+      "Bash(chmod *)",
+      "Bash(grep *)",
+      "Bash(touch *)"
     ]
   }
 }

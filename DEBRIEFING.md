@@ -896,3 +896,320 @@ Returns alternate language names per entity. For MRGID 14 (België): `["Belgium"
 We didn't even look at the downloads page or web services page in Session 3. One visit to `marineregions.org/downloads.php` would have revealed the EEZ-IHO intersection dataset. One visit to `marineregions.org/webservices.php` would have revealed the WFS with 55 queryable layers.
 
 **This is the source-surveyor lesson made concrete.** The cost of not surveying wasn't just inefficiency — it was building crude approximations of datasets that already existed in authoritative, pre-computed form.
+
+---
+
+## Session 8: Domain Modeler — Industry Research Skill
+
+### What we set out to do
+Extend the project from geographic data into industry research — understanding an industry's structure, players, and data-driven questions before sourcing any data. Used commodity trading and international sport entertainment as test domains.
+
+### What happened
+
+#### Phase 1: Commodity trading brainstorm
+1. Started with Glencore (glencore.com) as a seed — fetched their "what we do" and "who we are" pages
+2. Mapped stakeholder landscape: 3 tiers (core operators, commercial ecosystem, infrastructure & regulation), ~18 stakeholder types with named examples
+3. Identified 7 personas: commodity trader (desk), risk manager, supply chain/logistics, procurement (industrial buyer), CFO/treasury, strategy/M&A, compliance/ESG
+4. Drafted 5-6 data-driven questions per persona (~40 total)
+5. First refinement: filtered out real-time/online data — kept only structural questions (stable for 6+ months). This cut prices, freight rates, live positions, scores — left graph structure: who exists, who owns what, who connects to whom, what are the rules
+6. Mapped the result to the Four Problems framework — confirmed it applies directly to industry data (entities = companies/mines/ports, relationships = owns/trades/ships_via, properties = capacity/terms/ownership%)
+
+#### Phase 2: Cross-domain validation with international sport entertainment
+7. Ran the same exercise on sports: Olympics, Formula 1, FIFA as seed concepts
+8. Mapped 3 tiers of stakeholders: governing bodies/teams/athletes, broadcasters/sponsors/betting, venues/anti-doping/governments
+9. Identified 7 personas: rights negotiator, team principal, sponsorship director, host city bid director, broadcaster/media buyer, athlete/agent, integrity officer
+10. Drafted structural questions per persona
+11. **Key comparison**: commodity trading's "commodity" = physical materials; sport entertainment's "commodity" = attention/audience. The structural patterns are analogous:
+    - `owns(company, mine)` ≈ `governs(IOC, swimming)`
+    - `ships_via(cargo, port)` ≈ `broadcasts_via(event, network)`
+    - `trades(company, commodity)` ≈ `sponsors(brand, event)`
+
+#### Phase 3: Skill design
+12. Identified 3 gaps in the current pipeline:
+    - **Domain modeler** (new) — map industry structure before sourcing data
+    - **Entity profiler** (new, deferred) — extract structured facts from a specific company/org's public presence
+    - **Relationship mapper** (new, deferred) — systematically enumerate all instances of a known relationship type
+13. Built `domain-modeler.md` v1: 8-step skill anchored on a single seed example
+
+#### Phase 4: Methodology refinement
+14. Recognized the single-seed anchor biases the model (Glencore → trader-centric view, F1 → racing-centric view)
+15. Evaluated 3 alternative trigger strategies:
+    - **Option A: Multi-seed** — 3-5 seeds from different stakeholder types. Pro: still grounded. Con: still picking seeds from what you already know.
+    - **Option B: Relationship-first** — start from transactions (verbs), derive entities (nouns) from each end. Pro: naturally produces relationships. Con: requires some domain intuition.
+    - **Option C: Question-first** — start from strategic decisions, work backwards to data needs. Pro: everything tied to a real decision. Con: might miss non-decision-making stakeholders.
+16. **Chose B+C combined**: transactions + decisions generate the model, real players validate it (not generate it)
+
+#### Phase 5: Skill rewrite
+17. Rewrote `domain-modeler.md` v2 with fundamentally different step order:
+
+| v1 (seed-anchored) | v2 (transaction-driven) |
+|---|---|
+| Step 1: Anchor in one real player | Step 1: Map the **transactions** (verbs) |
+| Step 2: Stakeholder map (top-down) | Step 2: Map the **strategic decisions** |
+| Step 3: Personas | Step 3: **Derive** entities & relationships from transactions |
+| Step 4: Questions | Step 4: **Derive** personas & questions from decisions |
+| Step 5: E-R schema | Step 5: **Validate** against 2-3 diverse real players |
+| — | Step 6: Stakeholder map (now derived, not invented) |
+
+18. Added key rule: **"Every entity must transact"** — if an entity type doesn't participate in any transaction, it doesn't belong in the schema. Prevents decorative entities.
+
+### What went right
+- **Cross-domain testing caught the seed bias.** If we'd only tested on commodity trading, the seed-anchored approach would have seemed fine. Sports revealed the problem — starting from F1 gives you a racing model, not a sports industry model.
+- **The Four Problems framework transfers to non-geographic domains.** Entities = companies/teams/venues. Relationships = owns/trades/sponsors. Properties = capacity/terms/rights. Placement = where assets/venues are located. Same structure, different nouns.
+- **Filtering to structural data was the key refinement.** Removing real-time data transformed the question set from "trading terminal" questions to "knowledge graph" questions — exactly what our pipeline is built for.
+- **The transactions-first approach produces relationships by construction.** Instead of listing entities then struggling to find relationships (the Session 3 pattern), relationships emerge from the transactions. This is the methodology equivalent of "edges are more valuable than nodes."
+
+### What went wrong
+- **Nothing was extracted.** This was a pure design session — the domain-modeler skill exists but hasn't been tested end-to-end (run the skill → use output to run source-scout → etc.)
+- **Entity profiler and relationship mapper were identified but not built.** Deferred to avoid Session 1's over-engineering mistake (13 files, 4 useful). Better to validate domain-modeler first.
+
+### Key Lessons (Session 8)
+
+#### On industry research vs geographic data
+- **Geographic data has known entity types; industry data doesn't.** You know you want nations, seas, rivers before you start. You don't know whether "smelter" or "refinery" is the right entity granularity until you understand the industry. The domain modeler fills this gap.
+- **The "commodity" being traded defines the industry.** Commodity trading moves physical materials. Sport entertainment moves attention. Financial services move risk. Identifying what moves through the system is the fastest way to understand it.
+
+#### On skill design methodology
+- **Start from verbs (transactions), not nouns (players).** Nouns are ambiguous — is Glencore a trader, a miner, or both? Transactions are concrete — "a physical commodity changes hands." Derive entities from transaction endpoints, not the other way around.
+- **Validate with diverse seeds, don't anchor on one.** One seed gives you one perspective. Three diverse seeds (from different tiers) validate the model's coverage. The seeds should challenge the model, not generate it.
+- **Filter questions by data characteristics early.** "What is the copper price?" and "Who are all the copper producers?" are both valid questions but require completely different data infrastructure. Filtering to structural-only data aligns the domain model with what the pipeline can actually build.
+
+#### On cross-domain patterns
+- **"Who connects to whom" is the hardest data archetype in every domain.** In geography: which nations share a maritime border. In commodities: who trades with whom. In sports: who sponsors whom. The specific relationship differs but the difficulty pattern is constant.
+- **Countries are the universal join point.** Every domain model we've tested includes countries as an entity type. The existing geographic DB (196 nations with ISO codes, borders, maritime zones) is reusable infrastructure for any domain.
+
+### Result
+| Metric | Before | After |
+|---|---|---|
+| Skills | 6 (all data-pipeline) | 7 (+domain-modeler) |
+| Domain coverage | Geographic only | Geographic + framework for any industry |
+| Pipeline stages | Inventory → Scout → Survey → Validate → Inspect → Extract → Merge → Verify | **Domain Model →** Inventory → Scout → Survey → Validate → Inspect → Extract → Merge → Verify |
+
+### Open Items
+- **Test domain-modeler end-to-end** — run `/domain-modeler international sport entertainment` and use output to drive source-scout
+- **Entity profiler skill** — identified as needed, not yet built. Extracts structured facts from a company/org's public presence.
+- **Relationship mapper skill** — identified as needed, not yet built. Enumerates all instances of a known relationship type across many entities.
+- **Commodity trading domain model** — brainstormed but not saved as a formal `data/commodity_trading/00_domain_model.md`
+- **Sports entertainment domain model** — brainstormed but not saved as a formal `data/sports_entertainment/00_domain_model.md`
+
+---
+
+## Session 8b: Domain Modeler Test — Transboundary Water Governance
+
+### What we set out to do
+Test the domain-modeler skill on a non-commercial domain (water governance between countries) to validate the interactions-first approach, then use the output to assess what the existing DB already covers and what needs sourcing.
+
+### What happened
+
+#### Phase 1: Skill refinement
+1. Recognized "industry" language was too narrow — the domain modeler needs to handle governance systems, not just commercial ecosystems
+2. Replaced "transactions" → "interactions" and "industry" → "domain" throughout the skill
+3. The mechanics (interactions-first → derive entities → derive personas → validate) transferred without structural change
+
+#### Phase 2: Domain model execution
+4. Mapped 11 interactions forming a lifecycle: claim → negotiate → treaty → allocate → build (with notify) → monitor → dispute/cooperate → adjudicate → renegotiate
+5. Derived 7 entity types: Country, Water resource, Treaty, Joint commission/RBO, Infrastructure, Tribunal, Development financier
+6. Derived 11 relationship types — more edges than nodes (good sign)
+7. Identified 6 personas with structural data questions
+8. Validated against 3 real players: Oregon State TFDD, International Water Law Project, Mekong River Commission
+9. Validation caught 3 gaps: cooperation events (not just disputes), aquifer distinction, prior notification interaction
+
+#### Phase 3: Skill improvements from test
+10. Added **lifecycle detection** as Step 1b — interactions form a sequence, and where entities are "stuck" in the lifecycle reveals governance gaps
+11. Made **build-vs-layer verdict** mandatory (Step 8) — every domain model must issue a routing decision: LAYER (use backwards pipeline) / NEW BUILD (use forward pipeline) / HYBRID
+12. Added **minimum new data needed** analysis for LAYER verdicts
+13. Added **Problem 5: Sequence** to the Five Problems framework in CLAUDE.md
+
+#### Phase 4: Existing DB inventory
+14. Queried `global_map.db` for water governance coverage:
+    - 148 rivers with `flows_through`, 869 country-river pairs, 842 with upstream/downstream rank
+    - **625 country pairs** share at least 1 river (never computed before — this is the bilateral governance landscape)
+    - Canada↔US share 19 rivers, Argentina↔Chile share 18, Indonesia↔PNG share 9
+    - Full upstream→downstream ordering for key disputed rivers: Danube (9 main-stem countries), Nile (4), Mekong (6), Tigris (4), Jordan (3)
+15. **Verdict: LAYER.** Countries and rivers already exist. What's missing is the governance layer (treaties, institutions, disputes).
+
+#### Phase 5: TFDD treaty database scout
+16. Discovered TFDD offers an Excel download of their treaty database — same organization we used for river shapefiles in Session 2
+17. Downloaded `MasterTreatiesDB_20230213.xlsx` (2.4 MB)
+18. Inspected: **882 unique treaties**, 233 basins, 201 countries, 3,809 records (one per treaty×country×basin)
+19. Rich attributes per treaty: date signed, signatories, binding nature, issue area, allocation (surface + groundwater), RBO reference, conflict resolution mechanism, prior notification, infrastructure
+20. **~280 RBOs referenced** — major ones include International Joint Commission (66 treaties), International Boundary and Water Commission (34), River Niger Commission (27)
+21. Basin names in TFDD match our existing river names (same source!) — join is trivially solvable
+
+### Retrospective: What Domain Modeling Reveals About Sessions 2-6
+
+The most valuable output of this exercise was not the water governance domain model itself — it was the retrospective insight about how the river dataset should have been built.
+
+#### 1. We used TFDD twice and never surveyed it
+Session 2 downloaded TFDD shapefiles. Session 6 used HydroRIVERS for flow order. The TFDD treaty database (882 treaties, 280 RBOs) was on the same website the whole time. A `/source-surveyor` on TFDD in Session 2 would have revealed it immediately.
+
+**This is the Marine Regions mistake (Session 7b) repeated:** we went to a source for one thing, got it, and left without asking what else was there.
+
+#### 2. Flow order was treated as geographic — it's actually governance
+Session 6 framed flow order as "which country is upstream." But upstream/downstream matters because upstream countries can build dams, divert water, and pollute. Flow order is the power asymmetry that drives every water dispute.
+
+If the domain model had come first, flow order would have been Session 2's priority, not Session 6's enrichment. **Domain modeling reveals WHY a property matters, which changes priority order.**
+
+#### 3. Country pairs are the real unit, not rivers
+We built around rivers: Danube has 19 countries. But the governance unit is the **country pair sharing a river**: Turkey↔Syria, Egypt↔Ethiopia, India↔Bangladesh. The existing DB has 625 such pairs — we never materialized them because we were thinking in rivers, not governance.
+
+**The domain model tells you what to compute from existing data, not just what to source.**
+
+#### 4. Three sessions could have been two
+Actual path: Session 2 (rivers) → Session 4 (merge) → Session 6 (flow order) → Session 8 (discover treaties).
+With domain modeling first: Session N (domain model + TFDD survey) → Session N+1 (rivers + treaties + flow order from one source ecosystem).
+
+#### 5. The layer verdict changes everything
+Knowing that water governance is a LAYER (not a new build) means the backwards pipeline applies: define governance queries → identify what's missing (treaties, RBOs, disputes) → source only the missing layer. Instead, we built rivers as standalone geographic entities with no awareness of the governance domain they'd eventually serve.
+
+### Key Lessons (Session 8b)
+
+#### On domain modeling as a prerequisite
+- **Domain modeling is not optional for multi-session projects.** Without it, you build what's available (rivers as geography). With it, you build what's valuable (rivers as the backbone of a governance system). The difference: priority order, scope decisions, and total effort.
+- **The domain model is a routing decision.** LAYER → backwards pipeline. NEW BUILD → forward pipeline. This verdict determines the entire downstream approach. Making it mandatory in the skill was the right call.
+
+#### On lifecycle detection
+- **Every domain has a lifecycle.** Governance: claim → negotiate → treaty → allocate. Commercial: source → trade → ship → settle. Competitive: qualify → compete → rank. The lifecycle reveals prerequisites (can't dispute a treaty that doesn't exist), creation points (signing creates a treaty), and gap indicators (a basin with no treaty = stuck at step 1).
+- **"Stuck at step 1" is the most actionable output.** Of the 625 country pairs sharing rivers, how many have treaties? How many have RBOs? The ungoverned pairs are where water disputes will emerge. This is immediately actionable for a water diplomat or development investment officer.
+
+#### On the source-surveyor lesson (third time)
+- Session 3: Used MR REST API, missed WFS and GeoPackage downloads
+- Session 7b: Retrospective survey found 3 missed MR datasets
+- Session 8b: Used TFDD shapefiles in Session 2, missed 882 treaties on the same website
+- **This lesson needs to be harder to ignore.** The source-surveyor should be triggered automatically whenever the pipeline uses a source for the first time — not left as an optional step.
+
+#### On the Five Problems
+- **Problem 5 (Sequence) is real.** It didn't matter for geographic data (nations don't have a lifecycle). It matters enormously for governance, commercial, and competitive domains. The lifecycle reveals which entities are "stuck" early in the process — and those are the highest-value targets for intervention.
+
+### Result
+| Metric | Before | After |
+|---|---|---|
+| Domain models | 0 formal | 1 (water governance, saved to `data/water_governance/00_domain_model.md`) |
+| Domain-modeler skill | v2 (interactions-first) | v3 (+lifecycle, +build-vs-layer verdict, +minimum new data) |
+| CLAUDE.md framework | Four Problems | **Five Problems** (+Sequence) |
+| TFDD treaty data | Not known | 882 treaties downloaded (`data/water_governance/treaties_db.xlsx`) |
+| Existing DB governance coverage | Not analyzed | 625 country pairs share rivers, 842 have upstream/downstream rank |
+
+### Open Items
+- **Extract TFDD treaties into DB** — `signed(country, treaty)` + `governs(treaty, basin)` relationships. Data-inspector probe first.
+- **Materialize the 625 country pairs** — compute and store `shares_river(country_A, country_B)` with properties (which rivers, upstream/downstream position)
+- **GRanD dam database** — infrastructure layer. 7K+ dams with coordinates, spatial join to rivers.
+- **TFDD BAR events** — dispute/cooperation history. Need to find download format.
+- **RBO registry** — extract ~280 RBOs from treaty data as entities with `manages(RBO, basin)` and `member_of(country, RBO)`
+- **Source-surveyor trigger** — consider making it mandatory on first use of any source, not optional
+- **Entity profiler and relationship mapper** — still deferred from Session 8a
+
+---
+
+## Session 9: International Conflicts — Domain Model + Phase 1 Extraction
+
+### What we set out to do
+Enter a new domain (international conflicts) using the domain modeler, then follow the suggested extraction order to build the conflict graph.
+
+### What happened
+
+#### Phase 1: Domain model
+1. Ran `/domain-modeler international conflicts`
+2. Mapped 12 interactions with lifecycle: Claim → Threaten → Armed conflict → Mediate → Negotiate → Agreement → Peacekeepers (with branches for frozen conflicts, relapse, and parallel tracks for alliances, arms, sanctions)
+3. Derived 9 entity types, 14 relationship types, 6 personas with structural questions
+4. Validated against 4 sources: UCDP, SIPRI, COW, ICG
+5. **Verdict: HYBRID** — States exist (196 with ISO), but 8 new entity types needed
+6. Assessed Four Problems: Enumeration easy, Placement easy, Relationships moderate, Properties hard
+
+#### Phase 2: UCDP source survey
+7. Followed the "survey before extracting" rule — cataloged all 20+ UCDP datasets
+8. Found: all CC BY 4.0, CSV bulk downloads (no registration), API exists but requires token
+9. Tested actual CSV files: 303 conflicts, 684 dyads, 1,878 actors, 374 peace agreements, 10,852 external support triads
+10. Prioritized: Armed Conflict + Dyadic + Actor (Phase 1), Peace Agreements + External Support (Phase 2)
+
+#### Phase 3: UCDP extraction
+11. Built GW→ISO mapping (Gleditsch-Ward country codes → ISO alpha-3) — 180+ mappings including historical states
+12. Extracted 303 conflicts as entities, 1,714 armed groups, 8,154 party_to relationships
+13. **Bug found and fixed:** Secondary party matching originally used name-matching against all government actors — produced false positives (North Korea linked to Ethiopia's conflicts). Fixed by using `gwno_a_2nd`/`gwno_b_2nd` fields (GW country codes) instead of parsing name strings.
+14. Mapped all 164 government actors to existing nations via GW→ISO (100% match rate)
+
+#### Phase 4: COW alliances extraction
+15. Downloaded COW Formal Alliances v4.1 (1816-2012)
+16. Extracted 414 alliances, 3,304 allied_with relationships
+17. Russia: 104 alliances (USSR accumulation since 1816), France: 57, UK: 48 — historically plausible
+
+#### Phase 5: SIPRI arms transfers extraction
+18. SIPRI website is fully JS-rendered — WebFetch returns empty HTML
+19. **Reverse-engineered the API** from the JS bundle: found `Fs()` function builds base URL, discovered actual backend at `https://atbackend.sipri.org/api/p/` (public, no auth)
+20. API returns all 29,917 individual transfer records in one call (no pagination needed)
+21. Aggregated into 2,732 bilateral pairs, extracted 10,852 arms_transfer relationship rows
+22. **First extraction missed Turkiye and Czechia** (SIPRI uses modern names, mapping had old ones only). Fixed and re-ran — gained 139 additional bilateral pairs.
+
+#### Phase 6: Verification
+23. Cross-domain queries work: "Countries in conflicts that also sell arms" → France (29 conflicts, sells to 138), USA (27 conflicts, sells to 151)
+24. Most internationalized conflicts: Mali JNIM (82 parties — the NATO/ISAF coalition), CAR CPC (75)
+25. Active 2024 conflicts: 61 (matches UCDP's published figure)
+
+### What went right
+
+1. **Domain model → source survey → extraction ran smoothly as a 3-step pipeline.** The domain model's entity types became the extraction targets. The source survey prevented blind extraction. The UCDP survey found 20+ datasets we'd have otherwise discovered piecemeal.
+
+2. **The HYBRID verdict worked as designed.** States already existed → we joined to them via ISO codes. Conflicts, armed groups, alliances were new → forward pipeline. The routing decision saved us from trying to layer conflicts onto an entity type that didn't exist yet.
+
+3. **GW→ISO mapping was built once, reused across UCDP and COW.** The mapping table (180+ codes → ISO alpha-3, including historical states) is shared infrastructure — exactly the "design for integration" principle from CLAUDE.md.
+
+4. **Source survey caught the right extraction order.** By cataloging all 20+ UCDP datasets before extracting any, we could see that Armed Conflict + Dyadic + Actor form a skeleton that everything else (agreements, external support, termination) references. Starting with agreements would have been backwards.
+
+5. **SIPRI API discovery.** The website appeared closed (JS-rendered, no documentation), but reverse-engineering the JS bundle revealed a fully functional public API. This is a reusable technique for any Svelte/React data portal.
+
+6. **Bug was caught by domain knowledge.** North Korea in 31 conflicts including Ethiopia and Colombia was obviously wrong. The top-N sanity check (a pattern from prior sessions) caught the false-positive secondary party matching immediately.
+
+### What went wrong
+
+1. **Secondary party matching was naively implemented.** The first extraction looped through ALL government actors trying to match by name string — a quadratic, error-prone approach. Should have used the GW code fields (`gwno_a_2nd`, `gwno_b_2nd`) from the start. Cost: one full extraction cycle wasted.
+
+2. **SIPRI name mapping was incomplete on first pass.** Missed "Turkiye" (Turkey's official name change) and "Czechia" — 850 trades. This is the same entity-matching lesson from every prior session, now appearing in country name variants rather than just multilingual names.
+
+3. **No verification step was run.** We extracted from 3 sources and cross-queried, but never ran `/data-verifier` against an independent source. The pipeline says: extract → merge → **verify**. We skipped verify.
+
+4. **Peace agreements and external support were not extracted.** The session covered Phase 1 (graph skeleton) but not Phase 2 (resolution + support layers). The domain model identified these as high-value — they're the "who backs whom" and "what resolved what" questions.
+
+### Key Lessons (Session 9)
+
+#### On multi-source extraction
+- **Country code systems are the new name-matching problem.** UCDP uses Gleditsch-Ward codes. COW uses COW codes (same numbering, different abbreviations). SIPRI uses country names (with modern name changes like Turkiye). ISO alpha-3 in our DB is the Rosetta Stone, but you need a mapping table per source. Build it first, before extraction.
+- **Build the mapping table as shared infrastructure.** The GW→ISO table was used by both UCDP and COW extraction scripts. Next session, SIPRI name→ISO will be used for peacekeeping too. Don't embed the mapping in each script — extract it as a shared module.
+- **Historical states need explicit handling.** GW code 345 is Yugoslavia (→ Serbia). GW code 816 is North Vietnam (→ Vietnam). GW codes 260/265 are West/East Germany (→ Germany). Every conflict dataset has these. A single historical-to-modern mapping table covers all sources.
+
+#### On API discovery
+- **JS-rendered websites don't mean closed data.** SIPRI appeared inaccessible, but the JS bundle contained the full API surface. The pattern: download `bundle.js`, search for `fetch()` calls and API path strings, find the backend URL. This works for any Svelte, React, or Vue single-page app.
+- **Public and authenticated paths often coexist.** SIPRI has `/api/p/` (public) and `/api/v1/` (authenticated). The JS bundle's URL construction function (`Fs()`) selects based on login state. Look for this pattern when a website requires login — the public path may still have the data you need.
+
+#### On verification
+- **Extraction without verification is a gap.** We now have 59K relationships and no independent verification on the conflict data. The pipeline's verify step exists for a reason — casualty figures, alliance dates, and arms transfer values are all contested. At minimum, spot-check 10 records per source.
+
+#### On the domain model as extraction guide
+- **The domain model's entity types become the extraction plan.** Conflicts → UCDP. Alliances → COW. Arms transfers → SIPRI. The mapping was direct and complete for Phase 1. For Phase 2, the domain model also tells us: Agreements → UCDP Peace Agreements, External support → UCDP ESD, Peacekeeping → SIPRI Peace Operations.
+- **The "hardest data archetype" prediction was accurate.** The domain model identified "who supports whom" as the hardest archetype. The UCDP External Support dataset (1975-2017) is indeed the most limited — it stops 8 years ago and only covers what's publicly known. This gap was predictable before extraction.
+
+#### On skill/pipeline improvements needed
+- **The extraction step needs a country-code resolver.** Every source uses different identifiers. A shared `resolve_country(name_or_code, system)` function would eliminate the per-script mapping tables. This is the entity-matching infrastructure lesson (Session 7) applied to countries, not just marine features.
+- **The source-surveyor should output a machine-readable catalog.** The UCDP survey produced a markdown assessment. If it also produced a JSON catalog (`{dataset_name, url, format, entity_types, record_count}`), the extraction step could auto-select what to download.
+- **The domain-modeler's recommended next steps should map directly to extraction scripts.** The output says "Priority 1: UCDP Armed Conflict" but doesn't specify the file format, download URL, or join method. Adding these would make the handoff from modeling to extraction seamless.
+
+### Result
+| Metric | Before | After |
+|---|---|---|
+| Entity types in DB | ~25 (geographic/marine) | ~30 (+Conflict subtypes, Armed Group, Alliance) |
+| Total entities | 40,002 | 42,433 (+2,431) |
+| Total relationships | 28,473 | 59,717 (+31,244) |
+| Relationship types | 12 | 16 (+party_to, allied_with, arms_transfer, has_property) |
+| Domain models | 1 (water governance) | 2 (+international conflicts) |
+| Sources extracted | 4 (MR, TFDD, TeleGeography, HydroRIVERS) | 7 (+UCDP, COW, SIPRI) |
+| Nations with conflict data | 0 | 156 (80% of 196) |
+
+### Open Items
+- **Verify conflict data** — spot-check 10 records per source against Wikipedia/primary sources
+- **Extract UCDP Peace Agreements** — 374 agreements → Agreement entities + signed/resolves relationships
+- **Extract UCDP External Support** — 10,852 triad-years → supports relationships (who backs whom)
+- **Extract UCDP Conflict Termination** — lifecycle endpoints → properties on conflicts
+- **Extract SIPRI Peace Operations** — peacekeeping mission entities + deployed_to relationships
+- **Extract COW MIDs** — militarized interstate disputes (short of war) for the "threaten/display force" interaction
+- **Shared country-code resolver** — extract GW→ISO, COW→ISO, SIPRI-name→ISO into a shared module
+- **Re-run SIPRI extraction with Turkiye/Czechia/Bahamas/Yemen AR fixes** — or just accept current state (2,732 pairs covers 99%+ of state-to-state transfers)
+- **Non-state arms recipients** — SIPRI has transfers to Hezbollah, Houthi rebels, Northern Alliance, etc. These could link to existing Armed Group entities from UCDP. Deferred.

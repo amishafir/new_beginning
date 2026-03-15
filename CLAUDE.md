@@ -6,6 +6,7 @@ Build verified, source-backed datasets on any research topic using a disciplined
 ## Project Structure
 ```
 .claude/commands/
+├── domain-modeler.md     # Map an unfamiliar industry: stakeholders, personas, questions, E-R schema
 ├── source-scout.md       # Find and classify candidate data sources
 ├── source-surveyor.md    # Map an organization's full data offerings against our DB
 ├── source-validator.md   # Validate source authority, currency, and fitness
@@ -17,6 +18,15 @@ data/{topic}/             # Outputs organized by research topic
 
 ## Workflow
 
+### Domain modeling (entering a new domain)
+When starting research in an unfamiliar domain (industry, governance system, competitive ecosystem):
+- `/domain-modeler <domain>` — map interactions, lifecycle, decisions, E-R schema, personas, questions
+- Output includes a **build-vs-layer verdict**: is this a new database or a layer on existing data?
+- **LAYER verdict** → use backwards pipeline (define queries → source only the missing layer)
+- **NEW BUILD verdict** → use forward pipeline (scout → validate → inspect → extract → merge)
+- Entity types become source-scout search terms, relationship types become inspector test criteria, questions become acceptance criteria for "done"
+- Skip this if you already know the entities and relationships you want
+
 ### Source survey (mapping an organization's offerings)
 When you already know the source but need to discover what it offers:
 - `/source-surveyor <url>` — catalog all data products, map to entities/relationships/attributes, rank by integration value
@@ -26,7 +36,8 @@ When you already know the source but need to discover what it offers:
 0. **Inventory** — check what data already exists in the repo (`ls`, `head`, `wc -l`). Prior sessions may have left curated datasets.
 1. `/source-scout <topic>` — find sources, classify as primary/secondary, probe availability
 2. `/source-validator` — validate each source: who maintains it, does it have what we need?
-3. `/data-inspector` — probe sources against the three problems (see below), build capability matrix. **If existing data is present**, also test overlap with the new source.
+2b. **Survey before extracting** — before extracting from any source, run `/source-surveyor` on the organization. This has been skipped 3 times (MR in Session 3, TFDD in Session 2, TFDD again in Session 8) and each time we missed high-value datasets sitting on the same site.
+3. `/data-inspector` — probe sources against the four problems (see below), build capability matrix. **If existing data is present**, also test overlap with the new source.
 4. **Plan** — design extraction strategy based on what inspector actually found, not assumptions
 5. Extract data (method depends on what inspector finds: script, API calls, etc.)
 6. `/data-merger` — if combining with existing data: overlap analysis → name resolution → dry run → apply
@@ -71,6 +82,18 @@ For any gap, the inspector should propose how to fill it:
 - **Be transparent about gaps**: flag what's missing rather than guessing
 - **Define done by questions, not counts**: write the queries the dataset must answer, then build until they work
 
+### Default to Layering, Not Building
+When entering a new domain, first check whether its core entities already exist in the DB. If countries, rivers, seas, or ports are the backbone, the new domain is probably a governance/commercial/competitive **layer** on existing geographic data — not a separate database. Layers are cheaper to build (backwards pipeline) and immediately benefit from existing relationships.
+
+### The Five Problems
+The Four Problems framework (Enumeration, Placement, Relationships, Properties) applies to every dataset. For domains with process/governance structure, add:
+
+| # | Problem | Question | How to test |
+|---|---------|----------|-------------|
+| 5 | **Sequence** | "In what order do things happen?" | Map the lifecycle. Which interactions are prerequisites for others? Where in the lifecycle are entities created? Where does the process break down? |
+
+Sequence is central in governance (treaty before allocation), commercial (trade before settlement), and competitive (qualification before competition) domains. It reveals which entities are "stuck" at early stages — a basin with no treaty is stuck at step 1 of the water governance lifecycle.
+
 ### Curate the Head, Compute the Tail
 When deriving relationships from existing data (spatial joins, name parsing, type inference):
 - **Curate the top N entities** where errors are visible and costly — use domain knowledge
@@ -88,5 +111,21 @@ Bounding box overlap is a starting point, not an answer:
 Most projects end up combining multiple sources. Plan for this from day 1:
 - **Add a `source` column** to every table at creation time, not retroactively
 - **Use reference IDs** (ISO country codes, standard identifiers) alongside names — matching on IDs is trivial, matching on names is painful
-- **Build name normalization as shared infrastructure** — a single alias/lookup system, not per-script dictionaries
+- **Build name normalization as shared infrastructure** — a single alias/lookup system, not per-script dictionaries. Use `data/shared/country_resolver.py` for country code/name resolution across all extraction scripts.
 - **Test overlap early** — when inspecting a new source, check how many of its entities already exist in your dataset before building extraction logic
+
+### Always Prefer Structured IDs Over Name Matching
+When a data source provides both a code field (GW number, ISO code, COW code) and a name field, **always join on the code**. Never loop through names as a fallback when codes are available. Name matching produces false positives (Session 9: North Korea matched to Ethiopia's conflicts via government actor name iteration). Each source uses a different ID system — map it to ISO alpha-3 once via `data/shared/country_resolver.py`, then join on ISO codes throughout.
+
+### Country Code Systems
+Different conflict/governance/trade sources use different country identifiers:
+- **ISO 3166 alpha-3** (our DB standard): USA, GBR, FRA
+- **Gleditsch-Ward (GW)** (UCDP): numeric, e.g., 2=USA, 200=GBR
+- **COW** (Correlates of War): same numbers as GW, different abbreviations
+- **SIPRI**: country names with modern variants (Turkiye, Czechia)
+- **Historical states**: Yugoslavia→Serbia, USSR→Russia, GDR→Germany
+
+Always identify the source's ID system during source survey and build the mapping table BEFORE extraction.
+
+### Don't Skip Verification
+The pipeline ends with `/data-verifier`, not with extraction. Even when extraction runs cleanly, spot-check at least 10 records per source against an independent primary source. Session 9 extracted from 3 sources and skipped verification — casualty figures, alliance dates, and arms transfer values are all contested data.

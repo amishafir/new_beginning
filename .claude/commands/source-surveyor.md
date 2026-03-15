@@ -22,6 +22,16 @@ Look for:
 - **Bulk downloads** (CSV, Excel, shapefile, GeoPackage)
 - **Interactive tools** (maps, query builders) — often hide usable APIs behind them
 
+### JS-rendered site probe (mandatory for modern web portals)
+If the main page returns minimal HTML with a `<script src="bundle.js">` or similar:
+1. Fetch the JS bundle (`/build/bundle.js`, `/static/js/main.*.js`, etc.)
+2. Search for API paths: `grep -oE '"[^"]*api[^"]*"'` and `grep -oE 'fetch\([^)]+\)'`
+3. Search for backend URLs: `grep -oE '"https?://[^"]*"'`
+4. Check for public vs authenticated path split (e.g., `/api/p/` vs `/api/v1/`)
+5. Test the public endpoints directly — they often return full data without authentication
+
+This technique discovered SIPRI's full arms transfers API (29,917 records) behind a seemingly closed JS-rendered portal.
+
 For each mechanism found, document:
 - URL
 - Format (JSON API, CSV download, SDMX, PDF)
@@ -84,6 +94,32 @@ Save to `data/{source}/00_source_assessment.md`:
 - Ranked priority list (Step 4)
 - Explicit gaps: what this source does NOT cover
 - Recommended next steps: which datasets to inspect with `/data-inspector`
+- **Country identifier system**: what country codes/names does this source use? (ISO alpha-3, ISO numeric, COW/GW codes, custom names). Note any variant spellings (Turkiye vs Turkey, Czechia vs Czech Republic) and historical states (Yugoslavia, Soviet Union, Czechoslovakia). This determines how to join to existing DB.
+
+### Also save `data/{source}/00_source_catalog.json`:
+A machine-readable catalog for downstream tools:
+```json
+{
+  "source": "Organization name",
+  "url": "https://...",
+  "surveyed_date": "YYYY-MM-DD",
+  "country_id_system": "GW codes | ISO alpha-3 | custom names",
+  "datasets": [
+    {
+      "name": "Dataset name",
+      "url": "download or API URL",
+      "format": "CSV | Excel | JSON API",
+      "access": "open | registration | paid",
+      "record_count": 1234,
+      "entity_types": ["Conflict", "Actor"],
+      "relationship_types": ["party_to"],
+      "priority": "HIGH | MEDIUM | LOW",
+      "graph_value": "HIGH | MEDIUM | LOW"
+    }
+  ]
+}
+```
+This catalog enables the extraction step to auto-select targets without re-reading the markdown assessment.
 
 ## Rules
 - **Probe, don't extract.** Fetch sample pages, API docs, metadata — not bulk data.
